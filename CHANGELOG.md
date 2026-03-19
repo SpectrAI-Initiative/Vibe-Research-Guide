@@ -2,23 +2,9 @@
 
 All notable updates to this guide are documented in this file.
 
-## 2026-W13 (Content Expansion)
+## 2026-W13
 
-- Major content expansion — paper coverage from 14 to 30+ papers.
-- Created 4 new topic files:
-  - `topics/getting-started.md` — hands-on quickstart guide for beginners (zero-code to 7-day learning path)
-  - `topics/tools.md` — practical tools & platforms (discovery, reading, agents, writing, experiment)
-  - `topics/experiment.md` — experiment design & execution (MLAgentBench, Data Interpreter, OpenHands, SWE-agent)
-  - `topics/writing-review.md` — writing & review (LLM review feedback, MARG, SciMON, Paper SEA)
-- Expanded `topics/synthesis.md` from 1 to 5 papers (PaperQA2, AutoSurvey, ScholarCopilot, RA-ISF).
-- Expanded `topics/surveys.md` from 3 to 5 papers (Agent Architectures, Autonomous Agents survey).
-- Expanded `topics/systems.md` from 3 to 5 papers (SWE-agent, OpenHands).
-- Expanded `topics/ideation.md` from 4 to 6 papers (AI-Researcher, Nova).
-- Expanded `topics/benchmarks.md` from 3 to 5 papers (MLE-bench, RE-Bench).
-- README restructured: 12 numbered sections, new Getting Started / Tools / Experiment / Writing sections.
-- Updated Mermaid route map with new sections.
-- Updated route cards to link to new content.
-- Updated `index.html` with all new papers and sections.
+- 新增核心工具与平台（InnoClaw、ResearchClaw、FARS、Orchestra、OpenClaw）；内容扩充至 30+ 篇论文，9 个 topic 文件。
 
 ## 2026-W12 (Reorganization)
 
