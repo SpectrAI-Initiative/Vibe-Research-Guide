@@ -9,7 +9,10 @@ We curate resources related to:
 - LLM agents for scientific discovery
 - AI-assisted research ideation and planning
 - Literature synthesis for research workflows
+- Experiment design and execution with LLM agents
+- AI-assisted academic writing and peer review
 - Scientific benchmarks and evaluation for research agents
+- Practical tools and platforms for AI-assisted research
 
 ## Inclusion Criteria
 
@@ -24,7 +27,7 @@ A resource should satisfy most of the following:
 
 - Title
 - URL (paper/project/blog/repo)
-- Type (Survey, System, Ideation, Benchmark, etc.)
+- Type (Survey, System, Ideation, Synthesis, Experiment, Writing, Benchmark, Tool, etc.)
 - Why read (1-2 sentences)
 - Suggested stage (Beginner / Beginner-Intermediate / Intermediate)
 - Keywords (2-5 tags)

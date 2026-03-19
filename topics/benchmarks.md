@@ -11,6 +11,8 @@
 | 12 | ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery | [arXiv](https://arxiv.org/abs/2410.05080) | Benchmark | 严格评测 language agents 在 data-driven scientific discovery 中的能力，强调评测的真实性和严谨性。 | Intermediate | evaluation rigor, scientific authenticity |
 | 13 | FIRE-Bench: Evaluating Agents on the Rediscovery of Scientific Insights | [arXiv](https://arxiv.org/abs/2602.02905) | Benchmark | 以"rediscovery"为核心——测试 agent 能否重新发现已验证的科学结论，提供了可验证的评测范式。 | Intermediate | rediscovery, verification |
 | 14 | AstaBench: Rigorous Benchmarking of AI Agents with a Scientific Research Suite | [arXiv](https://arxiv.org/abs/2510.21652) | Benchmark | 更大规模、更 holistic 的科研 benchmark suite，覆盖多个科研子任务。 | Intermediate | holistic benchmark, scientific research suite |
+| 15 | MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering | [arXiv](https://arxiv.org/abs/2410.07095) | Benchmark | OpenAI 出品，以 Kaggle 竞赛为基础评测 Agent 的 ML 工程能力。75 个真实竞赛任务，衡量 Agent 在数据处理、特征工程、模型选择等环节的综合能力。 | Intermediate | ML engineering, Kaggle, practical skills |
+| 16 | RE-Bench: Evaluating Frontier AI R&D Capabilities of Language Model Agents Against Human Experts | [arXiv](https://arxiv.org/abs/2411.15671) | Benchmark | 评测 AI 在真实研究工程任务上的能力，与人类专家直接对比。提供了"AI 距离替代研究者还有多远"的量化参考。 | Intermediate | R&D capability, human expert comparison |
 
 <section id="benchmark-recommendations"></section>
 
@@ -21,18 +23,20 @@
 | 12 | ★★★★★ | Must-read，评测严谨性标杆 |
 | 13 | ★★★★★ | Must-read，rediscovery 范式创新 |
 | 14 | ★★★★☆ | 强烈推荐，大规模综合评测 |
+| 15 | ★★★★☆ | 强烈推荐，ML 工程能力评测 |
+| 16 | ★★★★★ | Must-read，人类专家对比 |
 
 <section id="benchmark-comparison"></section>
 
 ## Benchmark 对比
 
-| 维度 | ScienceAgentBench | FIRE-Bench | AstaBench |
-|---|---|---|---|
-| 核心理念 | 严谨评测 data-driven discovery | 验证可重复科学发现 | 大规模综合科研评测 |
-| 任务来源 | 真实科研任务 | 已发表的科学结论 | 多学科科研任务集 |
-| 评测重点 | Agent 能力 vs 人类表现 | 能否重新"发现"已知结论 | 端到端科研能力 |
-| 规模 | 中等 | 中等 | 较大 |
-| 特色 | 真实性（authenticity） | 可验证性（verifiability） | 覆盖面（holistic） |
+| 维度 | ScienceAgentBench | FIRE-Bench | AstaBench | MLE-bench | RE-Bench |
+|---|---|---|---|---|---|
+| 核心理念 | 严谨评测 data-driven discovery | 验证可重复科学发现 | 大规模综合科研评测 | ML 工程实践能力 | 研究工程 vs 人类专家 |
+| 任务来源 | 真实科研任务 | 已发表的科学结论 | 多学科科研任务集 | Kaggle 竞赛 | 真实 R&D 任务 |
+| 评测重点 | Agent 能力 vs 人类表现 | 能否重新"发现"已知结论 | 端到端科研能力 | 数据处理+建模+优化 | 研究工程综合能力 |
+| 规模 | 中等 | 中等 | 较大 | 75 个任务 | 中等 |
+| 特色 | 真实性（authenticity） | 可验证性（verifiability） | 覆盖面（holistic） | 实用性（Kaggle-based） | 人类对比（human-paired） |
 
 <section id="benchmark-reading-tips"></section>
 
@@ -41,6 +45,8 @@
 1. **论文 #12** 建议在读完系统篇（AI Scientist 等）之后阅读——它帮助你批判性地审视这些系统的真实能力。
 2. **论文 #13** 的 rediscovery 视角非常独特：不问"agent 能不能做新发现"，而问"agent 能不能重新发现已知的发现"——这个评测设计值得学习。
 3. **论文 #14** 适合在你准备设计自己的评测方案时参考。
+4. **论文 #15（MLE-bench）** 偏工程实践——它测试的不是科学洞察力，而是 Agent 能否完成真实的 ML 任务，适合 Builder 路线读者。
+5. **论文 #16（RE-Bench）** 提供了一个关键答案："AI Agent 与人类研究者之间的差距有多大？"——帮你校准对 Vibe Research 的合理预期。
 
 <section id="benchmark-extended"></section>
 
@@ -49,7 +55,6 @@
 | 资源 | 链接 | 说明 |
 |---|---|---|
 | MLAgentBench | [arXiv](https://arxiv.org/abs/2310.03302) | 评测 LLM Agent 做 ML 研究的 benchmark |
-| MLE-bench | [arXiv](https://arxiv.org/abs/2410.07095) | 评测 Agent 在 Kaggle 竞赛中的表现 |
 | SWE-bench | [GitHub](https://github.com/princeton-nlp/SWE-bench) | 评测 Agent 解决真实 GitHub Issue 的能力 |
-| RE-Bench | [arXiv](https://arxiv.org/abs/2411.15671) | 评测 AI 在研究工程任务上的能力 |
+| GAIA | [arXiv](https://arxiv.org/abs/2311.12983) | 通用 AI 助手能力评测 |
 | Awesome AI Agent Benchmarks | [repo](https://github.com/agiresearch/awesome-ai-agent-benchmarks) | Agent Benchmark 综合列表 |

@@ -151,6 +151,10 @@
         ideation: "Research Ideation",
         synthesis: "Literature Synthesis",
         benchmark: "Benchmark and Evaluation",
+        experiment: "Experiment Execution",
+        writingReview: "Writing & Review",
+        gettingStarted: "Getting Started",
+        practicalTools: "Practical Tools",
         featured: "Featured Projects and Repos",
         featuredDesc: "Useful starting points if you want to move from reading to building:",
         contribute: "How to Contribute",
@@ -211,6 +215,10 @@
         ideation: "研究构思",
         synthesis: "文献综合",
         benchmark: "评测与基准",
+        experiment: "实验设计与执行",
+        writingReview: "论文撰写与审稿",
+        gettingStarted: "上手实践指南",
+        practicalTools: "实用工具与平台",
         featured: "精选项目与仓库",
         featuredDesc: "从阅读到构建的实用起点：",
         contribute: "如何贡献",
@@ -237,24 +245,46 @@
       { title: "From Automation to Autonomy: A Survey on Large Language Models in Scientific Discovery", url: "https://arxiv.org/abs/2505.13259", type: "Survey" },
       { title: "LLM Agents as AI Scientists: A Survey", url: "https://openreview.net/pdf?id=bfdUWy6rUA", type: "Survey" },
       { title: "A Survey of LLM-based Scientific Agents", url: "https://arxiv.org/abs/2503.24047", type: "Survey" },
+      { title: "The Landscape of Emerging AI Agent Architectures", url: "https://arxiv.org/abs/2404.11584", type: "Survey" },
+      { title: "A Survey on LLM-based Autonomous Agents", url: "https://arxiv.org/abs/2308.11432", type: "Survey" },
       { title: "The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery", url: "https://arxiv.org/abs/2408.06292", type: "System" },
       { title: "The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search", url: "https://arxiv.org/abs/2504.08066", type: "System" },
       { title: "Agent Laboratory: Using LLM Agents as Research Assistants", url: "https://arxiv.org/abs/2501.04227", type: "System" },
-      { title: "ResearchAgent: Iterative Research Idea Generation over Scientific Literature with Large Language Models", url: "https://arxiv.org/abs/2404.07738", type: "Ideation" },
-      { title: "Can LLMs Generate Novel Research Ideas? A Large-Scale Human Study with 100+ NLP Researchers", url: "https://arxiv.org/abs/2409.04109", type: "Evaluation / Ideation" },
-      { title: "Chain of Ideas: Revolutionizing Research Via Novel Idea Development with LLM Agents", url: "https://arxiv.org/abs/2410.13185", type: "Ideation" },
-      { title: "Scideator: Human-LLM Scientific Idea Generation Grounded in Research-Paper Facet Recombination", url: "https://arxiv.org/abs/2409.14634", type: "Human-LLM Ideation" },
+      { title: "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering", url: "https://arxiv.org/abs/2405.15793", type: "System" },
+      { title: "OpenHands: An Open Platform for AI Software Engineers", url: "https://arxiv.org/abs/2407.16741", type: "Platform" },
+      { title: "ResearchAgent: Iterative Research Idea Generation over Scientific Literature", url: "https://arxiv.org/abs/2404.07738", type: "Ideation" },
+      { title: "Can LLMs Generate Novel Research Ideas? A Large-Scale Human Study", url: "https://arxiv.org/abs/2409.04109", type: "Evaluation / Ideation" },
+      { title: "Chain of Ideas: Revolutionizing Research Via Novel Idea Development", url: "https://arxiv.org/abs/2410.13185", type: "Ideation" },
+      { title: "Scideator: Human-LLM Scientific Idea Generation", url: "https://arxiv.org/abs/2409.14634", type: "Human-LLM Ideation" },
+      { title: "AI-Researcher: Multi-Agent Scientific Discovery", url: "https://arxiv.org/abs/2404.04573", type: "Ideation" },
+      { title: "Nova: Enhancing Novelty and Diversity of LLM Generated Ideas", url: "https://arxiv.org/abs/2410.14255", type: "Ideation" },
       { title: "OpenScholar: Synthesizing Scientific Literature with Retrieval-Augmented Language Models", url: "https://arxiv.org/abs/2411.14199", type: "RAG / Synthesis" },
-      { title: "ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery", url: "https://arxiv.org/abs/2410.05080", type: "Benchmark" },
+      { title: "PaperQA: Retrieval-Augmented Generative Agent for Scientific Research", url: "https://arxiv.org/abs/2312.07559", type: "RAG / QA" },
+      { title: "AutoSurvey: Large Language Models Can Automatically Write Surveys", url: "https://arxiv.org/abs/2406.10252", type: "Survey Generation" },
+      { title: "ScholarCopilot: RAG for Academic Writing", url: "https://arxiv.org/abs/2504.00824", type: "RAG / Writing" },
+      { title: "RA-ISF: Iterative Self-Feedback for RAG", url: "https://arxiv.org/abs/2403.06840", type: "RAG / Reasoning" },
+      { title: "MLAgentBench: Evaluating Language Agents on ML Experimentation", url: "https://arxiv.org/abs/2310.03302", type: "Benchmark + Agent" },
+      { title: "Data Interpreter: An LLM Agent for Data Science", url: "https://arxiv.org/abs/2402.18679", type: "System" },
+      { title: "Can LLMs Provide Useful Feedback on Research Papers?", url: "https://arxiv.org/abs/2310.01783", type: "Evaluation" },
+      { title: "MARG: Multi-Agent Review Generation", url: "https://arxiv.org/abs/2401.04259", type: "System" },
+      { title: "SciMON: Scientific Inspiration Machines for Novelty", url: "https://arxiv.org/abs/2305.14259", type: "System" },
+      { title: "Automated Peer Reviewing in Paper SEA", url: "https://arxiv.org/abs/2407.12857", type: "Benchmark" },
+      { title: "ScienceAgentBench: Rigorous Assessment of Language Agents for Scientific Discovery", url: "https://arxiv.org/abs/2410.05080", type: "Benchmark" },
       { title: "FIRE-Bench: Evaluating Agents on the Rediscovery of Scientific Insights", url: "https://arxiv.org/abs/2602.02905", type: "Benchmark" },
-      { title: "AstaBench: Rigorous Benchmarking of AI Agents with a Scientific Research Suite", url: "https://arxiv.org/abs/2510.21652", type: "Benchmark" }
+      { title: "AstaBench: Rigorous Benchmarking of AI Agents with a Scientific Research Suite", url: "https://arxiv.org/abs/2510.21652", type: "Benchmark" },
+      { title: "MLE-bench: Evaluating Machine Learning Agents on ML Engineering", url: "https://arxiv.org/abs/2410.07095", type: "Benchmark" },
+      { title: "RE-Bench: Evaluating AI R&D Capabilities vs Human Experts", url: "https://arxiv.org/abs/2411.15671", type: "Benchmark" }
     ];
 
     const projects = [
       { name: "The AI Scientist (Sakana AI)", url: "https://github.com/SakanaAI/AI-Scientist" },
-      { name: "OpenScholar", url: "https://github.com/allenai/OpenScholar" },
-      { name: "Paper with Code: AI for Science", url: "https://paperswithcode.com/task/ai-for-science" },
-      { name: "Papers with Code: Automated Machine Learning", url: "https://paperswithcode.com/task/automl" }
+      { name: "OpenScholar (Allen AI)", url: "https://github.com/allenai/OpenScholar" },
+      { name: "PaperQA2 (Future House)", url: "https://github.com/Future-House/paper-qa" },
+      { name: "Agent Laboratory", url: "https://github.com/SamuelSchmidgall/AgentLaboratory" },
+      { name: "OpenHands", url: "https://github.com/All-Hands-AI/OpenHands" },
+      { name: "SWE-agent (Princeton)", url: "https://github.com/princeton-nlp/SWE-agent" },
+      { name: "MetaGPT / Data Interpreter", url: "https://github.com/geekan/MetaGPT" },
+      { name: "Papers with Code: AI for Science", url: "https://paperswithcode.com/task/ai-for-science" }
     ];
 
     const otherLangs = {
@@ -347,27 +377,37 @@ researcher --> benchmark[BenchmarkEvaluation]</code></pre>
         <h3>1) ${get('surveys')}</h3>
         <table>
           <tr><th>#</th><th>Paper</th><th>Type</th></tr>
-          ${papers.slice(0,3).map((p,i) => `<tr><td>${i+1}</td><td><a href="${p.url}">${p.title}</a></td><td>${p.type}</td></tr>`).join('')}
+          ${papers.slice(0,5).map((p,i) => `<tr><td>${i+1}</td><td><a href="${p.url}">${p.title}</a></td><td>${p.type}</td></tr>`).join('')}
         </table>
         <h3>2) ${get('systems')}</h3>
         <table>
           <tr><th>#</th><th>Paper</th><th>Type</th></tr>
-          ${papers.slice(3,6).map((p,i) => `<tr><td>${i+4}</td><td><a href="${p.url}">${p.title}</a></td><td>${p.type}</td></tr>`).join('')}
+          ${papers.slice(5,10).map((p,i) => `<tr><td>${i+1}</td><td><a href="${p.url}">${p.title}</a></td><td>${p.type}</td></tr>`).join('')}
         </table>
         <h3>3) ${get('ideation')}</h3>
         <table>
           <tr><th>#</th><th>Paper</th><th>Type</th></tr>
-          ${papers.slice(6,10).map((p,i) => `<tr><td>${i+7}</td><td><a href="${p.url}">${p.title}</a></td><td>${p.type}</td></tr>`).join('')}
+          ${papers.slice(10,16).map((p,i) => `<tr><td>${i+1}</td><td><a href="${p.url}">${p.title}</a></td><td>${p.type}</td></tr>`).join('')}
         </table>
         <h3>4) ${get('synthesis')}</h3>
         <table>
           <tr><th>#</th><th>Paper</th><th>Type</th></tr>
-          <tr><td>11</td><td><a href="${papers[10].url}">${papers[10].title}</a></td><td>${papers[10].type}</td></tr>
+          ${papers.slice(16,21).map((p,i) => `<tr><td>${i+1}</td><td><a href="${p.url}">${p.title}</a></td><td>${p.type}</td></tr>`).join('')}
         </table>
-        <h3>5) ${get('benchmark')}</h3>
+        <h3>5) ${get('experiment')}</h3>
         <table>
           <tr><th>#</th><th>Paper</th><th>Type</th></tr>
-          ${papers.slice(11,14).map((p,i) => `<tr><td>${i+12}</td><td><a href="${p.url}">${p.title}</a></td><td>${p.type}</td></tr>`).join('')}
+          ${papers.slice(21,23).map((p,i) => `<tr><td>${i+1}</td><td><a href="${p.url}">${p.title}</a></td><td>${p.type}</td></tr>`).join('')}
+        </table>
+        <h3>6) ${get('writingReview')}</h3>
+        <table>
+          <tr><th>#</th><th>Paper</th><th>Type</th></tr>
+          ${papers.slice(23,27).map((p,i) => `<tr><td>${i+1}</td><td><a href="${p.url}">${p.title}</a></td><td>${p.type}</td></tr>`).join('')}
+        </table>
+        <h3>7) ${get('benchmark')}</h3>
+        <table>
+          <tr><th>#</th><th>Paper</th><th>Type</th></tr>
+          ${papers.slice(27,32).map((p,i) => `<tr><td>${i+1}</td><td><a href="${p.url}">${p.title}</a></td><td>${p.type}</td></tr>`).join('')}
         </table>
         <h2 id="featured">${get('featured')}</h2>
         <p>${get('featuredDesc')}</p>
@@ -378,7 +418,7 @@ researcher --> benchmark[BenchmarkEvaluation]</code></pre>
         <ul>${get('contributeItems').map(i => `<li>${i}</li>`).join('')}</ul>
         <h2>${get('changelog')}</h2>
         <p>${get('changelogDesc')}</p>
-        <p>2026-W12: Initial public release. Next: Add System + Benchmark papers.</p>
+        <p>2026-W13: Major content expansion — Getting Started, Tools, Experiment, Writing & Review sections added; 30+ papers total. 2026-W12: Initial public release with hub-and-spoke architecture.</p>
         <h2 id="principles">${get('principles')}</h2>
         <ol>${get('principlesItems').map(i => `<li>${i}</li>`).join('')}</ol>
         <h2 id="license">${get('license')}</h2>
