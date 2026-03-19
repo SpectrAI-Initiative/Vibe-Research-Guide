@@ -1,14 +1,14 @@
 # Vibe Research Starter Packet
 
-[![GitHub Repo stars](https://img.shields.io/github/stars/wang422003/vibe-research-starter-packet?style=social)](https://github.com/wang422003/vibe-research-starter-packet/stargazers)
-[![GitHub last commit](https://img.shields.io/github/last-commit/wang422003/vibe-research-starter-packet)](https://github.com/wang422003/vibe-research-starter-packet/commits/main)
-[![GitHub issues](https://img.shields.io/github/issues/wang422003/vibe-research-starter-packet)](https://github.com/wang422003/vibe-research-starter-packet/issues)
+[![GitHub Repo stars](https://img.shields.io/github/stars/wang422003/Vibe-Research-Guide?style=social)](https://github.com/wang422003/Vibe-Research-Guide/stargazers)
+[![GitHub last commit](https://img.shields.io/github/last-commit/wang422003/Vibe-Research-Guide)](https://github.com/wang422003/Vibe-Research-Guide/commits/main)
+[![GitHub issues](https://img.shields.io/github/issues/wang422003/Vibe-Research-Guide)](https://github.com/wang422003/Vibe-Research-Guide/issues)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## 🌐 Multilingual Version / 多语言版本
 
-**[View interactive multilingual README (13 languages) →](https://htmlpreview.github.io/?https://raw.githubusercontent.com/wang422003/vibe-research-starter-packet/main/index.html)**  
-**[查看交互式多语言 README（13 种语言）→](https://htmlpreview.github.io/?https://raw.githubusercontent.com/wang422003/vibe-research-starter-packet/main/index.html)**
+**[View interactive multilingual README (13 languages) →](https://htmlpreview.github.io/?https://raw.githubusercontent.com/wang422003/Vibe-Research-Guide/main/index.html)**  
+**[查看交互式多语言 README（13 种语言）→](https://htmlpreview.github.io/?https://raw.githubusercontent.com/wang422003/Vibe-Research-Guide/main/index.html)**
 
 Languages: 中文 | English | 한국어 | 日本語 | Deutsch | Français | Español | Italiano | Português | العربية | ไทย | Tiếng Việt | Русский
 
