@@ -128,6 +128,21 @@ This guide keeps **Vibe Research** as the core topic, then adds separate section
 
 ---
 
+## Plugins, Bridges & Research Connectors
+
+A new layer is forming between "agent" and "workflow": plugin surfaces, MCP registries, skill catalogs, and chat bridges that make research agents easier to extend, discover, and operate.
+
+| Layer | Representative resources | Why it matters |
+|---|---|---|
+| **Bridge & control surfaces** | [cc-connect](https://github.com/chenhg5/cc-connect) | Runs Claude Code, Cursor, Gemini CLI, Codex, and similar agents from chat surfaces such as Feishu/Lark, Slack, Telegram, and WeCom |
+| **Plugin / customization layer** | [Claude Code hooks, slash commands, and subagents](https://docs.anthropic.com/en/docs/claude-code/settings) · [awesome-claude-code-plugins](https://github.com/ccplugins/awesome-claude-code-plugins) | Shows how coding agents are becoming extensible platforms rather than single binaries |
+| **Registry / discovery layer** | [Official MCP Registry](https://modelcontextprotocol.io/registry/about) · [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) · [awesome-openclaw-skills](https://github.com/sundial-org/awesome-openclaw-skills) | Makes it easier to find, compare, and install the rapidly growing tool and skill ecosystem |
+| **Research connectors** | [OpenAlex Research MCP](https://github.com/oksure/openalex-research-mcp) · [Academia MCP](https://github.com/IlyaGusev/academia_mcp) · [PapersWithCode MCP](https://github.com/hbg/mcp-paperswithcode) | Connects agents directly to literature graphs, code artifacts, datasets, and benchmark metadata |
+
+More detailed map: [→ Tools & Platforms](./topics/tools.md)
+
+---
+
 ## Topic Map
 
 ### Core Guides
@@ -218,6 +233,7 @@ Submit resources via [Resource Suggestion](https://github.com/SpectrAI-Initiativ
 <details>
 <summary><b>Changelog</b></summary>
 
+- **2026-W13**: Added a new plugin / bridge / registry layer to the guide, including cc-connect, OpenAlex Research MCP, Academia MCP, PapersWithCode MCP, and more Claw ecosystem positioning
 - **2026-W13**: Added core tools & platforms (InnoClaw, ResearchClaw, FARS, Orchestra, OpenClaw, EvoScientist); added Deep Research tools, OpenAI Prism, MCP Servers; switched all content to English; expanded to 35+ papers across 9 topic files
 - **2026-W12**: Redesigned README into a stronger landing page with cleaner hierarchy, card-style path selection, and a more visual ecosystem map
 - **2026-W12**: Hub-and-spoke architecture reorganization

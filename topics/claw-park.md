@@ -48,6 +48,38 @@ This avoids a common mistake: comparing all Claws as if they were trying to solv
 
 ---
 
+## Where Research Claws Are Diverging
+
+The interesting shift is not just "more Claws." It is that research-oriented Claws are now splitting into clearly different bets:
+
+| Pattern | Representative projects | What the bet is |
+|---|---|---|
+| Grounded research workspace | InnoClaw · ResearchClaw Desktop App | Researchers want file-aware, paper-aware, local-first workspaces instead of generic chat |
+| Daily research copilot | ResearchClaw | The core value is steady literature, notes, tracking, and writing support rather than maximum autonomy |
+| Scientific specialist | ScienceClaw | The agent should behave more like a persistent scientific collaborator with deeper research memory |
+| Learning / evolution engine | MetaClaw | The long-term moat is online learning, skill extraction, and adaptation from real use |
+| Full autonomy pipeline | AutoResearchClaw | The system should run as much of the idea-to-paper loop as possible with minimal intervention |
+| Skill ecosystem and discovery | OpenClaw · awesome-openclaw-skills | Ecosystem value now depends on reusable skills, distribution, and community discovery, not only the base agent |
+
+This is why "Which Claw is best?" is often the wrong question. The better question is which layer of the research stack you are trying to strengthen.
+
+---
+
+## Skills, Marketplaces, And Remote Control
+
+The broader ecosystem is no longer only project repos. It now includes a distribution and control layer around those repos:
+
+| Layer | Example | Why it matters |
+|---|---|---|
+| Skill discovery | [awesome-openclaw-skills](https://github.com/sundial-org/awesome-openclaw-skills) | Makes OpenClaw-style skills easier to browse, compare, and reuse |
+| Chat control surface | [cc-connect](https://github.com/chenhg5/cc-connect) | Lets teams operate terminal agents from messaging tools instead of requiring everyone to sit inside a shell |
+| Plugin discovery | [awesome-claude-code-plugins](https://github.com/ccplugins/awesome-claude-code-plugins) | Shows how coding-agent ecosystems are becoming layered and extensible |
+| Tool registry | [Official MCP Registry](https://modelcontextprotocol.io/registry/about) · [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | Standardizes discovery and installation of external tools that research agents depend on |
+
+This is not "another Claw," but it changes how Claws spread: through skills, registries, and remote-control surfaces rather than only through monolithic apps.
+
+---
+
 ## Project Notes
 
 ### OpenClaw

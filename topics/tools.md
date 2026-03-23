@@ -62,6 +62,19 @@ Full guide: [→ Claw Park](./claw-park.md)
 
 ---
 
+## Plugins, Bridges & Registries
+
+The stack is no longer just "pick an agent." A new layer of bridges, plugin surfaces, and registries now determines how easily a research workflow can be extended and operated.
+
+| Resource | Link | What it adds | Why it matters |
+|---|---|---|---|
+| **cc-connect** | [GitHub](https://github.com/chenhg5/cc-connect) | Bridges Claude Code, Cursor, Gemini CLI, Codex, Goose, and more into chat apps | Useful when teams want to run coding or research agents from Feishu/Lark, Slack, Telegram, or WeCom instead of a local terminal |
+| **Claude Code extensibility** | [Docs](https://docs.anthropic.com/en/docs/claude-code/settings) | Official hooks, slash commands, subagents, and MCP integration surfaces | Defines the plugin/customization model around one of the most common terminal agents |
+| **awesome-claude-code-plugins** | [GitHub](https://github.com/ccplugins/awesome-claude-code-plugins) | Curated list of Claude Code prompts, commands, hooks, subagents, and MCP servers | Fastest way to see how the Claude Code plugin layer is evolving in practice |
+| **MCP Registry** | [Website](https://modelcontextprotocol.io/registry/about) | Official discovery and installation surface for MCP servers | Reduces friction when testing or installing new tool integrations |
+| **awesome-mcp-servers** | [GitHub](https://github.com/punkpeye/awesome-mcp-servers) | Broad discovery map of the MCP ecosystem | One of the highest-signal indexes for scouting connectors quickly |
+| **awesome-openclaw-skills** | [GitHub](https://github.com/sundial-org/awesome-openclaw-skills) | Community-curated OpenClaw skill directory | Shows the skill-distribution layer growing around the Claw ecosystem |
+
 ## Literature Discovery & Search
 
 | Tool | Link | Highlights | Cost |
@@ -92,13 +105,16 @@ Full guide: [→ Claw Park](./claw-park.md)
 | Perplexity Deep Research | [website](https://www.perplexity.ai/) | Free, academic focus mode, multi-source synthesis | Free |
 | Prism | [website](https://openai.com/prism/) | Scientific writing workspace for paper drafting, citations, and LaTeX-heavy workflows | Free |
 
-## MCP Servers for Research
+## Research MCP Servers & Academic Connectors
 
 Model Context Protocol (MCP) servers that integrate academic search into AI workflows:
 
 | Server | Link | Highlights |
 |---|---|---|
 | Semantic Scholar MCP | [GitHub](https://github.com/hamid-vakilzadeh/AIRA-SemanticScholar) | Search papers, analyze citations, paper recommendations |
+| OpenAlex Research MCP | [GitHub](https://github.com/oksure/openalex-research-mcp) | OpenAlex-powered literature search, citation graph exploration, and research trend analysis |
+| Academia MCP | [GitHub](https://github.com/IlyaGusev/academia_mcp) | Aggregates arXiv, ACL Anthology, Semantic Scholar, and academic search into one MCP surface |
+| PapersWithCode MCP | [GitHub](https://github.com/hbg/mcp-paperswithcode) | Bridges papers to code repos, datasets, tasks, methods, and leaderboard context |
 | arXiv MCP Server | [GitHub](https://github.com/blazickjp/arxiv-mcp-server) | Search & retrieve arXiv papers with filtering by author, category, date |
 | PubMed MCP Server | [PulseMCP](https://www.pulsemcp.com/) | Biomedical literature search and retrieval |
 
@@ -166,7 +182,10 @@ Broader framing: [→ Vibe Anything](./vibe-anything.md)
 |---|---|
 | **Quick Vibe Research demo** | Elicit + NotebookLM (zero-code) |
 | **Deploy a personal Research Agent** | InnoClaw or ResearchClaw |
+| **Operate agents from team chat** | cc-connect |
+| **Scout new connectors quickly** | MCP Registry or awesome-mcp-servers |
 | **Literature RAG Q&A** | PaperQA2 |
+| **Need literature plus benchmark/code metadata** | OpenAlex Research MCP + PapersWithCode MCP |
 | **Full automated research** | FARS or AI-Scientist |
 | **Cloud, no deployment** | Orchestra |
 | **Complete research workflow** | ResearchClaw + Zotero + Cursor + W&B |

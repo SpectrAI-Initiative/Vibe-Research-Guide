@@ -284,6 +284,14 @@
           ["Execution layer", "Claude Code, Codex, Cursor Background Agents, Copilot Coding Agent", "Repo and coding workflows that power execution"],
           ["Adjacent tools", "v0, Lovable, Replit Agent", "Useful prototyping tools outside the research core"]
         ],
+        connectors: "Plugins, Bridges & Research Connectors",
+        connectorNote: "A new layer now sits between the agent and the workflow: plugin surfaces, MCP registries, skill catalogs, and chat bridges.",
+        connectorRows: [
+          ["Bridge & control surfaces", "cc-connect", "Operate coding and research agents from Feishu/Lark, Slack, Telegram, and similar chat apps."],
+          ["Plugin layer", "Claude Code hooks / slash commands / subagents, awesome-claude-code-plugins", "Coding agents are becoming extensible platforms instead of single binaries."],
+          ["Registry & discovery", "Official MCP Registry, awesome-mcp-servers, awesome-openclaw-skills", "Discovery and installation are becoming first-class parts of the ecosystem."],
+          ["Research connectors", "OpenAlex Research MCP, Academia MCP, PapersWithCode MCP", "Agents can connect directly to literature graphs, code artifacts, and benchmark metadata."]
+        ],
         guides: "Guide Map",
         guideTopic: "Topic",
         guideDesc: "Description",
@@ -306,7 +314,7 @@
           "Follow the curation guidelines in docs/curation-guidelines.md."
         ],
         changelog: "Recent Updates",
-        changelogText: "2026-W12: added Claw Park, Vibe Coding, Vibe Anything, and a refreshed 2026 landscape snapshot.",
+        changelogText: "2026-W13: added a new plugin / bridge / registry layer, including cc-connect, research MCP connectors, and expanded Claw ecosystem signals.",
         license: "License",
         licenseText: "MIT (see LICENSE)."
       },
@@ -354,6 +362,14 @@
           ["Execution layer", "Claude Code、Codex、Cursor Background Agents、Copilot Coding Agent", "支撑执行的 repo 与 coding workflow 层"],
           ["Adjacent tools", "v0、Lovable、Replit Agent", "对原型有用，但不属于科研主线"]
         ],
+        connectors: "插件、桥接层与研究连接器",
+        connectorNote: "现在在 agent 和 workflow 之间，已经出现了一层新的生态：插件接口、MCP 注册表、skill 目录，以及聊天控制桥接层。",
+        connectorRows: [
+          ["Bridge & control surfaces", "cc-connect", "把 coding agent 和 research agent 放到飞书/Lark、Slack、Telegram 这类聊天界面里运行。"],
+          ["Plugin layer", "Claude Code hooks / slash commands / subagents、awesome-claude-code-plugins", "coding agent 正在从单一工具变成可扩展的平台。"],
+          ["Registry & discovery", "Official MCP Registry、awesome-mcp-servers、awesome-openclaw-skills", "发现和安装外部工具，正在成为生态里的独立能力层。"],
+          ["Research connectors", "OpenAlex Research MCP、Academia MCP、PapersWithCode MCP", "让 agent 直接连到文献图谱、代码资产与 benchmark 元数据。"]
+        ],
         guides: "Guide 地图",
         guideTopic: "主题",
         guideDesc: "说明",
@@ -376,7 +392,7 @@
           "遵循 docs/curation-guidelines.md 中的选编标准。"
         ],
         changelog: "最近更新",
-        changelogText: "2026-W12：新增 Claw Park、Vibe Coding、Vibe Anything，并刷新 2026 版图概览。",
+        changelogText: "2026-W13：新增插件 / 桥接层 / 注册表这一层内容，包括 cc-connect、研究向 MCP 连接器，以及扩展后的 Claw 生态信号。",
         license: "许可证",
         licenseText: "MIT（见 LICENSE）。"
       }
@@ -433,6 +449,9 @@
       const ecosystemRows = getTranslation(lang, "ecosystemRows").map(([layer, examples, why]) =>
         `<div class="card span-6"><span class="eyebrow">${layer}</span><p><strong>Representative:</strong> ${examples}</p><p>${why}</p></div>`
       ).join("");
+      const connectorRows = getTranslation(lang, "connectorRows").map(([layer, examples, why]) =>
+        `<div class="card span-6"><span class="eyebrow">${layer}</span><p><strong>Representative:</strong> ${examples}</p><p>${why}</p></div>`
+      ).join("");
 
       const clawRows = clawProjects.map(([name, summary, role, url]) =>
         `<tr><td><a href="${url}">${name}</a></td><td>${summary}</td><td>${role}</td></tr>`
@@ -467,6 +486,7 @@
           <li><a href="#snapshot">${getTranslation(lang, "snapshot")}</a></li>
           <li><a href="#paths">${getTranslation(lang, "paths")}</a></li>
           <li><a href="#ecosystem">${getTranslation(lang, "ecosystem")}</a></li>
+          <li><a href="#connectors">${getTranslation(lang, "connectors")}</a></li>
           <li><a href="#guides">${getTranslation(lang, "guides")}</a></li>
           <li><a href="#claw">${getTranslation(lang, "clawSection")}</a></li>
           <li><a href="#featured">${getTranslation(lang, "featured")}</a></li>
@@ -488,6 +508,10 @@
 
         <h2 id="ecosystem">${getTranslation(lang, "ecosystem")}</h2>
         <div class="grid">${ecosystemRows}</div>
+
+        <h2 id="connectors">${getTranslation(lang, "connectors")}</h2>
+        <p class="section-note">${getTranslation(lang, "connectorNote")}</p>
+        <div class="grid">${connectorRows}</div>
 
         <h2 id="guides">${getTranslation(lang, "guides")}</h2>
         <table>

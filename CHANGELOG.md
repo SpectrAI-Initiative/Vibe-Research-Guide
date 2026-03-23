@@ -4,6 +4,9 @@ All notable updates to this guide are documented in this file.
 
 ## 2026-W13
 
+- Added a new plugin / bridge / registry layer across `README.md`, `topics/tools.md`, and `topics/claw-park.md`.
+- Added high-signal ecosystem resources including `cc-connect`, `awesome-claude-code-plugins`, `awesome-mcp-servers`, `awesome-openclaw-skills`, `OpenAlex Research MCP`, `Academia MCP`, and `PapersWithCode MCP`.
+- Expanded Claw ecosystem positioning to cover skill discovery, chat control surfaces, and research-Claw divergence patterns.
 - Added core tools & platforms (InnoClaw, ResearchClaw, FARS, Orchestra, OpenClaw, EvoScientist).
 - Added Deep Research tools (OpenAI/Gemini/Perplexity), OpenAI Prism, MCP Servers for research.
 - Switched all content to English as default language.
