@@ -2,6 +2,13 @@
 
 All notable updates to this guide are documented in this file.
 
+## 2026-W14
+
+- Added a `2026 Q1 Signals` section to `README.md` to capture current ecosystem shifts instead of only static background framing.
+- Added `FutureHouse Platform`, `Robin`, `BixBench`, and `Edison Scientific / Kosmos` as current AI-scientist platform signals across `README.md`, `topics/tools.md`, and `topics/systems.md`.
+- Updated `topics/tools.md` and `topics/claw-park.md` to reflect OpenClaw's broader role as gateway, ClawHub-style marketplace, and plugin-bundle compatibility layer.
+- Refreshed `index.html` so the interactive page mirrors the stronger Q1 ecosystem framing.
+
 ## 2026-W13
 
 - Added a new plugin / bridge / registry layer across `README.md`, `topics/tools.md`, and `topics/claw-park.md`.

@@ -17,6 +17,8 @@ Agent systems and platforms purpose-built for automated scientific research:
 | **EvoScientist** | Self-evolving AI scientist | [GitHub](https://github.com/EvoScientist/EvoScientist) | Multi-agent with persistent memory, outperforms 7 SOTA systems |
 | **Orchestra** | AI-for-Science platform | [Website](https://www.orchestra-research.com/) | Cloud-based, no local deployment needed |
 | **Agent Laboratory** | Human-AI collaborative research | [GitHub](https://github.com/SamuelSchmidgall/AgentLaboratory) | Human-in-the-loop, researcher stays involved throughout |
+| **FutureHouse Platform** | Scientific agent platform | [Website](https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents?_bhlid=b2b50af9254da4cf97bbad70959795fa728b14f6) | Public platform for specialized science agents and API-style workflows |
+| **Edison Scientific** | AI scientist platform for R&D teams | [Website](https://edisonscientific.com/) · [Kosmos](https://edisonscientific.com/articles/announcing-kosmos) | Commercial scientific-discovery platform with private-data and enterprise workflow focus |
 
 ### Related Claw Ecosystem Projects
 
@@ -43,7 +45,15 @@ More ecosystem positioning: [→ Claw Park](./claw-park.md)
 
 ### OpenClaw Ecosystem
 
-[OpenClaw](https://docs.openclaw.ai/) is an open AI agent skill ecosystem with 28 skill categories (including AI & LLMs, search & research, agent social ecosystem), providing extensible skill support for the platforms above.
+[OpenClaw](https://docs.openclaw.ai/) is an open AI agent skill ecosystem spanning assistant, research, search, and workflow capabilities, providing extensible skill support for the platforms above.
+
+### OpenClaw In 2026 Q1
+
+The strongest current signal is that OpenClaw is no longer just a single assistant shell:
+
+- It has a public skill-discovery layer through [ClawHub](https://docs.openclaw.ai/tools/clawhub).
+- It is pushing cross-ecosystem installability through [Plugin Bundles](https://docs.openclaw.ai/plugins/bundles), including compatibility paths for other coding-agent ecosystems.
+- Its value is increasingly in acting as a gateway, distribution layer, and control surface for broader agent workflows.
 
 ## Claw Park at a Glance
 
@@ -69,6 +79,8 @@ The stack is no longer just "pick an agent." A new layer of bridges, plugin surf
 | Resource | Link | What it adds | Why it matters |
 |---|---|---|---|
 | **cc-connect** | [GitHub](https://github.com/chenhg5/cc-connect) | Bridges Claude Code, Cursor, Gemini CLI, Codex, Goose, and more into chat apps | Useful when teams want to run coding or research agents from Feishu/Lark, Slack, Telegram, or WeCom instead of a local terminal |
+| **ClawHub** | [Docs](https://docs.openclaw.ai/tools/clawhub) | Public discovery surface for OpenClaw-compatible skills and tools | Shows OpenClaw moving toward a real skill-distribution layer rather than a closed assistant |
+| **OpenClaw Plugin Bundles** | [Docs](https://docs.openclaw.ai/plugins/bundles) | Compatible bundles for importing capabilities across agent ecosystems | Useful for understanding how agent ecosystems may converge through bundle compatibility instead of isolated plugin silos |
 | **Claude Code extensibility** | [Docs](https://docs.anthropic.com/en/docs/claude-code/settings) | Official hooks, slash commands, subagents, and MCP integration surfaces | Defines the plugin/customization model around one of the most common terminal agents |
 | **awesome-claude-code-plugins** | [GitHub](https://github.com/ccplugins/awesome-claude-code-plugins) | Curated list of Claude Code prompts, commands, hooks, subagents, and MCP servers | Fastest way to see how the Claude Code plugin layer is evolving in practice |
 | **MCP Registry** | [Website](https://modelcontextprotocol.io/registry/about) | Official discovery and installation surface for MCP servers | Reduces friction when testing or installing new tool integrations |
@@ -104,6 +116,17 @@ The stack is no longer just "pick an agent." A new layer of bridges, plugin surf
 | Gemini Deep Research | [website](https://blog.google/products/gemini/google-gemini-deep-research/) | Google research copilot for broad web synthesis and planning | Gemini |
 | Perplexity Deep Research | [website](https://www.perplexity.ai/) | Free, academic focus mode, multi-source synthesis | Free |
 | Prism | [website](https://openai.com/prism/) | Scientific writing workspace for paper drafting, citations, and LaTeX-heavy workflows | Free |
+
+## AI Scientist Platforms & Current Signals
+
+One of the clearest 2026 shifts is that AI-scientist systems are no longer only papers or repos. They are becoming public platforms, products, and applied benchmarks.
+
+| Signal | Link | Why it matters |
+|---|---|---|
+| **FutureHouse Platform** | [Website](https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents?_bhlid=b2b50af9254da4cf97bbad70959795fa728b14f6) | Shows the public-platform direction for specialized scientific agents, not just one-off demos |
+| **Robin** | [Announcement](https://www.futurehouse.org/research-announcements/demonstrating-end-to-end-scientific-discovery-with-robin-a-multi-agent-system) | High-signal end-to-end demonstration of multi-agent scientific discovery and validated wet-lab-style workflow claims |
+| **BixBench** | [Announcement](https://www.futurehouse.org/research-announcements/bixbench) | Signals that more realistic, domain-specific benchmarks are becoming central to evaluating research agents |
+| **Edison Scientific / Kosmos** | [Website](https://edisonscientific.com/) · [Kosmos](https://edisonscientific.com/articles/announcing-kosmos) | Shows how AI-scientist ideas are being packaged into persistent scientific-discovery platforms for real R&D teams |
 
 ## Research MCP Servers & Academic Connectors
 
@@ -182,6 +205,8 @@ Broader framing: [→ Vibe Anything](./vibe-anything.md)
 |---|---|
 | **Quick Vibe Research demo** | Elicit + NotebookLM (zero-code) |
 | **Deploy a personal Research Agent** | InnoClaw or ResearchClaw |
+| **Need a public science-agent platform** | FutureHouse Platform |
+| **Need a commercial AI-scientist platform for team workflows** | Edison Scientific / Kosmos |
 | **Operate agents from team chat** | cc-connect |
 | **Scout new connectors quickly** | MCP Registry or awesome-mcp-servers |
 | **Literature RAG Q&A** | PaperQA2 |

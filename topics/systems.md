@@ -2,6 +2,17 @@
 
 > Representative systems demonstrate how LLM Agents participate **end-to-end** in scientific research: from idea generation to experiment execution to paper writing. These landmark systems mark Vibe Research's transition from concept to practice. Understanding their architecture and workflow helps you quickly assess "what's possible" and "how to build it."
 
+## 2026 Q1 Platform Signals
+
+Papers are no longer the whole story. One of the biggest changes in 2026 Q1 is that AI-scientist systems are turning into public platforms, product surfaces, and more realistic applied benchmarks:
+
+| Signal | Link | Why it matters |
+|---|---|---|
+| **FutureHouse Platform** | [Website](https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents?_bhlid=b2b50af9254da4cf97bbad70959795fa728b14f6) | Specialized scientific agents are now being packaged as a public platform instead of only a research prototype |
+| **Robin** | [Announcement](https://www.futurehouse.org/research-announcements/demonstrating-end-to-end-scientific-discovery-with-robin-a-multi-agent-system) | High-signal end-to-end scientific-discovery demo with stronger emphasis on validated workflow claims |
+| **BixBench** | [Announcement](https://www.futurehouse.org/research-announcements/bixbench) | Domain-specific benchmarking is becoming more important than abstract capability claims alone |
+| **Edison Scientific / Kosmos** | [Website](https://edisonscientific.com/) · [Kosmos](https://edisonscientific.com/articles/announcing-kosmos) | AI-scientist ideas are being translated into persistent scientific-discovery products for real R&D teams |
+
 <section id="system-papers"></section>
 
 ## Paper List
@@ -69,6 +80,10 @@
 
 | Resource | Link | Description |
 |---|---|---|
+| FutureHouse Platform | [Website](https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents?_bhlid=b2b50af9254da4cf97bbad70959795fa728b14f6) | Public platform surface for specialized scientific agents |
+| Robin | [Announcement](https://www.futurehouse.org/research-announcements/demonstrating-end-to-end-scientific-discovery-with-robin-a-multi-agent-system) | FutureHouse multi-agent scientific discovery demo and announcement |
+| BixBench | [Announcement](https://www.futurehouse.org/research-announcements/bixbench) | Benchmark signal for more realistic bioinformatics-style agent evaluation |
+| Edison Scientific / Kosmos | [Website](https://edisonscientific.com/) · [Kosmos](https://edisonscientific.com/articles/announcing-kosmos) | Commercial platformization of AI-scientist workflows |
 | MLAgentBench | [arXiv](https://arxiv.org/abs/2310.03302) | Benchmark for LLM agent ML experimentation |
 | MetaGPT | [GitHub](https://github.com/geekan/MetaGPT) | Multi-agent software development framework with Data Interpreter |
 | Aider | [GitHub](https://github.com/paul-gauthier/aider) | CLI AI programming assistant with multi-file editing |

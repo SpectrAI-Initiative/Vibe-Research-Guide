@@ -20,7 +20,7 @@ Without a map, the names blur together. Claw Park keeps them separated by job, n
 
 | Project | What it is doing | Role in the stack | Best for |
 |---|---|---|---|
-| [OpenClaw](https://github.com/openclaw/openclaw) | General-purpose personal AI assistant across platforms with an extensible skill ecosystem | Foundation framework | Builders who want a base platform and reusable skills |
+| [OpenClaw](https://github.com/openclaw/openclaw) | General-purpose personal AI assistant evolving into a gateway, control UI, skill registry, and compatible bundle platform | Foundation platform | Builders who want a base platform, distribution layer, and reusable skills |
 | [InnoClaw](https://github.com/SpectrAI-Initiative/InnoClaw) | Self-hostable research workspace for grounded chat, paper study, scientific skills, and research execution | Research workspace | Labs and self-hosters who want files, papers, and execution in one place |
 | [ResearchClaw](https://github.com/ymx10086/ResearchClaw) | Personal research assistant for literature review, note-taking, experiment tracking, and paper writing | Personal research copilot | Individual researchers who want an end-to-end daily driver |
 | [ScienceClaw](https://github.com/beita6969/ScienceClaw) | Self-evolving AI research colleague with many skills, persistent memory, and research focus | Scientific specialist | Research-heavy users who want a stronger scientific agent |
@@ -37,7 +37,7 @@ Think about the ecosystem as layers instead of sibling products:
 
 | Layer | Main question | Representative Claw |
 |---|---|---|
-| Base platform | What framework or assistant substrate do I build on? | OpenClaw |
+| Base platform | What gateway, assistant substrate, and skill-distribution layer do I build on? | OpenClaw |
 | Workspace | Where do I chat over files, papers, and tasks? | InnoClaw |
 | Daily copilot | What helps me read, track, and write every day? | ResearchClaw |
 | Specialist scientist | What pushes deeper into scientific assistance and memory? | ScienceClaw |
@@ -71,6 +71,8 @@ The broader ecosystem is no longer only project repos. It now includes a distrib
 
 | Layer | Example | Why it matters |
 |---|---|---|
+| Skill marketplace | [ClawHub](https://docs.openclaw.ai/tools/clawhub) | Makes OpenClaw look more like a living ecosystem with browsable skills and reusable tool surfaces |
+| Compatible bundles | [OpenClaw Plugin Bundles](https://docs.openclaw.ai/plugins/bundles) | Suggests agent ecosystems may interoperate through installable bundle compatibility, not only isolated plugins |
 | Skill discovery | [awesome-openclaw-skills](https://github.com/sundial-org/awesome-openclaw-skills) | Makes OpenClaw-style skills easier to browse, compare, and reuse |
 | Chat control surface | [cc-connect](https://github.com/chenhg5/cc-connect) | Lets teams operate terminal agents from messaging tools instead of requiring everyone to sit inside a shell |
 | Plugin discovery | [awesome-claude-code-plugins](https://github.com/ccplugins/awesome-claude-code-plugins) | Shows how coding-agent ecosystems are becoming layered and extensible |
@@ -80,11 +82,24 @@ This is not "another Claw," but it changes how Claws spread: through skills, reg
 
 ---
 
+## Why OpenClaw Matters Right Now
+
+The main reason OpenClaw matters in 2026 Q1 is not just popularity. It is that the product now points toward a broader platform shape:
+
+1. **Gateway**: it can sit between users, chat surfaces, models, and tools.
+2. **Control layer**: it is growing a clearer dashboard / operations surface instead of only a chat shell.
+3. **Marketplace layer**: [ClawHub](https://docs.openclaw.ai/tools/clawhub) turns skills into a browsable public layer.
+4. **Compatibility layer**: [Plugin Bundles](https://docs.openclaw.ai/plugins/bundles) hint at cross-ecosystem portability instead of hard ecosystem silos.
+
+That makes OpenClaw more important as infrastructure than as just one more assistant app.
+
+---
+
 ## Project Notes
 
 ### OpenClaw
 
-OpenClaw is the broad platform play. It is the general assistant and skill ecosystem layer, not a narrowly research-only product. When another Claw project says it is "compatible with OpenClaw" or builds on the Claw ecosystem, this is usually the underlying base they mean.
+OpenClaw is the broad platform play. It is no longer best understood as only a general assistant shell. The stronger reading now is: gateway plus control surface plus skill registry plus compatible-bundle layer. When another Claw project says it is "compatible with OpenClaw" or builds on the Claw ecosystem, this is increasingly the infrastructure stack they mean, not only a frontend.
 
 ### InnoClaw
 

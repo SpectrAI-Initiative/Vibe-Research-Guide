@@ -70,6 +70,17 @@ This guide keeps **Vibe Research** as the core topic, then adds separate section
 
 ---
 
+## 2026 Q1 Signals
+
+Several current signals make the field feel less like a loose collection of demos and more like an emerging stack:
+
+1. **OpenClaw is becoming a platform layer**: it now reads more like a self-hosted gateway plus control UI plus skill registry plus compatible plugin-bundle layer than a single assistant app. See [OpenClaw](https://docs.openclaw.ai/), [ClawHub](https://docs.openclaw.ai/tools/clawhub), and [Compatible Bundles](https://docs.openclaw.ai/plugins/bundles).
+2. **FutureHouse is showing the clearest public AI-Scientist ladder**: from specialized science agents on the [FutureHouse Platform](https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents?_bhlid=b2b50af9254da4cf97bbad70959795fa728b14f6), to [Robin](https://www.futurehouse.org/research-announcements/demonstrating-end-to-end-scientific-discovery-with-robin-a-multi-agent-system), to applied benchmarks such as [BixBench](https://www.futurehouse.org/research-announcements/bixbench).
+3. **Edison Scientific is platformizing the commercial AI-Scientist layer**: [Edison](https://edisonscientific.com/) and [Kosmos](https://edisonscientific.com/articles/announcing-kosmos) show how the field is moving from research systems to persistent R&D platforms with API, pricing, private data handling, and enterprise workflows.
+4. **Connectors matter more than ever**: MCP registries, plugin bundles, and research connectors now act as the glue between coding agents, literature tools, chat surfaces, and scientific databases.
+
+---
+
 ## Choose a Path
 
 <table>
@@ -113,7 +124,8 @@ This guide keeps **Vibe Research** as the core topic, then adds separate section
 |---|---|---|
 | **Research copilots** | [OpenAI Deep Research](https://openai.com/index/introducing-deep-research/) · [Gemini Deep Research](https://blog.google/products/gemini/google-gemini-deep-research/) · [NotebookLM](https://notebooklm.google/) · [Prism](https://openai.com/prism/) | Fast literature synthesis, source-grounded reading, and scientific writing assistance |
 | **Research systems** | [InnoClaw](https://github.com/SpectrAI-Initiative/InnoClaw) · [ResearchClaw](https://github.com/ymx10086/ResearchClaw) · [FARS](https://github.com/fars-analemma) · [AI Scientist](https://github.com/SakanaAI/AI-Scientist) · [Agent Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) · [EvoScientist](https://github.com/EvoScientist/EvoScientist) | End-to-end research assistance, automation, and experiment execution |
-| **Claw ecosystem** | [OpenClaw](https://github.com/openclaw/openclaw) · [ScienceClaw](https://github.com/beita6969/ScienceClaw) · [MetaClaw](https://github.com/aiming-lab/MetaClaw) · [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | Foundation, specialization, online learning, and autonomous pipeline layers |
+| **AI scientist platforms** | [FutureHouse Platform](https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents?_bhlid=b2b50af9254da4cf97bbad70959795fa728b14f6) · [Robin](https://www.futurehouse.org/research-announcements/demonstrating-end-to-end-scientific-discovery-with-robin-a-multi-agent-system) · [Edison Scientific](https://edisonscientific.com/) · [Kosmos](https://edisonscientific.com/articles/announcing-kosmos) | Shows the field moving from paper demos to persistent web/API platforms and validated scientific workflows |
+| **Claw ecosystem** | [OpenClaw](https://github.com/openclaw/openclaw) · [ScienceClaw](https://github.com/beita6969/ScienceClaw) · [MetaClaw](https://github.com/aiming-lab/MetaClaw) · [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | Foundation, specialization, online learning, autonomous pipelines, and the growing gateway / skill-distribution layer |
 | **Execution layer** | [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) · [Codex](https://github.com/openai/codex) · [Cursor Background Agents](https://docs.cursor.com/en/background-agent) · [GitHub Copilot Coding Agent](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent) | The coding and repo workflow layer that increasingly powers research execution |
 | **Adjacent prompt-native tools** | [v0](https://v0.dev/docs) · [Lovable](https://docs.lovable.dev/) · [Replit Agent](https://docs.replit.com/replitai/agent) | Useful for prototyping, but not the core of Vibe Research |
 
@@ -135,7 +147,7 @@ A new layer is forming between "agent" and "workflow": plugin surfaces, MCP regi
 | Layer | Representative resources | Why it matters |
 |---|---|---|
 | **Bridge & control surfaces** | [cc-connect](https://github.com/chenhg5/cc-connect) | Runs Claude Code, Cursor, Gemini CLI, Codex, and similar agents from chat surfaces such as Feishu/Lark, Slack, Telegram, and WeCom |
-| **Plugin / customization layer** | [Claude Code hooks, slash commands, and subagents](https://docs.anthropic.com/en/docs/claude-code/settings) · [awesome-claude-code-plugins](https://github.com/ccplugins/awesome-claude-code-plugins) | Shows how coding agents are becoming extensible platforms rather than single binaries |
+| **Plugin / customization layer** | [ClawHub](https://docs.openclaw.ai/tools/clawhub) · [OpenClaw Plugin Bundles](https://docs.openclaw.ai/plugins/bundles) · [awesome-claude-code-plugins](https://github.com/ccplugins/awesome-claude-code-plugins) | Shows how agent ecosystems are moving toward reusable skill registries, bundle compatibility, and installable capability packs |
 | **Registry / discovery layer** | [Official MCP Registry](https://modelcontextprotocol.io/registry/about) · [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) · [awesome-openclaw-skills](https://github.com/sundial-org/awesome-openclaw-skills) | Makes it easier to find, compare, and install the rapidly growing tool and skill ecosystem |
 | **Research connectors** | [OpenAlex Research MCP](https://github.com/oksure/openalex-research-mcp) · [Academia MCP](https://github.com/IlyaGusev/academia_mcp) · [PapersWithCode MCP](https://github.com/hbg/mcp-paperswithcode) | Connects agents directly to literature graphs, code artifacts, datasets, and benchmark metadata |
 
@@ -198,6 +210,8 @@ More detailed map: [→ Tools & Platforms](./topics/tools.md)
 
 **Search & Reading**: [Semantic Scholar](https://www.semanticscholar.org/) · [Elicit](https://elicit.com/) · [Consensus](https://consensus.app/) · [Connected Papers](https://www.connectedpapers.com/)
 
+**AI Scientist Platforms**: [FutureHouse Platform](https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents?_bhlid=b2b50af9254da4cf97bbad70959795fa728b14f6) · [Robin](https://www.futurehouse.org/research-announcements/demonstrating-end-to-end-scientific-discovery-with-robin-a-multi-agent-system) · [Edison Scientific](https://edisonscientific.com/) · [Kosmos](https://edisonscientific.com/articles/announcing-kosmos)
+
 **Execution**: [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) · [Codex](https://github.com/openai/codex) · [Cursor Background Agents](https://docs.cursor.com/en/background-agent) · [GitHub Copilot Coding Agent](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent) · [Gemini CLI](https://github.com/google-gemini/gemini-cli)
 
 **Prototyping**: [v0](https://v0.dev/docs) · [Lovable](https://docs.lovable.dev/) · [Replit Agent](https://docs.replit.com/replitai/agent) · [Figma AI](https://www.figma.com/ai/) · [Canva AI](https://www.canva.com/canva-ai/)
@@ -233,6 +247,7 @@ Submit resources via [Resource Suggestion](https://github.com/SpectrAI-Initiativ
 <details>
 <summary><b>Changelog</b></summary>
 
+- **2026-W14**: Added 2026 Q1 signals for OpenClaw platformization, FutureHouse / Robin / BixBench, and Edison Scientific / Kosmos; refreshed ecosystem framing across the guide
 - **2026-W13**: Added a new plugin / bridge / registry layer to the guide, including cc-connect, OpenAlex Research MCP, Academia MCP, PapersWithCode MCP, and more Claw ecosystem positioning
 - **2026-W13**: Added core tools & platforms (InnoClaw, ResearchClaw, FARS, Orchestra, OpenClaw, EvoScientist); added Deep Research tools, OpenAI Prism, MCP Servers; switched all content to English; expanded to 35+ papers across 9 topic files
 - **2026-W12**: Redesigned README into a stronger landing page with cleaner hierarchy, card-style path selection, and a more visual ecosystem map
