@@ -8,6 +8,7 @@ All notable updates to this guide are documented in this file.
 - Added `FutureHouse Platform`, `Robin`, `BixBench`, and `Edison Scientific / Kosmos` as current AI-scientist platform signals across `README.md`, `topics/tools.md`, and `topics/systems.md`.
 - Updated `topics/tools.md` and `topics/claw-park.md` to reflect OpenClaw's broader role as gateway, ClawHub-style marketplace, and plugin-bundle compatibility layer.
 - Refreshed `index.html` so the interactive page mirrors the stronger Q1 ecosystem framing.
+- Added a stronger Claude Code ecosystem framing across `README.md` and `topics/vibe-coding.md`, including `anthropics/skills`, `wshobson/agents`, `SuperClaude Framework`, `claude-code-router`, `Claude Squad`, `claude-task-master`, and `Repomix`.
 
 ## 2026-W13
 

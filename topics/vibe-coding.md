@@ -29,6 +29,24 @@ For research workflows, this matters because modern Vibe Research increasingly d
 
 ---
 
+## Claude Code Ecosystem Signals
+
+Claude Code is increasingly less like one terminal binary and more like the center of a wider execution ecosystem:
+
+| Project | Link | Why it matters |
+|---|---|---|
+| **anthropics/skills** | [GitHub](https://github.com/anthropics/skills) | Official public Agent Skills repo and marketplace-style source for reusable Claude Code capabilities |
+| **wshobson/agents** | [GitHub](https://github.com/wshobson/agents) | Large community marketplace for Claude Code agents, commands, hooks, and skills |
+| **SuperClaude Framework** | [GitHub](https://github.com/SuperClaude-Org/SuperClaude_Framework) | Opinionated meta-framework that layers personas, commands, and workflow structure onto Claude Code |
+| **claude-code-router** | [GitHub](https://github.com/musistudio/claude-code-router) | Adds provider routing, request transformation, and workflow infrastructure around Claude Code |
+| **Claude Squad** | [GitHub](https://github.com/smtg-ai/claude-squad) | Focuses on multi-agent terminal workflows with isolated workspaces and team-style management |
+| **claude-task-master** | [GitHub](https://github.com/eyaltoledano/claude-task-master) | Turns agent execution into a more explicit task-management and checkpoint workflow |
+| **Repomix** | [GitHub](https://github.com/yamadashy/repomix) | Useful for packaging and compressing codebase context so coding agents can ingest repos more effectively |
+
+The practical takeaway: if you are evaluating the execution layer for Vibe Research, look at the surrounding ecosystem, not just the core binary.
+
+---
+
 ## Working Modes
 
 | Mode | Typical tools | When to use it | Failure mode |

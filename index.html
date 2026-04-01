@@ -293,6 +293,14 @@
           ["Registry & discovery", "Official MCP Registry, awesome-mcp-servers, awesome-openclaw-skills", "Discovery and installation are becoming first-class parts of the ecosystem."],
           ["Research connectors", "OpenAlex Research MCP, Academia MCP, PapersWithCode MCP", "Agents can connect directly to literature graphs, code artifacts, and benchmark metadata."]
         ],
+        ccSignals: "Recent Claude Code Signals",
+        ccSignalNote: "The Claude Code layer is rapidly expanding beyond the core binary into skills, marketplaces, routing, multi-agent ops, and structured workflow frameworks.",
+        ccSignalRows: [
+          ["Official skills layer", "anthropics/skills", "Anthropic is turning public Agent Skills into a reusable Claude Code capability source."],
+          ["Community marketplace", "wshobson/agents", "A large community ecosystem for Claude Code agents, commands, hooks, and skills."],
+          ["Meta-framework layer", "SuperClaude Framework", "Shows how users are wrapping Claude Code with personas, commands, and workflow conventions."],
+          ["Routing and ops layer", "claude-code-router, Claude Squad, claude-task-master, Repomix", "Signals that routing, multi-agent management, task systems, and repo packaging are becoming execution infrastructure."]
+        ],
         guides: "Guide Map",
         guideTopic: "Topic",
         guideDesc: "Description",
@@ -315,7 +323,7 @@
           "Follow the curation guidelines in docs/curation-guidelines.md."
         ],
         changelog: "Recent Updates",
-        changelogText: "2026-W14: added current AI-scientist platform signals, including FutureHouse Platform, Robin, Edison Scientific / Kosmos, and a stronger OpenClaw platform-layer framing.",
+        changelogText: "2026-W14: added current AI-scientist platform signals and a stronger Claude Code ecosystem framing, including skills, marketplaces, routing, and multi-agent ops projects.",
         license: "License",
         licenseText: "MIT (see LICENSE)."
       },
@@ -372,6 +380,14 @@
           ["Registry & discovery", "Official MCP Registry、awesome-mcp-servers、awesome-openclaw-skills", "发现和安装外部工具，正在成为生态里的独立能力层。"],
           ["Research connectors", "OpenAlex Research MCP、Academia MCP、PapersWithCode MCP", "让 agent 直接连到文献图谱、代码资产与 benchmark 元数据。"]
         ],
+        ccSignals: "最近的 Claude Code 生态信号",
+        ccSignalNote: "Claude Code 这一层正在快速从核心二进制扩展成技能层、市场层、路由层、多 agent 运维层，以及结构化工作流框架。",
+        ccSignalRows: [
+          ["官方技能层", "anthropics/skills", "Anthropic 正在把公开 Agent Skills 变成可复用的 Claude Code 能力来源。"],
+          ["社区市场层", "wshobson/agents", "一个很强的 Claude Code agents / commands / hooks / skills 社区生态。"],
+          ["元框架层", "SuperClaude Framework", "说明用户已经开始用 persona、commands 和 workflow convention 来包装 Claude Code。"],
+          ["路由与运维层", "claude-code-router、Claude Squad、claude-task-master、Repomix", "说明 routing、多 agent 管理、任务系统、repo 打包正在变成执行基础设施。"]
+        ],
         guides: "Guide 地图",
         guideTopic: "主题",
         guideDesc: "说明",
@@ -394,7 +410,7 @@
           "遵循 docs/curation-guidelines.md 中的选编标准。"
         ],
         changelog: "最近更新",
-        changelogText: "2026-W14：新增当前 AI-scientist 平台信号，包括 FutureHouse Platform、Robin、Edison Scientific / Kosmos，并强化了 OpenClaw 的 platform-layer 叙述。",
+        changelogText: "2026-W14：新增当前 AI-scientist 平台信号，并补强 Claude Code 生态框架，包括 skills、marketplace、routing 和 multi-agent ops 项目。",
         license: "许可证",
         licenseText: "MIT（见 LICENSE）。"
       }
@@ -425,9 +441,9 @@
     const featuredProjects = [
       ["OpenAI Deep Research", "https://openai.com/index/introducing-deep-research/"],
       ["FutureHouse Platform", "https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents?_bhlid=b2b50af9254da4cf97bbad70959795fa728b14f6"],
-      ["Robin", "https://www.futurehouse.org/research-announcements/demonstrating-end-to-end-scientific-discovery-with-robin-a-multi-agent-system"],
-      ["Kosmos", "https://edisonscientific.com/articles/announcing-kosmos"],
-      ["ClawHub", "https://docs.openclaw.ai/tools/clawhub"],
+      ["anthropics/skills", "https://github.com/anthropics/skills"],
+      ["wshobson/agents", "https://github.com/wshobson/agents"],
+      ["SuperClaude Framework", "https://github.com/SuperClaude-Org/SuperClaude_Framework"],
       ["AI Scientist-v2", "https://arxiv.org/abs/2504.08066"],
       ["EvoScientist", "https://github.com/EvoScientist/EvoScientist"]
     ];
@@ -453,6 +469,9 @@
         `<div class="card span-6"><span class="eyebrow">${layer}</span><p><strong>Representative:</strong> ${examples}</p><p>${why}</p></div>`
       ).join("");
       const connectorRows = getTranslation(lang, "connectorRows").map(([layer, examples, why]) =>
+        `<div class="card span-6"><span class="eyebrow">${layer}</span><p><strong>Representative:</strong> ${examples}</p><p>${why}</p></div>`
+      ).join("");
+      const ccSignalRows = getTranslation(lang, "ccSignalRows").map(([layer, examples, why]) =>
         `<div class="card span-6"><span class="eyebrow">${layer}</span><p><strong>Representative:</strong> ${examples}</p><p>${why}</p></div>`
       ).join("");
 
@@ -490,6 +509,7 @@
           <li><a href="#paths">${getTranslation(lang, "paths")}</a></li>
           <li><a href="#ecosystem">${getTranslation(lang, "ecosystem")}</a></li>
           <li><a href="#connectors">${getTranslation(lang, "connectors")}</a></li>
+          <li><a href="#cc-signals">${getTranslation(lang, "ccSignals")}</a></li>
           <li><a href="#guides">${getTranslation(lang, "guides")}</a></li>
           <li><a href="#claw">${getTranslation(lang, "clawSection")}</a></li>
           <li><a href="#featured">${getTranslation(lang, "featured")}</a></li>
@@ -515,6 +535,10 @@
         <h2 id="connectors">${getTranslation(lang, "connectors")}</h2>
         <p class="section-note">${getTranslation(lang, "connectorNote")}</p>
         <div class="grid">${connectorRows}</div>
+
+        <h2 id="cc-signals">${getTranslation(lang, "ccSignals")}</h2>
+        <p class="section-note">${getTranslation(lang, "ccSignalNote")}</p>
+        <div class="grid">${ccSignalRows}</div>
 
         <h2 id="guides">${getTranslation(lang, "guides")}</h2>
         <table>
