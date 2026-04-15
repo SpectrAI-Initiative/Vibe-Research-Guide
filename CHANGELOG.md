@@ -2,6 +2,13 @@
 
 All notable updates to this guide are documented in this file.
 
+## 2026-W17
+
+- Expanded `Claw Park` from a short research-project list into a fuller Claw family map covering gateway, registry, compatibility bundles, deployment, research surfaces, specialist scientist layers, and autonomous pipelines.
+- Added `ClawHub`, `OpenClaw Plugin Bundles`, `nix-openclaw`, `ResearchClaw Desktop App`, and `awesome-openclaw-skills` as first-class ecosystem entries across `README.md`, `topics/tools.md`, and `topics/claw-park.md`.
+- Reframed OpenClaw as a broader stack layer rather than only one assistant shell, including registry, compatibility, and packaging/deployment surfaces.
+- Added real multilingual localization to the interactive landing page while keeping deeper topic pages English-first for now.
+
 ## 2026-W16
 
 - Added a dedicated `learning / RL / self-evolving` layer across `README.md`, including `Agent Lightning`, `Agent0`, `AgentEvolver`, `EvoAgentX`, `Acontext`, and `Awesome-Self-Evolving-Agents`.

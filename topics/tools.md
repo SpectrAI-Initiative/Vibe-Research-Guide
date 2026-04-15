@@ -20,16 +20,20 @@ Agent systems and platforms purpose-built for automated scientific research:
 | **FutureHouse Platform** | Scientific agent platform | [Website](https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents?_bhlid=b2b50af9254da4cf97bbad70959795fa728b14f6) | Public platform for specialized science agents and API-style workflows |
 | **Edison Scientific** | AI scientist platform for R&D teams | [Website](https://edisonscientific.com/) · [Kosmos](https://edisonscientific.com/articles/announcing-kosmos) | Commercial scientific-discovery platform with private-data and enterprise workflow focus |
 
-### Related Claw Ecosystem Projects
+### Related Claw Ecosystem Projects & Infrastructure
 
 | Project | Focus | Link | Highlights |
 |---|---|---|---|
 | **OpenClaw** | General-purpose personal AI assistant framework | [GitHub](https://github.com/openclaw/openclaw) · [Docs](https://docs.openclaw.ai/) | Cross-platform assistant with an extensible skill ecosystem |
+| **ClawHub** | Public registry for OpenClaw skills and plugins | [GitHub](https://github.com/openclaw/clawhub) · [Docs](https://docs.openclaw.ai/tools/clawhub) | Search, install, publish, and version OpenClaw capabilities through a dedicated ecosystem layer |
+| **OpenClaw Plugin Bundles** | Compatibility layer for third-party bundle ecosystems | [Docs](https://docs.openclaw.ai/plugins/bundles) | Reuses Codex, Claude, and Cursor bundle formats inside OpenClaw-native features |
+| **nix-openclaw** | Declarative Nix packaging and deployment | [GitHub](https://github.com/openclaw/nix-openclaw) | Reproducible setup, upgrades, and rollback path for OpenClaw environments |
 | **ScienceClaw** | Self-evolving scientific research agent | [GitHub](https://github.com/beita6969/ScienceClaw) | Research-oriented Claw variant with persistent memory and evolving skills |
 | **ScienceClaw (alt repo)** | Alternative research-lab implementation | [GitHub](https://github.com/Zaoqu-Liu/ScienceClaw) | Research workflow automation with broad database/tool coverage |
 | **MetaClaw** | Self-evolving agent framework | [GitHub](https://github.com/aiming-lab/MetaClaw) · [Website](https://metaclaw.bot/) | Online learning framework for continuously improving Claw-style agents |
 | **AutoResearchClaw** | Autonomous research pipeline | [GitHub](https://github.com/aiming-lab/AutoResearchClaw) | End-to-end academic pipeline from topic to paper with code, review, and reports |
 | **ResearchClaw Desktop App** | Desktop paper reading and note-taking workflow | [Website](https://noietch.github.io/ResearchClaw/) | PDF chat, note-taking, agentic search, local-first workflow |
+| **awesome-openclaw-skills** | Community skill directory | [GitHub](https://github.com/sundial-org/awesome-openclaw-skills) | Fast discovery layer for OpenClaw-compatible skills, examples, and ecosystem patterns |
 
 More ecosystem positioning: [→ Claw Park](./claw-park.md)
 
@@ -53,7 +57,8 @@ The strongest current signal is that OpenClaw is no longer just a single assista
 
 - It has a public skill-discovery layer through [ClawHub](https://docs.openclaw.ai/tools/clawhub).
 - It is pushing cross-ecosystem installability through [Plugin Bundles](https://docs.openclaw.ai/plugins/bundles), including compatibility paths for other coding-agent ecosystems.
-- Its value is increasingly in acting as a gateway, distribution layer, and control surface for broader agent workflows.
+- It now has a clearer packaging path through [nix-openclaw](https://github.com/openclaw/nix-openclaw), which matters for reproducible self-hosting and operations.
+- Its value is increasingly in acting as a gateway, distribution layer, control surface, and deployment substrate for broader agent workflows.
 
 ## Claw Park at a Glance
 
@@ -61,8 +66,11 @@ If you are confused by the growing number of Claw-branded projects, the cleanest
 
 | Layer | Representative project | Role |
 |---|---|---|
-| Foundation | OpenClaw | Base assistant framework and skill ecosystem |
-| Research workspace | InnoClaw | Grounded workspace for files, papers, and execution |
+| Foundation | OpenClaw | Base runtime, gateway, and control layer |
+| Registry / discovery | ClawHub · awesome-openclaw-skills | Helps users find, install, compare, and publish skills and plugins |
+| Compatibility layer | OpenClaw Plugin Bundles | Imports adjacent coding-agent bundle ecosystems into OpenClaw |
+| Deployment layer | nix-openclaw | Adds reproducible packaging, installation, and rollback |
+| Research workspace | InnoClaw · ResearchClaw Desktop App | Grounded surfaces for files, papers, notes, and local reading |
 | Personal research copilot | ResearchClaw | Day-to-day research assistance across search, notes, and writing |
 | Scientific specialist | ScienceClaw | Research-oriented, self-evolving scientific collaborator |
 | Evolution engine | MetaClaw | Learns skills from real conversations and improves over time |
