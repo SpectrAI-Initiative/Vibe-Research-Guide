@@ -26,6 +26,13 @@ const translations = {
       "Autonomous research systems are maturing through AI Scientist-v2, Agent Laboratory, EvoScientist, and public AI-scientist platforms such as FutureHouse Platform and Edison Scientific.",
       "Vibe Coding is becoming the execution layer for research automation, especially when agents need to inspect repos, edit files, and run experiments."
     ],
+    beyondResearch: "Beyond The Research Core",
+    beyondResearchNote: "Vibe Research stays at the center of this repo, but the field now also depends on personal assistants, agent-native software surfaces, and companion UX around coding agents.",
+    beyondResearchRows: {
+      assistants: ["Personal agent assistants", "Shows the messaging-native, knowledge-native, and workspace-native assistant layer growing around research."],
+      software: ["Agent-native software / harnesses", "Shows how CLIs, registries, chat bridges, and harness layers are turning existing software into agent-operable surfaces."],
+      companion: ["Companion apps & coding UX", "Shows the monitor / approve / jump-back layer emerging around long-running coding agents."]
+    },
     learning: "Learning, RL & Self-Evolving Agents",
     learningNote: "The stack is no longer only about agents that can use tools. A separate learning layer is emerging around training, online improvement, evolving workflows, and persistent reusable skills.",
     learningRows: {
@@ -159,6 +166,13 @@ const translations = {
       "自主科研系统正在成熟，AI Scientist-v2、Agent Laboratory、EvoScientist，以及 FutureHouse Platform、Edison Scientific 这类平台化方向，正在把系统推进到更强的 ideation、execution 和 evaluation。",
       "Vibe Coding 正成为研究自动化的执行层，因为 agent 越来越需要真实地读 repo、改文件和跑实验。"
     ],
+    beyondResearch: "超出科研核心的 Agent 生态",
+    beyondResearchNote: "这个仓库仍然以 Vibe Research 为中心，但现在这个领域已经同时依赖个人助手、agent-native 软件层，以及围绕 coding agent 长出来的 companion UX。",
+    beyondResearchRows: {
+      assistants: ["个人 Agent 助手", "说明 research 周围正在长出 messaging-native、knowledge-native 和 workspace-native 的助手层。"],
+      software: ["Agent-native 软件 / harnesses", "说明 CLI、registry、聊天桥接层和 harness 层正在把已有软件变成 agent 可调用的表面。"],
+      companion: ["Companion Apps 与 Coding UX", "说明围绕长时间运行的 coding agent，monitor / approve / jump-back 这一层正在形成。"]
+    },
     learning: "Learning、RL 与自进化 Agent",
     learningNote: "现在这条栈不再只是“会调用工具的 agent”。围绕训练、在线优化、workflow 演化和持久技能记忆，已经开始形成单独的 learning layer。",
     learningRows: {
@@ -1749,6 +1763,11 @@ const guideTracks = [
 ];
 
 const glanceKeys = ["coreQuestion", "shift2026", "useRepo"];
+const beyondRowsData = [
+  { key: "assistants", examples: "OpenClaw, Hermes Agent, Goose, Khoj, AnythingLLM" },
+  { key: "software", examples: "CLI-Anything, cc-connect, Official MCP Registry, anthropics/skills, ClawHub" },
+  { key: "companion", examples: "Crush, Vibe Island, xisland" }
+];
 const learningRowsData = [
   { key: "training", examples: "Agent Lightning" },
   { key: "zeroData", examples: "Agent0, AgentEvolver" },
@@ -1782,7 +1801,7 @@ const clawStackRowsData = [
 ];
 const connectorRowsData = [
   { key: "bridge", examples: "cc-connect" },
-  { key: "plugin", examples: "ClawHub, OpenClaw Plugin Bundles, Claude Code hooks / slash commands / subagents" },
+  { key: "plugin", examples: "CLI-Anything, ClawHub, OpenClaw Plugin Bundles, Claude Code hooks / slash commands / subagents" },
   { key: "memory", examples: "Acontext, anthropics/skills" },
   { key: "registry", examples: "Official MCP Registry, awesome-mcp-servers, awesome-openclaw-skills" },
   { key: "research", examples: "OpenAlex Research MCP, Academia MCP, PapersWithCode MCP" }
@@ -1809,20 +1828,30 @@ const clawProjects = [
 ];
 const featuredProjects = [
   ["OpenClaw", "https://github.com/openclaw/openclaw"],
-  ["ClawHub", "https://github.com/openclaw/clawhub"],
-  ["nix-openclaw", "https://github.com/openclaw/nix-openclaw"],
-  ["InnoClaw", "https://github.com/SpectrAI-Initiative/InnoClaw"],
-  ["ResearchClaw", "https://github.com/ymx10086/ResearchClaw"],
-  ["ScienceClaw", "https://github.com/beita6969/ScienceClaw"],
-  ["MetaClaw", "https://github.com/aiming-lab/MetaClaw"],
-  ["AutoResearchClaw", "https://github.com/aiming-lab/AutoResearchClaw"]
+  ["Hermes Agent", "https://github.com/NousResearch/Hermes-Agent"],
+  ["Goose", "https://github.com/block/goose"],
+  ["Khoj", "https://github.com/khoj-ai/khoj"],
+  ["AnythingLLM", "https://github.com/Mintplex-Labs/anything-llm"],
+  ["CLI-Anything", "https://github.com/HKUDS/CLI-Anything"],
+  ["Agent Lightning", "https://github.com/microsoft/agent-lightning"],
+  ["Vibe Island", "https://vibeisland.app/"]
 ];
 const readingModeKeys = ["field", "stack", "beyond"];
 const langButtons = ["en", "zh", "ko", "ja", "de", "fr", "es", "it", "pt", "ar", "th", "vi", "ru"];
+const landingUpdateText = {
+  en: "2026-04-15: expanded the guide from a research-only map into a research-first broader agent-native landscape, adding personal assistants, software / harness layers, and companion coding apps.",
+  zh: "2026-04-15：把这个指南从偏研究单线地图扩展成了 research-first 的更广义 agent-native 版图，新增了个人助手、software / harness 层，以及 companion coding apps。"
+};
 
 function getTranslation(lang, key) {
   const current = translations[lang] || translations.en;
   return current[key] !== undefined ? current[key] : translations.en[key];
+}
+
+function getGroupItem(lang, group, key) {
+  const currentGroup = (translations[lang] && translations[lang][group]) || {};
+  const fallbackGroup = translations.en[group] || {};
+  return currentGroup[key] || fallbackGroup[key];
 }
 
 function applyLanguageState(lang) {
@@ -1834,45 +1863,50 @@ function applyLanguageState(lang) {
 
 function render(lang) {
   const glanceCards = glanceKeys.map((key) => {
-    const [title, text] = getTranslation(lang, "glanceCards")[key];
+    const [title, text] = getGroupItem(lang, "glanceCards", key);
     return `<div class="card span-4"><span class="eyebrow">${title}</span><p>${text}</p></div>`;
   }).join("");
 
+  const beyondRows = beyondRowsData.map(({ key, examples }) => {
+    const [title, why] = getGroupItem(lang, "beyondResearchRows", key);
+    return `<div class="card span-4"><span class="eyebrow">${title}</span><p><strong>${getTranslation(lang, "representativeLabel")}:</strong> ${examples}</p><p>${why}</p></div>`;
+  }).join("");
+
   const learningRows = learningRowsData.map(({ key, examples }) => {
-    const [title, why] = getTranslation(lang, "learningRows")[key];
+    const [title, why] = getGroupItem(lang, "learningRows", key);
     return `<div class="card span-6"><span class="eyebrow">${title}</span><p><strong>${getTranslation(lang, "representativeLabel")}:</strong> ${examples}</p><p>${why}</p></div>`;
   }).join("");
 
   const pathRows = pathRowsData.map(({ key, start, then }) =>
-    `<div class="card span-6"><h3>${getTranslation(lang, "pathLabels")[key]}</h3><p><strong>${getTranslation(lang, "startLabel")}:</strong> <a href="${start}">${start}</a></p><p><strong>${getTranslation(lang, "thenLabel")}:</strong> <a href="${then}">${then}</a></p></div>`
+    `<div class="card span-6"><h3>${getGroupItem(lang, "pathLabels", key)}</h3><p><strong>${getTranslation(lang, "startLabel")}:</strong> <a href="${start}">${start}</a></p><p><strong>${getTranslation(lang, "thenLabel")}:</strong> <a href="${then}">${then}</a></p></div>`
   ).join("");
 
   const ecosystemRows = ecosystemRowsData.map(({ key, examples }) => {
-    const [title, why] = getTranslation(lang, "ecosystemRows")[key];
+    const [title, why] = getGroupItem(lang, "ecosystemRows", key);
     return `<div class="card span-6"><span class="eyebrow">${title}</span><p><strong>${getTranslation(lang, "representativeLabel")}:</strong> ${examples}</p><p>${why}</p></div>`;
   }).join("");
 
   const clawStackRows = clawStackRowsData.map(({ key, examples }) => {
-    const [title, why] = getTranslation(lang, "clawStackRows")[key];
+    const [title, why] = getGroupItem(lang, "clawStackRows", key);
     return `<div class="card span-6"><span class="eyebrow">${title}</span><p><strong>${getTranslation(lang, "representativeLabel")}:</strong> ${examples}</p><p>${why}</p></div>`;
   }).join("");
 
   const connectorRows = connectorRowsData.map(({ key, examples }) => {
-    const [title, why] = getTranslation(lang, "connectorRows")[key];
+    const [title, why] = getGroupItem(lang, "connectorRows", key);
     return `<div class="card span-6"><span class="eyebrow">${title}</span><p><strong>${getTranslation(lang, "representativeLabel")}:</strong> ${examples}</p><p>${why}</p></div>`;
   }).join("");
 
   const ccSignalRows = ccSignalRowsData.map(({ key, examples }) => {
-    const [title, why] = getTranslation(lang, "ccSignalRows")[key];
+    const [title, why] = getGroupItem(lang, "ccSignalRows", key);
     return `<div class="card span-6"><span class="eyebrow">${title}</span><p><strong>${getTranslation(lang, "representativeLabel")}:</strong> ${examples}</p><p>${why}</p></div>`;
   }).join("");
 
   const guideRows = guideTracks.map(({ key, url }) =>
-    `<tr><td>${getTranslation(lang, "guideTrackLabels")[key]}</td><td><a href="${url}">${url}</a></td></tr>`
+    `<tr><td>${getGroupItem(lang, "guideTrackLabels", key)}</td><td><a href="${url}">${url}</a></td></tr>`
   ).join("");
 
   const clawRows = clawProjects.map(({ name, layer, url }) =>
-    `<tr><td><a href="${url}">${name}</a></td><td>${getTranslation(lang, "clawLayerNames")[layer]}</td></tr>`
+    `<tr><td><a href="${url}">${name}</a></td><td>${getGroupItem(lang, "clawLayerNames", layer)}</td></tr>`
   ).join("");
 
   const heroLinksHtml = heroLinks.map((url, i) =>
@@ -1905,6 +1939,7 @@ function render(lang) {
     <ul>
       <li><a href="#what">${getTranslation(lang, "whatIs")}</a></li>
       <li><a href="#snapshot">${getTranslation(lang, "snapshot")}</a></li>
+      <li><a href="#beyond-research">${getTranslation(lang, "beyondResearch")}</a></li>
       <li><a href="#learning">${getTranslation(lang, "learning")}</a></li>
       <li><a href="#paths">${getTranslation(lang, "paths")}</a></li>
       <li><a href="#ecosystem">${getTranslation(lang, "ecosystem")}</a></li>
@@ -1926,6 +1961,10 @@ function render(lang) {
 
     <h2 id="snapshot">${getTranslation(lang, "snapshot")}</h2>
     <ul>${getTranslation(lang, "snapshotItems").map((item) => `<li>${item}</li>`).join("")}</ul>
+
+    <h2 id="beyond-research">${getTranslation(lang, "beyondResearch")}</h2>
+    <p class="section-note">${getTranslation(lang, "beyondResearchNote")}</p>
+    <div class="grid">${beyondRows}</div>
 
     <h2 id="learning">${getTranslation(lang, "learning")}</h2>
     <p class="section-note">${getTranslation(lang, "learningNote")}</p>
@@ -1978,7 +2017,7 @@ function render(lang) {
     <ul>${getTranslation(lang, "contributeItems").map((item) => `<li>${item}</li>`).join("")}</ul>
 
     <h2>${getTranslation(lang, "changelog")}</h2>
-    <p>${getTranslation(lang, "changelogText")}</p>
+    <p>${landingUpdateText[lang] || landingUpdateText.en}</p>
 
     <h2 id="license">${getTranslation(lang, "license")}</h2>
     <p>${getTranslation(lang, "licenseText")}</p>

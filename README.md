@@ -24,11 +24,11 @@
 
 <div align="center">
 
-### AI Agents For Scientific Discovery, Research Execution, And The New Claw Ecosystem
+### Vibe Research At The Center, With The Broader Agent-Native Stack Around It
 
 Automate the research loop with LLM agents: literature review → idea generation → experiment execution → paper writing → peer review.
 
-This repo is a **landing page for the field**: use it to choose the right track, then move into the topic pages for detail.
+This repo is a **research-first landing page for the field**: use it to choose the right track, then move into the topic pages for detail. The center is still Vibe Research, but the map now also tracks personal assistants, agent-native software layers, and companion apps around that core.
 
 **Start here**: [Getting Started](./topics/getting-started.md) · [Tools & Platforms](./topics/tools.md) · [Claw Park](./topics/claw-park.md) · [Vibe Coding](./topics/vibe-coding.md)
 
@@ -60,14 +60,15 @@ This repo is a **landing page for the field**: use it to choose the right track,
 
 ## 2026 Landscape Snapshot
 
-Four trends are now shaping the field:
+Five trends are now shaping the field:
 
 1. **Research copilots are getting stronger**: Deep Research products, NotebookLM-style source-grounded reading, and scientific workspaces such as Prism are making literature synthesis and report writing much faster.
-2. **Learning and self-evolving agents are becoming a real layer**: Agent Lightning, Agent0, AgentEvolver, EvoAgentX, and memory substrates such as Acontext suggest that training, optimization, and persistent reusable experience are becoming first-class agent infrastructure.
-3. **Autonomous research systems are maturing**: AI Scientist-v2, Agent Laboratory, and EvoScientist push the field from "paper summary bots" toward iterative ideation, execution, and evaluation.
-4. **Vibe Coding is becoming the execution layer**: terminal agents, coding agents, and background agents now matter because research automation increasingly depends on reliable code generation, experiment loops, and repository operations.
+2. **Autonomous research systems are maturing**: AI Scientist-v2, Agent Laboratory, and EvoScientist push the field from "paper summary bots" toward iterative ideation, execution, and evaluation.
+3. **Research is no longer isolated from the personal-agent wave**: OpenClaw, Hermes Agent, Goose, Khoj, and AnythingLLM show how research workflows increasingly sit next to messaging-native, knowledge-native, and workspace-native personal assistants.
+4. **Agent-native software layers are becoming real infrastructure**: CLI-Anything, MCP registries, chat bridges, skills, and plugin registries are turning existing tools and software surfaces into agent-operable environments.
+5. **Learning layers and companion UX are both accelerating**: self-evolving stacks such as Agent Lightning and AgentEvolver matter more, but so do approval, monitoring, and jump-back interfaces such as Vibe Island and xisland around long-running coding agents.
 
-This guide keeps **Vibe Research** as the core topic, then adds separate sections for **Vibe Coding** and **Vibe Anything** so the repo can expand without losing scope.
+This guide keeps **Vibe Research** as the core topic, then adds adjacent sections for the broader **agent-native landscape** so the repo can expand without losing scope.
 
 ---
 
@@ -75,35 +76,11 @@ This guide keeps **Vibe Research** as the core topic, then adds separate section
 
 Several current signals make the field feel less like a loose collection of demos and more like an emerging stack:
 
-1. **Learning and RL are becoming a first-class layer**: [Agent Lightning](https://github.com/microsoft/agent-lightning) turns arbitrary agents into trainable systems with RL, automatic prompt optimization, and SFT; [Agent0](https://github.com/aiming-lab/Agent0) and [AgentEvolver](https://github.com/modelscope/AgentEvolver) push zero-data and self-generated evolution; [EvoAgentX](https://github.com/EvoAgentX/EvoAgentX) and [EvoScientist](https://github.com/EvoScientist/EvoScientist) push evolving workflows and scientist loops.
-2. **Skill and memory are becoming learning substrates**: [Acontext](https://github.com/memodb-io/Acontext) and [anthropics/skills](https://github.com/anthropics/skills) suggest that reusable skills, persistent context, and accumulated experience are becoming part of the agent learning stack rather than only convenience features.
-3. **OpenClaw is becoming a full stack, not just a shell**: the current picture is now gateway plus control surface plus public registry plus compatibility layer plus deployment path. See [OpenClaw](https://docs.openclaw.ai/), [ClawHub](https://docs.openclaw.ai/tools/clawhub), [Compatible Bundles](https://docs.openclaw.ai/plugins/bundles), and [nix-openclaw](https://github.com/openclaw/nix-openclaw).
-4. **FutureHouse and Edison show platformization**: [FutureHouse Platform](https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents?_bhlid=b2b50af9254da4cf97bbad70959795fa728b14f6), [Robin](https://www.futurehouse.org/research-announcements/demonstrating-end-to-end-scientific-discovery-with-robin-a-multi-agent-system), [BixBench](https://www.futurehouse.org/research-announcements/bixbench), [Edison](https://edisonscientific.com/), and [Kosmos](https://edisonscientific.com/articles/announcing-kosmos) show how the field is moving from repos and papers to persistent public or commercial platform surfaces.
-5. **Execution and connectors remain the glue**: MCP registries, routing layers, plugin bundles, and research connectors still determine whether these agents can actually plug into code, literature, chat surfaces, and scientific databases.
-
----
-
-## Learning, RL & Self-Evolving Agents
-
-This is the layer the guide used to underweight: not just tool-using agents, but agents that can be trained, optimized, or improved over time.
-
-| Layer | Representative resources | Why it matters |
-|---|---|---|
-| **Agent training / optimization** | [Agent Lightning](https://github.com/microsoft/agent-lightning) | Brings RL, automatic prompt optimization, and SFT to arbitrary agent systems with near-zero code changes |
-| **Zero-data self-evolution** | [Agent0](https://github.com/aiming-lab/Agent0) · [AgentEvolver](https://github.com/modelscope/AgentEvolver) | Shows how agents can generate tasks, feedback, and training signals without human-curated data pipelines |
-| **Evolving workflows** | [EvoAgentX](https://github.com/EvoAgentX/EvoAgentX) · [EvoScientist](https://github.com/EvoScientist/EvoScientist) · [MetaClaw](https://github.com/aiming-lab/MetaClaw) | Shifts the focus from optimizing one prompt to evolving whole workflows, skill graphs, or scientist loops |
-| **Skill & memory substrate** | [Acontext](https://github.com/memodb-io/Acontext) · [anthropics/skills](https://github.com/anthropics/skills) | Makes skills, context, and reusable experience part of the learning layer |
-| **Landscape map** | [Awesome-Self-Evolving-Agents](https://github.com/EvoAgentX/Awesome-Self-Evolving-Agents) | Best current GitHub-native overview of the optimization, evolution, and lifelong-agent literature |
-
----
-
-## Execution, Skills & Agent Ops
-
-The execution layer is still where the fastest open-source productization is happening:
-
-1. **Skills marketplaces are real now**: [anthropics/skills](https://github.com/anthropics/skills), [wshobson/agents](https://github.com/wshobson/agents), and [ClawHub](https://docs.openclaw.ai/tools/clawhub) make reusable agent capabilities browsable and installable.
-2. **Workflow structure is becoming explicit**: [SuperClaude Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) and [claude-task-master](https://github.com/eyaltoledano/claude-task-master) show how people are layering conventions, commands, and task systems on top of coding agents.
-3. **Routing and agent-ops are becoming infrastructure**: [claude-code-router](https://github.com/musistudio/claude-code-router), [Claude Squad](https://github.com/smtg-ai/claude-squad), and [Repomix](https://github.com/yamadashy/repomix) highlight provider routing, multi-agent management, and codebase packaging as real operational layers.
+1. **Research is still the center, but no longer the whole map**: the most useful way to read the field now is research core plus adjacent assistant, software-surface, learning, and companion-UX layers.
+2. **Personal agent assistants are converging with research workflows**: [OpenClaw](https://docs.openclaw.ai/), [Hermes Agent](https://github.com/NousResearch/Hermes-Agent), [Goose](https://github.com/block/goose), [Khoj](https://github.com/khoj-ai/khoj), and [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) show how long-running assistants, personal memory, and local-first agent shells are becoming normal infrastructure around research and coding work.
+3. **Agent-native software and harness layers are emerging fast**: [CLI-Anything](https://github.com/HKUDS/CLI-Anything) turns software into agent-operable CLI surfaces, while MCP registries, [cc-connect](https://github.com/chenhg5/cc-connect), [anthropics/skills](https://github.com/anthropics/skills), and [ClawHub](https://docs.openclaw.ai/tools/clawhub) make capabilities more installable and portable.
+4. **Learning and RL remain a first-class layer**: [Agent Lightning](https://github.com/microsoft/agent-lightning), [Agent0](https://github.com/aiming-lab/Agent0), [AgentEvolver](https://github.com/modelscope/AgentEvolver), [EvoAgentX](https://github.com/EvoAgentX/EvoAgentX), and [Acontext](https://github.com/memodb-io/Acontext) keep pushing the field from tool use toward agent improvement.
+5. **Companion apps are becoming their own category**: [Vibe Island](https://vibeisland.app/), [xisland](https://xisland.app/), and projects such as [Crush](https://github.com/charmbracelet/crush) show that coding-agent UX is no longer just terminal UI, but also monitoring, approval, and agent-ops surface design.
 
 ---
 
@@ -140,6 +117,58 @@ The execution layer is still where the fastest open-source productization is hap
 
 ---
 
+## Agent-Native Landscape Beyond Research
+
+`Vibe Research` remains the center of this repo. But in practice, the field now sits inside a larger agent-native landscape: personal assistants, software-surface layers, self-improving agents, and companion UX around coding agents.
+
+### Personal Agent Assistants
+
+These are not all "research agents", but they increasingly shape the environment research agents live in.
+
+| Project | What it is | Why it matters here |
+|---|---|---|
+| [OpenClaw](https://github.com/openclaw/openclaw) | Gateway-native assistant runtime with chat control, plugins, bundles, and deployment surfaces | Shows how personal assistants, plugins, and research flows can share one substrate instead of staying as separate demos |
+| [Hermes Agent](https://github.com/NousResearch/Hermes-Agent) | General-purpose personal agent stack with gateway, CLI, plugins, skills, and long-running plans | Important signal that "personal assistant" is becoming a real open-source platform layer, not only a chatbot wrapper |
+| [Goose](https://github.com/block/goose) | Open-source extensible agent that can install, execute, edit, and test with any LLM | Represents the dev-native branch of personal assistants that sits close to repo work and engineering execution |
+| [Khoj](https://github.com/khoj-ai/khoj) | Self-hostable AI second brain and autonomous personal AI with deep-research and automation hooks | Shows the knowledge-native assistant pattern where long-term memory, personal docs, and web retrieval become part of the assistant surface |
+| [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) | Privacy-first workspace-style AI productivity layer | Useful reference for the workspace-native assistant pattern where teams want one local-first surface for models, docs, and agents |
+
+### Agent-Native Software / CLI-Anything
+
+This layer matters because the frontier is no longer only "which agent is best", but also "which software surfaces are now agent-operable".
+
+| Project | What it is | Why it matters here |
+|---|---|---|
+| [CLI-Anything](https://github.com/HKUDS/CLI-Anything) | Turns software into agent-native CLI surfaces and ships many `agent-harness` adapters | Strong signal that existing tools are being retrofitted into agent-operable interfaces instead of being rebuilt from scratch |
+| [cc-connect](https://github.com/chenhg5/cc-connect) | Chat control plane for Claude Code, Codex, Cursor, Gemini CLI, and related agents | Shows how chat surfaces are becoming remote-control shells for coding and research agents |
+| [Official MCP Registry](https://modelcontextprotocol.io/registry/about) | Canonical discovery layer for MCP servers and tools | Makes tool discovery and installation a real infrastructure concern instead of ad hoc glue |
+| [anthropics/skills](https://github.com/anthropics/skills) | Public reusable skill substrate for Claude Code | Shows how skills are becoming portable capability units rather than only local prompts |
+| [ClawHub](https://docs.openclaw.ai/tools/clawhub) · [OpenClaw Plugin Bundles](https://docs.openclaw.ai/plugins/bundles) | Registry, bundle compatibility, and install layer around OpenClaw | Good reference for how agent-native ecosystems package and distribute capabilities |
+
+### Learning, RL & Self-Evolving Agents
+
+This is still one of the most important structural shifts in the field: not just tool-using agents, but agents that can be trained, optimized, or improved over time.
+
+| Layer | Representative resources | Why it matters |
+|---|---|---|
+| **Agent training / optimization** | [Agent Lightning](https://github.com/microsoft/agent-lightning) | Brings RL, automatic prompt optimization, and SFT to arbitrary agent systems with near-zero code changes |
+| **Zero-data self-evolution** | [Agent0](https://github.com/aiming-lab/Agent0) · [AgentEvolver](https://github.com/modelscope/AgentEvolver) | Shows how agents can generate tasks, feedback, and training signals without human-curated data pipelines |
+| **Evolving workflows** | [EvoAgentX](https://github.com/EvoAgentX/EvoAgentX) · [EvoScientist](https://github.com/EvoScientist/EvoScientist) · [MetaClaw](https://github.com/aiming-lab/MetaClaw) | Shifts the focus from optimizing one prompt to evolving whole workflows, skill graphs, or scientist loops |
+| **Skill & memory substrate** | [Acontext](https://github.com/memodb-io/Acontext) · [anthropics/skills](https://github.com/anthropics/skills) | Makes skills, context, and reusable experience part of the learning layer |
+| **Landscape map** | [Awesome-Self-Evolving-Agents](https://github.com/EvoAgentX/Awesome-Self-Evolving-Agents) | Best current GitHub-native overview of the optimization, evolution, and lifelong-agent literature |
+
+### Vibe Coding Apps & Companion UX
+
+This is a newer branch, but it is growing quickly enough that it deserves to be called out separately.
+
+| Project | What it is | Why it matters here |
+|---|---|---|
+| [Crush](https://github.com/charmbracelet/crush) | Open-source agentic coding UX from Charm | Good signal that the UI layer around coding agents is now its own product surface, not just a wrapper around a model API |
+| [Vibe Island](https://vibeisland.app/) | Commercial macOS Dynamic Island companion for many coding agents | Shows the new monitor / approve / ask / jump-back interaction layer around long-running coding-agent sessions |
+| [xisland](https://xisland.app/) | Free macOS notch companion for Claude Code, Codex, Gemini CLI, and OpenCode | Similar signal from an indie distribution angle: approval and session-monitoring UX is becoming a category of its own |
+
+---
+
 ## Claw Stack At A Glance
 
 The Claw family now spans more than research agents. The cleaner reading is:
@@ -169,10 +198,12 @@ Full map: [→ Claw Park](./topics/claw-park.md)
 | **Research copilots** | [OpenAI Deep Research](https://openai.com/index/introducing-deep-research/) · [Gemini Deep Research](https://blog.google/products/gemini/google-gemini-deep-research/) · [NotebookLM](https://notebooklm.google/) · [Prism](https://openai.com/prism/) | Fast literature synthesis, source-grounded reading, and scientific writing assistance |
 | **Research systems** | [InnoClaw](https://github.com/SpectrAI-Initiative/InnoClaw) · [ResearchClaw](https://github.com/ymx10086/ResearchClaw) · [FARS](https://github.com/fars-analemma) · [AI Scientist](https://github.com/SakanaAI/AI-Scientist) · [Agent Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) · [EvoScientist](https://github.com/EvoScientist/EvoScientist) | End-to-end research assistance, automation, and experiment execution |
 | **AI scientist platforms** | [FutureHouse Platform](https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents?_bhlid=b2b50af9254da4cf97bbad70959795fa728b14f6) · [Robin](https://www.futurehouse.org/research-announcements/demonstrating-end-to-end-scientific-discovery-with-robin-a-multi-agent-system) · [Edison Scientific](https://edisonscientific.com/) · [Kosmos](https://edisonscientific.com/articles/announcing-kosmos) | Shows the field moving from paper demos to persistent web/API platforms and validated scientific workflows |
+| **Personal agent assistants** | [OpenClaw](https://github.com/openclaw/openclaw) · [Hermes Agent](https://github.com/NousResearch/Hermes-Agent) · [Goose](https://github.com/block/goose) · [Khoj](https://github.com/khoj-ai/khoj) · [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) | Shows the wider assistant layer surrounding research: messaging-native, dev-native, knowledge-native, and workspace-native agents |
+| **Agent-native software / harnesses** | [CLI-Anything](https://github.com/HKUDS/CLI-Anything) · [cc-connect](https://github.com/chenhg5/cc-connect) · [Official MCP Registry](https://modelcontextprotocol.io/registry/about) · [anthropics/skills](https://github.com/anthropics/skills) | Shows how software surfaces, registries, and skills are becoming agent-operable infrastructure |
 | **Learning / self-evolving layer** | [Agent Lightning](https://github.com/microsoft/agent-lightning) · [Agent0](https://github.com/aiming-lab/Agent0) · [AgentEvolver](https://github.com/modelscope/AgentEvolver) · [EvoAgentX](https://github.com/EvoAgentX/EvoAgentX) · [Acontext](https://github.com/memodb-io/Acontext) | Turns agent training, self-generated data, evolving workflows, and persistent skill/context memory into a real stack layer |
 | **Claw ecosystem** | [OpenClaw](https://github.com/openclaw/openclaw) · [ClawHub](https://github.com/openclaw/clawhub) · [OpenClaw Plugin Bundles](https://docs.openclaw.ai/plugins/bundles) · [nix-openclaw](https://github.com/openclaw/nix-openclaw) · [InnoClaw](https://github.com/SpectrAI-Initiative/InnoClaw) · [ResearchClaw](https://github.com/ymx10086/ResearchClaw) · [ScienceClaw](https://github.com/beita6969/ScienceClaw) · [MetaClaw](https://github.com/aiming-lab/MetaClaw) · [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | Gateway, registry, compatibility, deployment, research workspaces, scientific specialization, online learning, and autonomous pipelines |
 | **Execution layer** | [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) · [Codex](https://github.com/openai/codex) · [Cursor Background Agents](https://docs.cursor.com/en/background-agent) · [GitHub Copilot Coding Agent](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent) | The coding and repo workflow layer that increasingly powers research execution |
-| **Claude Code ecosystem** | [anthropics/skills](https://github.com/anthropics/skills) · [wshobson/agents](https://github.com/wshobson/agents) · [SuperClaude Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) · [claude-code-router](https://github.com/musistudio/claude-code-router) | Shows how the Claude Code layer is expanding into skills, marketplaces, meta-frameworks, and routing infrastructure |
+| **Companion apps / coding UX** | [Crush](https://github.com/charmbracelet/crush) · [Vibe Island](https://vibeisland.app/) · [xisland](https://xisland.app/) | Shows the monitoring, approval, and session-jump UX layer forming around long-running coding agents |
 | **Adjacent prompt-native tools** | [v0](https://v0.dev/docs) · [Lovable](https://docs.lovable.dev/) · [Replit Agent](https://docs.replit.com/replitai/agent) | Useful for prototyping, but not the core of Vibe Research |
 
 <table>
@@ -193,7 +224,7 @@ A new layer is forming between "agent" and "workflow": plugin surfaces, MCP regi
 | Layer | Representative resources | Why it matters |
 |---|---|---|
 | **Bridge & control surfaces** | [cc-connect](https://github.com/chenhg5/cc-connect) | Runs Claude Code, Cursor, Gemini CLI, Codex, and similar agents from chat surfaces such as Feishu/Lark, Slack, Telegram, and WeCom |
-| **Plugin / customization layer** | [ClawHub](https://docs.openclaw.ai/tools/clawhub) · [OpenClaw Plugin Bundles](https://docs.openclaw.ai/plugins/bundles) · [awesome-claude-code-plugins](https://github.com/ccplugins/awesome-claude-code-plugins) | Shows how agent ecosystems are moving toward skill registries, plugin marketplaces, bundle compatibility, and installable capability packs |
+| **Plugin / customization layer** | [CLI-Anything](https://github.com/HKUDS/CLI-Anything) · [ClawHub](https://docs.openclaw.ai/tools/clawhub) · [OpenClaw Plugin Bundles](https://docs.openclaw.ai/plugins/bundles) · [awesome-claude-code-plugins](https://github.com/ccplugins/awesome-claude-code-plugins) | Shows how agent ecosystems are moving toward software harnesses, skill registries, plugin marketplaces, bundle compatibility, and installable capability packs |
 | **Learning / memory substrate** | [Acontext](https://github.com/memodb-io/Acontext) · [anthropics/skills](https://github.com/anthropics/skills) | Shows how context, memory, and reusable skills are turning into persistent substrates for agent improvement |
 | **Claude Code workflow layer** | [wshobson/agents](https://github.com/wshobson/agents) · [SuperClaude Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) · [claude-task-master](https://github.com/eyaltoledano/claude-task-master) | Shows how commands, agent teams, skills, and task systems are turning Claude Code into a fuller development environment |
 | **Routing / agent-ops layer** | [claude-code-router](https://github.com/musistudio/claude-code-router) · [Claude Squad](https://github.com/smtg-ai/claude-squad) · [Repomix](https://github.com/yamadashy/repomix) | Highlights provider routing, multi-agent session management, and codebase packaging as new operational layers around coding agents |
@@ -211,9 +242,9 @@ More detailed map: [→ Tools & Platforms](./topics/tools.md)
 | Topic | Description | Link |
 |---|---|---|
 | 🚀 **Getting Started** | 5-min demo → 30-min agent deployment → full automation | [→ Getting Started](./topics/getting-started.md) |
-| 🧰 **Tools & Platforms** | Core platforms, literature tools, writing aids, experiment tools | [→ Tools & Platforms](./topics/tools.md) |
+| 🧰 **Tools & Platforms** | Core research platforms plus assistant, connector, and software-surface layers | [→ Tools & Platforms](./topics/tools.md) |
 | 🦞 **Claw Park** | Ecosystem map for what each Claw project is building and where it fits | [→ Claw Park](./topics/claw-park.md) |
-| 💻 **Vibe Coding** | Terminal agents, coding agents, background agents, and repo guardrails | [→ Vibe Coding](./topics/vibe-coding.md) |
+| 💻 **Vibe Coding** | Terminal agents, coding agents, companion apps, and repo guardrails | [→ Vibe Coding](./topics/vibe-coding.md) |
 | 🎨 **Vibe Anything** | Adjacent prompt-native workflows for apps, design, writing, slides, and ops | [→ Vibe Anything](./topics/vibe-anything.md) |
 
 ### Research Topics (35+ papers)
@@ -257,17 +288,23 @@ More detailed map: [→ Tools & Platforms](./topics/tools.md)
 
 **Awesome Lists**: [LLM Agent Survey](https://github.com/Paitesanshi/LLM-Agent-Survey) · [AI Agents](https://github.com/e2b-dev/awesome-ai-agents) · [Scientific Idea Generation](https://github.com/wjie0309/awesome-scientific-idea-generation)
 
-**Search & Reading**: [Semantic Scholar](https://www.semanticscholar.org/) · [Elicit](https://elicit.com/) · [Consensus](https://consensus.app/) · [Connected Papers](https://www.connectedpapers.com/)
+**Research Core**: [Semantic Scholar](https://www.semanticscholar.org/) · [Elicit](https://elicit.com/) · [Consensus](https://consensus.app/) · [Connected Papers](https://www.connectedpapers.com/)
 
 **AI Scientist Platforms**: [FutureHouse Platform](https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents?_bhlid=b2b50af9254da4cf97bbad70959795fa728b14f6) · [Robin](https://www.futurehouse.org/research-announcements/demonstrating-end-to-end-scientific-discovery-with-robin-a-multi-agent-system) · [Edison Scientific](https://edisonscientific.com/) · [Kosmos](https://edisonscientific.com/articles/announcing-kosmos)
+
+**Personal Agent Assistants**: [OpenClaw](https://docs.openclaw.ai/) · [Hermes Agent](https://github.com/NousResearch/Hermes-Agent) · [Goose](https://github.com/block/goose) · [Khoj](https://github.com/khoj-ai/khoj) · [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm)
+
+**Agent-Native Interfaces & Harnesses**: [CLI-Anything](https://github.com/HKUDS/CLI-Anything) · [cc-connect](https://github.com/chenhg5/cc-connect) · [Official MCP Registry](https://modelcontextprotocol.io/registry/about) · [anthropics/skills](https://github.com/anthropics/skills) · [ClawHub](https://docs.openclaw.ai/tools/clawhub)
 
 **Claw Ecosystem**: [OpenClaw](https://docs.openclaw.ai/) · [ClawHub](https://docs.openclaw.ai/tools/clawhub) · [Plugin Bundles](https://docs.openclaw.ai/plugins/bundles) · [nix-openclaw](https://github.com/openclaw/nix-openclaw) · [Claw Park](./topics/claw-park.md)
 
 **Learning / Self-Evolving Agents**: [Agent Lightning](https://github.com/microsoft/agent-lightning) · [Agent0](https://github.com/aiming-lab/Agent0) · [AgentEvolver](https://github.com/modelscope/AgentEvolver) · [EvoAgentX](https://github.com/EvoAgentX/EvoAgentX) · [Acontext](https://github.com/memodb-io/Acontext) · [Awesome-Self-Evolving-Agents](https://github.com/EvoAgentX/Awesome-Self-Evolving-Agents)
 
-**Execution**: [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) · [Codex](https://github.com/openai/codex) · [Cursor Background Agents](https://docs.cursor.com/en/background-agent) · [GitHub Copilot Coding Agent](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent) · [Gemini CLI](https://github.com/google-gemini/gemini-cli)
+**Execution / Vibe Coding**: [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) · [Codex](https://github.com/openai/codex) · [Cursor Background Agents](https://docs.cursor.com/en/background-agent) · [GitHub Copilot Coding Agent](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent) · [Gemini CLI](https://github.com/google-gemini/gemini-cli) · [Crush](https://github.com/charmbracelet/crush)
 
 **Claude Code Ecosystem**: [anthropics/skills](https://github.com/anthropics/skills) · [wshobson/agents](https://github.com/wshobson/agents) · [SuperClaude Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) · [claude-code-router](https://github.com/musistudio/claude-code-router) · [Claude Squad](https://github.com/smtg-ai/claude-squad) · [claude-task-master](https://github.com/eyaltoledano/claude-task-master) · [Repomix](https://github.com/yamadashy/repomix)
+
+**Companion Apps**: [Vibe Island](https://vibeisland.app/) · [xisland](https://xisland.app/)
 
 **Prototyping**: [v0](https://v0.dev/docs) · [Lovable](https://docs.lovable.dev/) · [Replit Agent](https://docs.replit.com/replitai/agent) · [Figma AI](https://www.figma.com/ai/) · [Canva AI](https://www.canva.com/canva-ai/)
 
@@ -302,6 +339,7 @@ Submit resources via [Resource Suggestion](https://github.com/SpectrAI-Initiativ
 <details>
 <summary><b>Changelog</b></summary>
 
+- **2026-04-15**: Reframed the README as a research-first but broader agent-native map, adding personal assistants, CLI-Anything / harness layers, and companion coding apps while keeping `Vibe Research` as the center
 - **2026-W17**: Expanded Claw coverage from a short project list into a fuller family map, including ClawHub, Plugin Bundles, nix-openclaw, ResearchClaw Desktop App, and a clearer stack-layer taxonomy
 - **2026-W16**: Added a dedicated learning / RL / self-evolving layer to the guide, including Agent Lightning, Agent0, AgentEvolver, EvoAgentX, Acontext, and Awesome-Self-Evolving-Agents
 - **2026-W14**: Added 2026 Q1 signals for OpenClaw platformization, FutureHouse / Robin / BixBench, and Edison Scientific / Kosmos; refreshed ecosystem framing across the guide

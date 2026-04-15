@@ -2,6 +2,13 @@
 
 All notable updates to this guide are documented in this file.
 
+## 2026-04-15
+
+- Reframed `README.md` so `Vibe Research` stays the center while the broader agent-native landscape now appears explicitly around it.
+- Added new README sections for `Personal Agent Assistants`, `Agent-Native Software / CLI-Anything`, and `Vibe Coding Apps & Companion UX`.
+- Added current ecosystem projects including `Hermes Agent`, `Goose`, `Khoj`, `AnythingLLM`, `CLI-Anything`, `Vibe Island`, `xisland`, and `Crush`.
+- Refreshed the interactive landing page data to reflect the broader research-first taxonomy and updated featured projects.
+
 ## 2026-W17
 
 - Expanded `Claw Park` from a short research-project list into a fuller Claw family map covering gateway, registry, compatibility bundles, deployment, research surfaces, specialist scientist layers, and autonomous pipelines.
