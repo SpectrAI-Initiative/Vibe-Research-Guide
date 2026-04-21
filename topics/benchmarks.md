@@ -1,63 +1,71 @@
 <h1 align="center">Vibe Research Guide<br>Benchmarks & Evaluation</h1>
 
-> Benchmarks and Evaluation are **the most overlooked yet most critical part** of Vibe Research. Without rigorous evaluation, we cannot judge whether a research agent truly makes "scientific discoveries." This area focuses on: how to design evaluation tasks, how to measure real capabilities of research agents, and how to verify "reproducible scientific discovery."
+> Benchmarks are where most Auto Research claims become credible or collapse. Without scientist-aligned evaluation, it is too easy to confuse fluent reports, strong tool use, or decent coding ability with actual research capability.
 
-<section id="benchmark-papers"></section>
+## How To Read This Page
+
+The current benchmark landscape splits into two main groups:
+
+1. **Scientist-aligned workflow benchmarks**: can a system rediscover, reason through, and operate a research process that looks like real science?
+2. **Engineering / R&D capability benchmarks**: can a system execute the implementation-heavy work that modern research depends on?
+
+Both matter. A research agent that cannot code or run experiments is weak. A coding agent that cannot reason scientifically is also weak.
 
 ## Paper List
 
-| # | Paper | URL | Type | Why read | Stage | Keywords |
+| # | Benchmark | URL | Type | Why read | Stage | Keywords |
 |---|---|---|---|---|---|---|
-| 12 | ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery | [arXiv](https://arxiv.org/abs/2410.05080) | Benchmark | Rigorously evaluates language agents in data-driven scientific discovery, emphasizing authenticity and rigor. | Intermediate | evaluation rigor, scientific authenticity |
-| 13 | FIRE-Bench: Evaluating Agents on the Rediscovery of Scientific Insights | [arXiv](https://arxiv.org/abs/2602.02905) | Benchmark | Core idea of "rediscovery" — tests whether agents can re-derive verified scientific conclusions. Provides a verifiable evaluation paradigm. | Intermediate | rediscovery, verification |
-| 14 | AstaBench: Rigorous Benchmarking of AI Agents with a Scientific Research Suite | [arXiv](https://arxiv.org/abs/2510.21652) | Benchmark | Larger-scale, more holistic scientific research benchmark suite covering multiple research sub-tasks. | Intermediate | holistic benchmark, scientific research suite |
-| 15 | MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering | [arXiv](https://arxiv.org/abs/2410.07095) | Benchmark | By OpenAI. Uses Kaggle competitions to evaluate agent ML engineering capabilities. 75 real tasks covering data processing, feature engineering, model selection. | Intermediate | ML engineering, Kaggle, practical skills |
-| 16 | RE-Bench: Evaluating Frontier AI R&D Capabilities of Language Model Agents Against Human Experts | [arXiv](https://arxiv.org/abs/2411.15671) | Benchmark | Evaluates AI on real R&D tasks with direct human expert comparison. Provides a quantitative answer to "how far is AI from replacing researchers." | Intermediate | R&D capability, human expert comparison |
-
-<section id="benchmark-recommendations"></section>
+| 12 | ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery | [arXiv](https://arxiv.org/abs/2410.05080) · [GitHub](https://github.com/OSU-NLP-Group/ScienceAgentBench) | Scientist-aligned workflow | Early high-signal benchmark for realistic scientific-discovery evaluation | Intermediate | rigor, discovery |
+| 13 | FIRE-Bench: Evaluating Agents on the Rediscovery of Scientific Insights | [arXiv](https://arxiv.org/abs/2602.02905) · [Website](https://firebench.github.io/) | Scientist-aligned workflow | Strong rediscovery framing that makes verification easier than vague novelty claims | Intermediate | rediscovery, verification |
+| 14 | ResearchClawBench | [GitHub](https://github.com/InternScience/ResearchClawBench) | Scientist-aligned workflow | Benchmark signal built around autonomous scientific research from rediscovery to new-discovery | Intermediate | autonomous research, workflow |
+| 15 | Probing Scientific General Intelligence of LLMs with Scientist-Aligned Workflows | [arXiv](https://arxiv.org/abs/2512.16969) | Scientist-aligned workflow | Useful for separating general reasoning from scientist-aligned process capability | Intermediate | SGI, scientist workflow |
+| 16 | AstaBench: Rigorous Benchmarking of AI Agents with a Scientific Research Suite | [arXiv](https://arxiv.org/abs/2510.21652) · [Ai2 post](https://allenai.org/blog/astabench) | Scientist-aligned workflow | Broader and more holistic scientific benchmark suite | Intermediate | benchmark suite, coverage |
+| 17 | MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering | [arXiv](https://arxiv.org/abs/2410.07095) · [GitHub](https://github.com/openai/mle-bench) | Engineering / R&D | Strong reality check for the implementation side of research work | Intermediate | ML engineering, Kaggle |
+| 18 | RE-Bench: Evaluating Frontier AI R&D Capabilities of Language Model Agents Against Human Experts | [arXiv](https://arxiv.org/abs/2411.15671) · [GitHub](https://github.com/METR/RE-Bench) | Engineering / R&D | Most useful benchmark here when you care about expert-level R&D comparison | Intermediate | R&D, human experts |
 
 ## Recommendations
 
 | # | Rating | Note |
 |---|---|---|
-| 12 | ★★★★★ | Must-read, evaluation rigor benchmark |
-| 13 | ★★★★★ | Must-read, innovative rediscovery paradigm |
-| 14 | ★★★★☆ | Highly recommended, large-scale comprehensive evaluation |
-| 15 | ★★★★☆ | Highly recommended, ML engineering capability evaluation |
-| 16 | ★★★★★ | Must-read, human expert comparison |
+| 12 | ★★★★★ | Must-read baseline for scientific-agent evaluation |
+| 13 | ★★★★★ | Must-read if you care about rediscovery and verifiability |
+| 14 | ★★★★☆ | Strong recent signal for agentic research-workspace evaluation |
+| 15 | ★★★★★ | Best current framing for scientist-aligned workflow evaluation |
+| 16 | ★★★★☆ | Useful for broader scientific-task coverage |
+| 17 | ★★★★☆ | Important adjacent benchmark for execution-heavy work |
+| 18 | ★★★★★ | Best reality check for autonomous R&D against humans |
 
-<section id="benchmark-comparison"></section>
+## Benchmark Families
+
+| Family | Representative resources | What it evaluates | Why it matters |
+|---|---|---|---|
+| **Scientist-aligned workflow benchmarks** | [ScienceAgentBench](https://arxiv.org/abs/2410.05080) · [FIRE-Bench](https://arxiv.org/abs/2602.02905) · [ResearchClawBench](https://github.com/InternScience/ResearchClawBench) · [SGI-Bench](https://arxiv.org/abs/2512.16969) · [AstaBench](https://arxiv.org/abs/2510.21652) | Literature reasoning, rediscovery, structured scientific workflows, and research-process quality | This is where "AI scientist" claims should increasingly be judged |
+| **Engineering / R&D capability benchmarks** | [MLE-bench](https://arxiv.org/abs/2410.07095) · [RE-Bench](https://arxiv.org/abs/2411.15671) | Implementation, experimentation, ML engineering, and expert-level R&D capability | Research systems increasingly fail on execution, not only on ideation |
 
 ## Benchmark Comparison
 
-| Dimension | ScienceAgentBench | FIRE-Bench | AstaBench | MLE-bench | RE-Bench |
-|---|---|---|---|---|---|
-| Core idea | Rigorous data-driven discovery eval | Verify reproducible discoveries | Large-scale comprehensive eval | ML engineering practice | R&D vs human experts |
-| Task source | Real research tasks | Published scientific conclusions | Multi-disciplinary research suite | Kaggle competitions | Real R&D tasks |
-| Evaluation focus | Agent capability vs human | Can agent "rediscover" known results | End-to-end research ability | Data processing + modeling + optimization | Comprehensive R&D capability |
-| Scale | Medium | Medium | Large | 75 tasks | Medium |
-| Unique feature | Authenticity | Verifiability | Holistic coverage | Practicality (Kaggle-based) | Human-paired comparison |
-
-<section id="benchmark-reading-tips"></section>
+| Dimension | ScienceAgentBench | FIRE-Bench | ResearchClawBench | SGI-Bench | AstaBench | MLE-bench | RE-Bench |
+|---|---|---|---|---|---|---|---|
+| Core idea | Rigorous science-task assessment | Rediscovery of known insights | Autonomous research workflow evaluation | Scientist-aligned process quality | Broad scientific-research suite | ML engineering execution | Frontier AI R&D vs experts |
+| Best use | Baseline scientific-agent evaluation | Verifiable rediscovery | Agentic research workspace evaluation | Scientist-like workflow calibration | Wider task coverage | Implementation-heavy systems | Reality check against human experts |
+| Main strength | Scientific realism | Verifiability | Workflow framing | Process alignment | Breadth | Practical coding + ML work | Human comparison |
 
 ## Reading Tips
 
-1. **Paper #12** is best read after the Systems topic (AI Scientist, etc.) — it helps you critically assess these systems' real capabilities.
-2. **Paper #13**'s rediscovery perspective is unique: instead of asking "can the agent make new discoveries," it asks "can the agent rediscover known ones" — a clever evaluation design worth studying.
-3. **Paper #14** is good reference when designing your own evaluation methodology.
-4. **Paper #15 (MLE-bench)** is more engineering-oriented — it tests practical ML task completion, suited for Builder-track readers.
-5. **Paper #16 (RE-Bench)** provides a key answer: "How large is the gap between AI agents and human researchers?" — helps calibrate realistic expectations for Vibe Research.
-
-<section id="benchmark-extended"></section>
+1. Start with **ScienceAgentBench** if you want the cleanest baseline.
+2. Read **FIRE-Bench** next if you care about rediscovery rather than hand-wavy discovery claims.
+3. Read **SGI-Bench** when you want to judge whether a system is behaving like a scientist rather than just a strong generalist model.
+4. Use **ResearchClawBench** and **AstaBench** to understand the current push toward broader and more realistic workflow suites.
+5. Finish with **MLE-bench** and **RE-Bench** to calibrate implementation and expert-level R&D gaps.
 
 ## Extended Reading
 
 | Resource | Link | Description |
 |---|---|---|
-| MLAgentBench | [arXiv](https://arxiv.org/abs/2310.03302) | LLM agent ML research benchmark |
-| SWE-bench | [GitHub](https://github.com/princeton-nlp/SWE-bench) | Agent GitHub issue solving benchmark |
-| GAIA | [arXiv](https://arxiv.org/abs/2311.12983) | General AI assistant capability evaluation |
-| Awesome AI Agent Benchmarks | [repo](https://github.com/agiresearch/awesome-ai-agent-benchmarks) | Comprehensive agent benchmark list |
+| MLAgentBench | [arXiv](https://arxiv.org/abs/2310.03302) | Earlier benchmark for machine-learning experimentation by agents |
+| SWE-bench | [GitHub](https://github.com/princeton-nlp/SWE-bench) | Important execution-layer benchmark for coding agents |
+| GAIA | [arXiv](https://arxiv.org/abs/2311.12983) | General assistant benchmark that is useful, but not scientist-aligned |
+| Awesome AI Agent Benchmarks | [GitHub](https://github.com/agiresearch/awesome-ai-agent-benchmarks) | Useful meta-index for wider benchmark scouting |
 
 ---
 

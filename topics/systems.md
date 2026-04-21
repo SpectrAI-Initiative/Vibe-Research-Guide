@@ -1,92 +1,96 @@
 <h1 align="center">Vibe Research Guide<br>Representative Systems</h1>
 
-> Representative systems demonstrate how LLM Agents participate **end-to-end** in scientific research: from idea generation to experiment execution to paper writing. These landmark systems mark Vibe Research's transition from concept to practice. Understanding their architecture and workflow helps you quickly assess "what's possible" and "how to build it."
+> Representative systems show what happens when LLM agents move from "research help" to "research operation." The most important question is no longer whether an agent can write a summary, but whether it can plan work, execute code, branch experiments, inspect failures, and produce outputs that survive evaluation.
 
-## 2026 Q1 Platform Signals
+## 2026 Signals
 
-Papers are no longer the whole story. One of the biggest changes in 2026 Q1 is that AI-scientist systems are turning into public platforms, product surfaces, and more realistic applied benchmarks:
+The system layer now has clearer internal structure than it did a year ago:
 
-| Signal | Link | Why it matters |
+| Signal | Representative resources | Why it matters |
 |---|---|---|
-| **FutureHouse Platform** | [Website](https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents?_bhlid=b2b50af9254da4cf97bbad70959795fa728b14f6) | Specialized scientific agents are now being packaged as a public platform instead of only a research prototype |
-| **Robin** | [Announcement](https://www.futurehouse.org/research-announcements/demonstrating-end-to-end-scientific-discovery-with-robin-a-multi-agent-system) | High-signal end-to-end scientific-discovery demo with stronger emphasis on validated workflow claims |
-| **BixBench** | [Announcement](https://www.futurehouse.org/research-announcements/bixbench) | Domain-specific benchmarking is becoming more important than abstract capability claims alone |
-| **Edison Scientific / Kosmos** | [Website](https://edisonscientific.com/) · [Kosmos](https://edisonscientific.com/articles/announcing-kosmos) | AI-scientist ideas are being translated into persistent scientific-discovery products for real R&D teams |
+| **End-to-end scientist systems are now a real family** | [The AI Scientist](https://arxiv.org/abs/2408.06292) · [The AI Scientist-v2](https://arxiv.org/abs/2504.08066) · [EvoScientist](https://arxiv.org/abs/2603.08127) | There is now a recognizable line of systems trying to automate idea generation, execution, and reporting |
+| **Human-in-the-loop systems remain important** | [Agent Laboratory](https://arxiv.org/abs/2501.04227) | Practical research help often still benefits from explicit collaboration rather than maximum autonomy |
+| **Framework-style auto research is growing** | [AI-Researcher](https://github.com/HKUDS/AI-Researcher) · [RD-Agent](https://github.com/microsoft/RD-Agent) · [Auto-Deep-Research](https://github.com/HKUDS/Auto-Deep-Research) | The field is no longer only flagship papers; orchestration frameworks are becoming first-class objects |
+| **Execution substrates are part of system design now** | [OpenHands](https://github.com/All-Hands-AI/OpenHands) · [SWE-agent](https://github.com/princeton-nlp/SWE-agent) · [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) | The best "research system" often depends on a reliable coding or environment-interaction layer |
+| **Platformization is visible** | [FutureHouse Platform](https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents?_bhlid=b2b50af9254da4cf97bbad70959795fa728b14f6) · [Robin](https://www.futurehouse.org/research-announcements/demonstrating-end-to-end-scientific-discovery-with-robin-a-multi-agent-system) · [Edison Scientific](https://edisonscientific.com/) | System ideas are moving beyond papers into persistent product surfaces |
 
-<section id="system-papers"></section>
+## System Families
+
+| Family | Representative resources | Best mental model | What it optimizes for |
+|---|---|---|---|
+| **Template-heavy end-to-end scientist** | [The AI Scientist](https://github.com/SakanaAI/AI-Scientist) | The cleanest "idea to paper" baseline | Full-loop automation inside a clearer scaffold |
+| **Search-heavy end-to-end scientist** | [The AI Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) | Branching search over research ideas and experiments | Better exploration and higher-quality output |
+| **Collaborative research copilot** | [Agent Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) | Human stays in the loop while the agent executes real work | Practical assistance and controllability |
+| **Productized auto-research orchestrator** | [AI-Researcher](https://github.com/HKUDS/AI-Researcher) | Research workflow as a reusable system layer | Broader usability and workflow packaging |
+| **Autonomous R&D / data science agent** | [RD-Agent](https://github.com/microsoft/RD-Agent) | Research and development on real implementation loops | Execution-heavy data-science and engineering workflows |
+| **Deep-research assistant framework** | [Auto-Deep-Research](https://github.com/HKUDS/Auto-Deep-Research) | Search, reading, synthesis, and structured report generation | Stronger literature-grounded multi-step research assistance |
+| **Self-evolving multi-agent scientist** | [EvoScientist](https://github.com/EvoScientist/EvoScientist) | Scientist workflow plus persistent improvement | Memory, iteration, and continual system evolution |
 
 ## Paper List
 
 | # | Paper | URL | Type | Why read | Stage | Keywords |
 |---|---|---|---|---|---|---|
-| 4 | The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery | [arXiv](https://arxiv.org/abs/2408.06292) | System | Landmark work demonstrating end-to-end research automation: idea generation → experiment → paper writing → review. Foundational for understanding the field. | Intermediate | AI Scientist, end-to-end workflow |
-| 5 | The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search | [arXiv](https://arxiv.org/abs/2504.08066) | System | Upgraded AI Scientist with agentic tree search, achieving higher autonomy and workshop-level output quality. | Intermediate | agentic tree search, autonomy |
-| 6 | Agent Laboratory: Using LLM Agents as Research Assistants | [arXiv](https://arxiv.org/abs/2501.04227) | System | Human-in-the-loop design closer to real research scenarios, emphasizing human feedback and collaboration. More practical. | Intermediate | copilot, human feedback |
-| 7 | SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering | [arXiv](https://arxiv.org/abs/2405.15793) | System | Princeton's Agent-Computer Interface (ACI) for efficient code repository interaction. Directly applicable to research experiment agents. | Intermediate | ACI, code interaction, software engineering |
-| 8 | OpenHands: An Open Platform for AI Software Engineers | [arXiv](https://arxiv.org/abs/2407.16741) | Platform | Open-source full-stack agent platform with Docker sandbox. Ideal infrastructure for building research experiment systems. | Intermediate | open-source, full-stack agent, sandbox |
-| 9 | EvoScientist: Towards Multi-Agent Evolving AI Scientists for End-to-End Scientific Discovery | [arXiv](https://arxiv.org/abs/2603.08127) | System | Self-evolving multi-agent framework (Researcher + Engineer + Evolution Manager) with persistent memory. Outperforms 7 SOTA systems in idea generation. | Intermediate | multi-agent, self-evolution, persistent memory |
-
-<section id="system-recommendations"></section>
+| 4 | The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery | [arXiv](https://arxiv.org/abs/2408.06292) | System | Landmark reference for end-to-end idea → experiment → report automation | Intermediate | AI scientist, full loop |
+| 5 | The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search | [arXiv](https://arxiv.org/abs/2504.08066) | System | Stronger exploration and higher output quality via agentic tree search | Intermediate | tree search, branching |
+| 6 | Agent Laboratory: Using LLM Agents as Research Assistants | [arXiv](https://arxiv.org/abs/2501.04227) | System | Best reference for human-in-the-loop scientific assistance | Intermediate | collaboration, copilot |
+| 7 | AI-Researcher: Autonomous Scientific Innovation | [arXiv](https://arxiv.org/abs/2505.18705) · [GitHub](https://github.com/HKUDS/AI-Researcher) | Framework | Important bridge from paper demo to reusable auto-research workflow system | Intermediate | orchestration, innovation |
+| 8 | R&D-Agent: An LLM-Agent Framework Towards Autonomous Data Science | [arXiv](https://arxiv.org/abs/2505.14738) · [GitHub](https://github.com/microsoft/RD-Agent) | Framework | Shows how autonomous R&D and data-science execution fit into the same landscape | Intermediate | autonomous R&D, data science |
+| 9 | Auto-Deep-Research | [arXiv](https://arxiv.org/abs/2502.05957) · [GitHub](https://github.com/HKUDS/Auto-Deep-Research) | Framework | Best reference for retrieval-heavy multi-step research automation | Beginner-Intermediate | deep research, synthesis |
+| 10 | EvoScientist: Towards Multi-Agent Evolving AI Scientists for End-to-End Scientific Discovery | [arXiv](https://arxiv.org/abs/2603.08127) | System | Strongest recent example of self-evolving multi-agent research automation | Intermediate | self-evolution, persistent memory |
 
 ## Recommendations
 
 | # | Rating | Note |
 |---|---|---|
-| 4 | ★★★★★ | Must-read, milestone work |
-| 5 | ★★★★★ | Must-read, autonomy upgrade |
-| 6 | ★★★★★ | Must-read, practical and deployable |
-| 7 | ★★★★☆ | Highly recommended, pioneering ACI design |
-| 8 | ★★★★☆ | Highly recommended, benchmark open-source agent platform |
-| 9 | ★★★★★ | Must-read, latest self-evolving multi-agent approach |
-
-<section id="system-architecture"></section>
+| 4 | ★★★★★ | Must-read baseline for what "auto research" means |
+| 5 | ★★★★★ | Must-read if you care about open-ended search and branching |
+| 6 | ★★★★★ | Must-read if you want something closer to real human workflows |
+| 7 | ★★★★☆ | Highly recommended for framework thinking and productization |
+| 8 | ★★★★☆ | Highly recommended for autonomous R&D and execution-heavy loops |
+| 9 | ★★★★☆ | Best bridge from deep-research products to fuller research agents |
+| 10 | ★★★★★ | Must-read for the learning / evolving-scientist direction |
 
 ## Architecture Comparison
 
-| Dimension | AI Scientist | AI Scientist-v2 | Agent Laboratory | SWE-agent | OpenHands | EvoScientist |
-|---|---|---|---|---|---|---|
-| Autonomy | Fully automatic | Fully automatic (stronger search) | Human-in-the-loop | Fully automatic | Fully automatic / interactive | Fully automatic (self-evolving) |
-| Search strategy | Linear pipeline | Agentic tree search | Human-guided | ACI-driven | Multi-strategy | Evolution-driven |
-| Output level | Paper-level (preliminary) | Workshop-level | Research assistant | Code patch | Code + PR | Paper-level (evolved) |
-| Best for | Proof of concept | Autonomous exploration | Real research collaboration | Code-intensive research | General research engineering | Continuous improvement |
-| Code execution | Built-in | Built-in | Built-in | Sandbox | Docker Sandbox | Built-in |
-| Open-source | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Dimension | AI Scientist | AI Scientist-v2 | Agent Laboratory | AI-Researcher | RD-Agent | Auto-Deep-Research | EvoScientist |
+|---|---|---|---|---|---|---|---|
+| Autonomy | High | Very high | Medium | High | High | Medium-High | Very high |
+| Human-in-the-loop | Minimal | Minimal | Explicit | Optional | Optional | Optional | Minimal |
+| Core search strategy | Linear staged workflow | Agentic tree search | Human-guided iteration | Multi-stage orchestration | R&D loop orchestration | Search + retrieval + synthesis | Evolution and memory |
+| Execution substrate dependence | Built-in | Built-in | Built-in | High | High | Medium | High |
+| Best output | End-to-end research artifact | Stronger branching exploration | Practical assistant-style support | Reusable research workflow | Autonomous data-science / R&D results | Grounded research report | Improving scientist workflow |
+| Benchmark relevance | ScienceAgentBench-style eval | FIRE-Bench / SGI-Bench style eval | Human collaboration studies | Framework and orchestration comparisons | RE-Bench / MLE-bench-adjacent eval | Deep-research quality eval | Scientist-aligned process eval |
+| Open-source | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-<section id="system-repos"></section>
+## Execution Substrates
 
-## Code Repositories
+These are not always "research systems" by themselves, but they increasingly function as the lower layer that research systems rely on.
 
-| Project | Link | Description |
+| Project | Link | Why it matters here |
 |---|---|---|
-| The AI Scientist (Sakana AI) | [GitHub](https://github.com/SakanaAI/AI-Scientist) | Official open-source implementation |
-| Agent Laboratory | [GitHub](https://github.com/SamuelSchmidgall/AgentLaboratory) | Official repository |
-| SWE-agent | [GitHub](https://github.com/princeton-nlp/SWE-agent) | Princeton's official implementation |
-| OpenHands | [GitHub](https://github.com/All-Hands-AI/OpenHands) | Open-source full-stack agent platform |
-| EvoScientist | [GitHub](https://github.com/EvoScientist/EvoScientist) | Self-evolving AI scientist framework |
-
-<section id="system-reading-tips"></section>
-
-## Reading Tips
-
-1. **Paper #4 (AI Scientist)** is the best entry point — understand what "end-to-end" means before looking at improvements.
-2. **Paper #5** and **#4** are best read together — focus on what tree search brings as new capability.
-3. **Paper #6** is for readers who want to "build things" — its human-in-the-loop design is closest to real research usage.
-4. **Papers #7 (SWE-agent)** and **#8 (OpenHands)** focus on code execution, suited for the Builder track. Their open-source implementations can directly serve as base components.
-5. **Paper #9 (EvoScientist)** is the latest advance — its self-evolution and persistent memory approach represents the next frontier.
-
-<section id="system-extended"></section>
+| OpenHands | [GitHub](https://github.com/All-Hands-AI/OpenHands) | General open-source execution substrate for coding and environment interaction |
+| SWE-agent | [GitHub](https://github.com/princeton-nlp/SWE-agent) | Strong reference for agent-computer interaction and reliable repo workflows |
+| Claude Code | [Docs](https://docs.anthropic.com/en/docs/claude-code/overview) | Terminal-native coding agent with approval and repo controls |
+| Codex | [GitHub](https://github.com/openai/codex) | OpenAI execution layer for local and cloud coding tasks |
+| OpenClaw | [GitHub](https://github.com/openclaw/openclaw) | Assistant substrate that can host research-oriented Claw variants and plugin surfaces |
 
 ## Extended Reading
 
 | Resource | Link | Description |
 |---|---|---|
-| FutureHouse Platform | [Website](https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents?_bhlid=b2b50af9254da4cf97bbad70959795fa728b14f6) | Public platform surface for specialized scientific agents |
-| Robin | [Announcement](https://www.futurehouse.org/research-announcements/demonstrating-end-to-end-scientific-discovery-with-robin-a-multi-agent-system) | FutureHouse multi-agent scientific discovery demo and announcement |
-| BixBench | [Announcement](https://www.futurehouse.org/research-announcements/bixbench) | Benchmark signal for more realistic bioinformatics-style agent evaluation |
-| Edison Scientific / Kosmos | [Website](https://edisonscientific.com/) · [Kosmos](https://edisonscientific.com/articles/announcing-kosmos) | Commercial platformization of AI-scientist workflows |
-| MLAgentBench | [arXiv](https://arxiv.org/abs/2310.03302) | Benchmark for LLM agent ML experimentation |
-| MetaGPT | [GitHub](https://github.com/geekan/MetaGPT) | Multi-agent software development framework with Data Interpreter |
-| Aider | [GitHub](https://github.com/paul-gauthier/aider) | CLI AI programming assistant with multi-file editing |
+| Toward end-to-end automation of AI research | [Nature](https://www.nature.com/articles/s41586-026-09511-4) | Perspective on how the system layer is changing and where the remaining gaps are |
+| FutureHouse Platform | [Announcement](https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents?_bhlid=b2b50af9254da4cf97bbad70959795fa728b14f6) | Public platform surface for specialized scientific agents |
+| Robin | [Announcement](https://www.futurehouse.org/research-announcements/demonstrating-end-to-end-scientific-discovery-with-robin-a-multi-agent-system) | Multi-agent scientific discovery signal with stronger real-workflow claims |
+| BixBench | [Announcement](https://www.futurehouse.org/research-announcements/bixbench) | Benchmark productization signal for the platform layer |
+| Edison Scientific / Kosmos | [Website](https://edisonscientific.com/) · [Kosmos](https://edisonscientific.com/articles/announcing-kosmos) | Commercial platformization of AI-scientist ideas |
+
+## Reading Tips
+
+1. Start with **The AI Scientist** if you want the cleanest mental model of end-to-end automation.
+2. Read **Agent Laboratory** next if you want a more realistic and collaborative system design.
+3. Read **The AI Scientist-v2** after that to see what stronger search adds.
+4. Use **AI-Researcher**, **RD-Agent**, and **Auto-Deep-Research** to understand why frameworks and orchestration matter now.
+5. Finish with **EvoScientist** if you care about persistent memory, evolution, and continual improvement.
 
 ---
 

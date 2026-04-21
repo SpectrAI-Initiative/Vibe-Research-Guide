@@ -2,6 +2,15 @@
 
 All notable updates to this guide are documented in this file.
 
+## 2026-04-21
+
+- Added a dedicated `topics/auto-research.md` core guide to map the `AI Scientist / Auto Research` stack across papers, systems, benchmarks, frameworks, execution substrates, and platform signals.
+- Reweighted `README.md` back toward a stronger `Vibe Research` center, including new sections for `2026 Auto Research Signals`, `Auto Research Stack`, representative systems, and benchmark framing.
+- Refreshed `topics/systems.md` around system families such as `AI Scientist`, `AI Scientist-v2`, `Agent Laboratory`, `AI-Researcher`, `RD-Agent`, `Auto-Deep-Research`, and `EvoScientist`.
+- Refreshed `topics/surveys.md` and `topics/benchmarks.md` to better reflect scientific-method framing, scientist-aligned workflows, and newer benchmark signals such as `ResearchClawBench` and `SGI-Bench`.
+- Updated `topics/tools.md` with an `Auto Research Frameworks & Platforms` section and stronger separation between platforms, frameworks, execution substrates, and evaluation signals.
+- Synced the interactive landing page data in `files/index-translations.js` so `Auto Research` appears as a core guide and the featured-project list reflects the stronger research-first taxonomy.
+
 ## 2026-04-15
 
 - Reframed `README.md` so `Vibe Research` stays the center while the broader agent-native landscape now appears explicitly around it.

@@ -20,6 +20,21 @@ Agent systems and platforms purpose-built for automated scientific research:
 | **FutureHouse Platform** | Scientific agent platform | [Website](https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents?_bhlid=b2b50af9254da4cf97bbad70959795fa728b14f6) | Public platform for specialized science agents and API-style workflows |
 | **Edison Scientific** | AI scientist platform for R&D teams | [Website](https://edisonscientific.com/) · [Kosmos](https://edisonscientific.com/articles/announcing-kosmos) | Commercial scientific-discovery platform with private-data and enterprise workflow focus |
 
+## Auto Research Frameworks & Platforms
+
+These are the projects that matter most if you want to move from "research assistant" to "research operator" without treating every flagship paper as a one-off demo.
+
+| Project | Role | Link | Why it matters |
+|---|---|---|---|
+| **The AI Scientist** | End-to-end auto-research baseline | [GitHub](https://github.com/SakanaAI/AI-Scientist) · [arXiv](https://arxiv.org/abs/2408.06292) | Best reference for the classic idea → experiment → report loop |
+| **The AI Scientist-v2** | Search-heavy AI scientist | [GitHub](https://github.com/SakanaAI/AI-Scientist-v2) · [arXiv](https://arxiv.org/abs/2504.08066) | Strongest current signal for agentic tree search in scientific discovery |
+| **Agent Laboratory** | Human-in-the-loop research assistant system | [GitHub](https://github.com/SamuelSchmidgall/AgentLaboratory) · [arXiv](https://arxiv.org/abs/2501.04227) | Good default mental model when you want collaboration, not maximum autonomy |
+| **AI-Researcher** | Auto-research orchestration framework | [GitHub](https://github.com/HKUDS/AI-Researcher) · [arXiv](https://arxiv.org/abs/2505.18705) | Shows how research workflows are becoming reusable framework layers |
+| **RD-Agent** | Autonomous R&D / data-science framework | [GitHub](https://github.com/microsoft/RD-Agent) · [arXiv](https://arxiv.org/abs/2505.14738) | Useful when implementation and evaluation loops matter as much as ideation |
+| **Auto-Deep-Research** | Retrieval-heavy multi-step research framework | [GitHub](https://github.com/HKUDS/Auto-Deep-Research) · [arXiv](https://arxiv.org/abs/2502.05957) | Good bridge from Deep Research products to fuller Auto Research systems |
+| **ResearchClawBench** | Research-agent benchmark / harness signal | [GitHub](https://github.com/InternScience/ResearchClawBench) | High-signal benchmark-facing repo for autonomous scientific research workflows |
+| **EvoScientist** | Self-evolving AI scientist | [GitHub](https://github.com/EvoScientist/EvoScientist) · [arXiv](https://arxiv.org/abs/2603.08127) | Strong learning-layer signal inside the auto-research stack |
+
 ### Related Claw Ecosystem Projects & Infrastructure
 
 | Project | Focus | Link | Highlights |
@@ -125,7 +140,7 @@ The stack is no longer just "pick an agent." A new layer of bridges, plugin surf
 | Perplexity Deep Research | [website](https://www.perplexity.ai/) | Free, academic focus mode, multi-source synthesis | Free |
 | Prism | [website](https://openai.com/prism/) | Scientific writing workspace for paper drafting, citations, and LaTeX-heavy workflows | Free |
 
-## AI Scientist Platforms & Current Signals
+## Auto Research Platform Signals
 
 One of the clearest 2026 shifts is that AI-scientist systems are no longer only papers or repos. They are becoming public platforms, products, and applied benchmarks.
 
@@ -135,6 +150,18 @@ One of the clearest 2026 shifts is that AI-scientist systems are no longer only 
 | **Robin** | [Announcement](https://www.futurehouse.org/research-announcements/demonstrating-end-to-end-scientific-discovery-with-robin-a-multi-agent-system) | High-signal end-to-end demonstration of multi-agent scientific discovery and validated wet-lab-style workflow claims |
 | **BixBench** | [Announcement](https://www.futurehouse.org/research-announcements/bixbench) | Signals that more realistic, domain-specific benchmarks are becoming central to evaluating research agents |
 | **Edison Scientific / Kosmos** | [Website](https://edisonscientific.com/) · [Kosmos](https://edisonscientific.com/articles/announcing-kosmos) | Shows how AI-scientist ideas are being packaged into persistent scientific-discovery platforms for real R&D teams |
+
+## Auto Research Evaluation Signals
+
+If you are selecting tools or frameworks for serious use, evaluation resources now matter almost as much as the systems themselves.
+
+| Resource | Link | What it adds | Why it matters |
+|---|---|---|---|
+| **ScienceAgentBench** | [arXiv](https://arxiv.org/abs/2410.05080) · [GitHub](https://github.com/OSU-NLP-Group/ScienceAgentBench) | Scientific-discovery benchmark with grounded tasks | Good baseline for evaluating research-agent realism |
+| **FIRE-Bench** | [arXiv](https://arxiv.org/abs/2602.02905) · [Website](https://firebench.github.io/) | Rediscovery benchmark | Best current framing for verifiable scientific rediscovery |
+| **ResearchClawBench** | [GitHub](https://github.com/InternScience/ResearchClawBench) | Agentic scientific-research benchmark signal | Useful when you care about workflow-level evaluation rather than only model scores |
+| **SGI-Bench** | [arXiv](https://arxiv.org/abs/2512.16969) | Scientist-aligned workflow evaluation | Helps separate scientist-like process quality from generic reasoning strength |
+| **RE-Bench** | [arXiv](https://arxiv.org/abs/2411.15671) · [GitHub](https://github.com/METR/RE-Bench) | Expert-compared R&D evaluation | Useful for reality-checking autonomous R&D claims |
 
 ## Learning, RL & Self-Evolving Agents
 
@@ -225,9 +252,14 @@ Broader framing: [→ Vibe Anything](./vibe-anything.md)
 | What you want to do | Recommended |
 |---|---|
 | **Quick Vibe Research demo** | Elicit + NotebookLM (zero-code) |
+| **Need the fastest overview of the AI Scientist stack** | [Auto Research](./auto-research.md) + The AI Scientist + Agent Laboratory |
 | **Deploy a personal Research Agent** | InnoClaw or ResearchClaw |
+| **Need a reusable Auto Research framework** | AI-Researcher or Auto-Deep-Research |
+| **Need autonomous R&D / data-science execution** | RD-Agent |
 | **Need a public science-agent platform** | FutureHouse Platform |
 | **Need a commercial AI-scientist platform for team workflows** | Edison Scientific / Kosmos |
+| **Need scientist-aligned benchmark signals** | ScienceAgentBench or FIRE-Bench |
+| **Need a workflow-centric research benchmark** | ResearchClawBench or SGI-Bench |
 | **Operate agents from team chat** | cc-connect |
 | **Scout new connectors quickly** | MCP Registry or awesome-mcp-servers |
 | **Literature RAG Q&A** | PaperQA2 |

@@ -28,9 +28,9 @@
 
 Automate the research loop with LLM agents: literature review → idea generation → experiment execution → paper writing → peer review.
 
-This repo is a **research-first landing page for the field**: use it to choose the right track, then move into the topic pages for detail. The center is still Vibe Research, but the map now also tracks personal assistants, agent-native software layers, and companion apps around that core.
+This repo is a **research-first landing page for the field**. The center is still Vibe Research, but the guide now gives `Auto Research / AI Scientist` its own top-level map and then places Claw, coding agents, connectors, and adjacent assistant ecosystems around that core.
 
-**Start here**: [Getting Started](./topics/getting-started.md) · [Tools & Platforms](./topics/tools.md) · [Claw Park](./topics/claw-park.md) · [Vibe Coding](./topics/vibe-coding.md)
+**Start here**: [Getting Started](./topics/getting-started.md) · [Auto Research](./topics/auto-research.md) · [Tools & Platforms](./topics/tools.md) · [Claw Park](./topics/claw-park.md)
 
 </div>
 
@@ -60,27 +60,25 @@ This repo is a **research-first landing page for the field**: use it to choose t
 
 ## 2026 Landscape Snapshot
 
-Five trends are now shaping the field:
+Five shifts now define the field:
 
-1. **Research copilots are getting stronger**: Deep Research products, NotebookLM-style source-grounded reading, and scientific workspaces such as Prism are making literature synthesis and report writing much faster.
-2. **Autonomous research systems are maturing**: AI Scientist-v2, Agent Laboratory, and EvoScientist push the field from "paper summary bots" toward iterative ideation, execution, and evaluation.
-3. **Research is no longer isolated from the personal-agent wave**: OpenClaw, Hermes Agent, Goose, Khoj, and AnythingLLM show how research workflows increasingly sit next to messaging-native, knowledge-native, and workspace-native personal assistants.
-4. **Agent-native software layers are becoming real infrastructure**: CLI-Anything, MCP registries, chat bridges, skills, and plugin registries are turning existing tools and software surfaces into agent-operable environments.
-5. **Learning layers and companion UX are both accelerating**: self-evolving stacks such as Agent Lightning and AgentEvolver matter more, but so do approval, monitoring, and jump-back interfaces such as Vibe Island and xisland around long-running coding agents.
-
-This guide keeps **Vibe Research** as the core topic, then adds adjacent sections for the broader **agent-native landscape** so the repo can expand without losing scope.
+1. **Research copilots are stronger and easier to trust**: Deep Research, NotebookLM-style source-grounded reading, and scientific workspaces such as Prism are making synthesis and report-writing meaningfully faster.
+2. **Auto Research is becoming a recognizable system category**: [The AI Scientist](https://arxiv.org/abs/2408.06292), [The AI Scientist-v2](https://arxiv.org/abs/2504.08066), [Agent Laboratory](https://arxiv.org/abs/2501.04227), [AI-Researcher](https://github.com/HKUDS/AI-Researcher), [RD-Agent](https://github.com/microsoft/RD-Agent), [Auto-Deep-Research](https://github.com/HKUDS/Auto-Deep-Research), and [EvoScientist](https://arxiv.org/abs/2603.08127) now form a real system family.
+3. **Benchmarks are getting closer to scientific reality**: [ScienceAgentBench](https://arxiv.org/abs/2410.05080), [FIRE-Bench](https://arxiv.org/abs/2602.02905), [ResearchClawBench](https://github.com/InternScience/ResearchClawBench), [SGI-Bench](https://arxiv.org/abs/2512.16969), and [RE-Bench](https://arxiv.org/abs/2411.15671) shift evaluation away from vague "agent capability" claims.
+4. **Execution substrates now determine whether research agents actually work**: Claude Code, Codex, OpenHands, SWE-agent, OpenClaw, and chat bridges such as cc-connect increasingly matter because experiment loops fail on tooling long before they fail on prose.
+5. **A wider agent-native ecosystem is forming around research**: personal assistants, registries, skills, self-evolving stacks, and companion UX are increasingly part of the same operational environment.
 
 ---
 
-## 2026 Spring Signals
+## 2026 Auto Research Signals
 
-Several current signals make the field feel less like a loose collection of demos and more like an emerging stack:
+Several current signals make the field feel less like a loose collection of demos and more like an emerging research stack:
 
-1. **Research is still the center, but no longer the whole map**: the most useful way to read the field now is research core plus adjacent assistant, software-surface, learning, and companion-UX layers.
-2. **Personal agent assistants are converging with research workflows**: [OpenClaw](https://docs.openclaw.ai/), [Hermes Agent](https://github.com/NousResearch/Hermes-Agent), [Goose](https://github.com/block/goose), [Khoj](https://github.com/khoj-ai/khoj), and [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) show how long-running assistants, personal memory, and local-first agent shells are becoming normal infrastructure around research and coding work.
-3. **Agent-native software and harness layers are emerging fast**: [CLI-Anything](https://github.com/HKUDS/CLI-Anything) turns software into agent-operable CLI surfaces, while MCP registries, [cc-connect](https://github.com/chenhg5/cc-connect), [anthropics/skills](https://github.com/anthropics/skills), and [ClawHub](https://docs.openclaw.ai/tools/clawhub) make capabilities more installable and portable.
-4. **Learning and RL remain a first-class layer**: [Agent Lightning](https://github.com/microsoft/agent-lightning), [Agent0](https://github.com/aiming-lab/Agent0), [AgentEvolver](https://github.com/modelscope/AgentEvolver), [EvoAgentX](https://github.com/EvoAgentX/EvoAgentX), and [Acontext](https://github.com/memodb-io/Acontext) keep pushing the field from tool use toward agent improvement.
-5. **Companion apps are becoming their own category**: [Vibe Island](https://vibeisland.app/), [xisland](https://xisland.app/), and projects such as [Crush](https://github.com/charmbracelet/crush) show that coding-agent UX is no longer just terminal UI, but also monitoring, approval, and agent-ops surface design.
+1. **The field has moved from "can an agent summarize papers?" to "can an agent operate a research loop?"**
+2. **System families are diverging clearly**: end-to-end scientists, human-in-the-loop research copilots, R&D execution agents, deep-research assistants, and self-evolving scientist stacks now look meaningfully different.
+3. **Benchmarking is improving fast**: scientist-aligned workflows, rediscovery tasks, expert comparison, and checklist-based evaluation are becoming standard expectations instead of afterthoughts.
+4. **Frameworks matter as much as flagship demos**: AI-Researcher, RD-Agent, and Auto-Deep-Research show that orchestration and harness design are now first-class concerns.
+5. **Platformization is visible**: FutureHouse Platform, Robin, BixBench, and Edison Scientific / Kosmos show how AI-scientist ideas are moving from one-off papers to persistent public or commercial surfaces.
 
 ---
 
@@ -91,24 +89,24 @@ Several current signals make the field feel less like a loose collection of demo
     <td width="50%">
       <strong>🟢 New to Vibe Research</strong><br><br>
       Start: <a href="./topics/getting-started.md">Getting Started</a><br>
-      Then: <a href="./topics/tools.md">Tools & Platforms</a>
+      Then: <a href="./topics/auto-research.md">Auto Research</a> · <a href="./topics/tools.md">Tools & Platforms</a>
     </td>
     <td width="50%">
       <strong>🔵 Developer / Builder</strong><br><br>
-      Start: <a href="./topics/tools.md">Tools & Platforms</a><br>
-      Then: <a href="./topics/vibe-coding.md">Vibe Coding</a> · <a href="./topics/systems.md">Systems</a> · <a href="./topics/experiment.md">Experiment</a>
+      Start: <a href="./topics/auto-research.md">Auto Research</a><br>
+      Then: <a href="./topics/tools.md">Tools & Platforms</a> · <a href="./topics/vibe-coding.md">Vibe Coding</a> · <a href="./topics/systems.md">Systems</a>
     </td>
   </tr>
   <tr>
     <td width="50%">
       <strong>🔴 Researcher</strong><br><br>
       Start: <a href="./topics/surveys.md">Surveys</a><br>
-      Then: <a href="./topics/ideation.md">Ideation</a> · <a href="./topics/benchmarks.md">Benchmarks</a>
+      Then: <a href="./topics/auto-research.md">Auto Research</a> · <a href="./topics/benchmarks.md">Benchmarks</a> · <a href="./topics/ideation.md">Ideation</a>
     </td>
     <td width="50%">
       <strong>🟣 Creator / Operator</strong><br><br>
-      Start: <a href="./topics/vibe-anything.md">Vibe Anything</a><br>
-      Then: <a href="./topics/vibe-coding.md">Vibe Coding</a> · <a href="./topics/tools.md">Tools & Platforms</a>
+      Start: <a href="./topics/tools.md">Tools & Platforms</a><br>
+      Then: <a href="./topics/vibe-coding.md">Vibe Coding</a> · <a href="./topics/vibe-anything.md">Vibe Anything</a>
     </td>
   </tr>
 </table>
@@ -117,9 +115,52 @@ Several current signals make the field feel less like a loose collection of demo
 
 ---
 
+## Auto Research Stack
+
+This is the shortest useful way to read the field in 2026:
+
+| Layer | Representative resources | Why it matters |
+|---|---|---|
+| **Research copilots** | [Deep Research](https://openai.com/index/introducing-deep-research/) · [NotebookLM](https://notebooklm.google/) · [Prism](https://openai.com/prism/) | Best entry point for synthesis, reading, and report generation |
+| **Auto Research systems** | [The AI Scientist](https://arxiv.org/abs/2408.06292) · [The AI Scientist-v2](https://arxiv.org/abs/2504.08066) · [Agent Laboratory](https://arxiv.org/abs/2501.04227) · [EvoScientist](https://arxiv.org/abs/2603.08127) | Defines what end-to-end or near-end-to-end research automation looks like |
+| **Orchestration frameworks** | [AI-Researcher](https://github.com/HKUDS/AI-Researcher) · [RD-Agent](https://github.com/microsoft/RD-Agent) · [Auto-Deep-Research](https://github.com/HKUDS/Auto-Deep-Research) | Shows the framework layer growing around research loops, not only one-off papers |
+| **Benchmarks & scientist-aligned eval** | [ScienceAgentBench](https://arxiv.org/abs/2410.05080) · [FIRE-Bench](https://arxiv.org/abs/2602.02905) · [ResearchClawBench](https://github.com/InternScience/ResearchClawBench) · [SGI-Bench](https://arxiv.org/abs/2512.16969) · [RE-Bench](https://arxiv.org/abs/2411.15671) | Keeps the field grounded in rediscovery, expert comparison, and workflow realism |
+| **Execution substrate** | [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) · [Codex](https://github.com/openai/codex) · [OpenHands](https://github.com/All-Hands-AI/OpenHands) · [SWE-agent](https://github.com/princeton-nlp/SWE-agent) · [OpenClaw](https://github.com/openclaw/openclaw) | Most research-agent failures now happen here: tool use, code execution, environment control, and iteration |
+| **Platform signals** | [FutureHouse Platform](https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents?_bhlid=b2b50af9254da4cf97bbad70959795fa728b14f6) · [Robin](https://www.futurehouse.org/research-announcements/demonstrating-end-to-end-scientific-discovery-with-robin-a-multi-agent-system) · [Edison Scientific](https://edisonscientific.com/) | Shows the move from repos and papers toward durable product surfaces |
+
+For a dedicated overview, start here: [→ Auto Research](./topics/auto-research.md)
+
+---
+
+## Representative Auto Research Systems
+
+| Family | Representative resources | What it optimizes for |
+|---|---|---|
+| **End-to-end AI scientist** | [The AI Scientist](https://github.com/SakanaAI/AI-Scientist) · [The AI Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) | Idea generation, experiment execution, and paper/report production |
+| **Human-in-the-loop research copilot** | [Agent Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) | Collaboration and controllable research assistance |
+| **Research orchestration framework** | [AI-Researcher](https://github.com/HKUDS/AI-Researcher) · [Auto-Deep-Research](https://github.com/HKUDS/Auto-Deep-Research) | Search, synthesis, and multi-stage research workflow control |
+| **Autonomous R&D / data science** | [RD-Agent](https://github.com/microsoft/RD-Agent) | Real implementation loops, evaluation, and applied experimentation |
+| **Self-evolving scientist** | [EvoScientist](https://github.com/EvoScientist/EvoScientist) | Memory, iteration, and continual improvement of the research process itself |
+
+---
+
+## Auto Research Benchmarks
+
+| Benchmark | What it measures | Why it matters |
+|---|---|---|
+| [ScienceAgentBench](https://arxiv.org/abs/2410.05080) | Scientific discovery tasks with grounded evaluation | One of the clearest early attempts to benchmark real research-agent capability |
+| [FIRE-Bench](https://arxiv.org/abs/2602.02905) | Rediscovery of known scientific insights | Makes "can the system rediscover something real?" a first-class metric |
+| [ResearchClawBench](https://github.com/InternScience/ResearchClawBench) | Autonomous research from rediscovery to new-discovery | Strong recent signal that agentic research-workspace evaluation is becoming more realistic |
+| [SGI-Bench](https://arxiv.org/abs/2512.16969) | Scientist-aligned workflows and scientific general intelligence | Separates scientist-like process quality from generic language-model fluency |
+| [RE-Bench](https://arxiv.org/abs/2411.15671) | Frontier AI R&D against human experts | Useful reality check for how far autonomous R&D actually is from human performance |
+
+More detail: [→ Benchmarks](./topics/benchmarks.md)
+
+---
+
 ## Agent-Native Landscape Beyond Research
 
-`Vibe Research` remains the center of this repo. But in practice, the field now sits inside a larger agent-native landscape: personal assistants, software-surface layers, self-improving agents, and companion UX around coding agents.
+`Vibe Research` remains the center of this repo. But in practice, research agents now live inside a larger operating environment: personal assistants, software-surface layers, self-improving agents, and companion UX around coding agents.
 
 ### Personal Agent Assistants
 
@@ -196,13 +237,15 @@ Full map: [→ Claw Park](./topics/claw-park.md)
 | Layer | Representative projects | Why it matters |
 |---|---|---|
 | **Research copilots** | [OpenAI Deep Research](https://openai.com/index/introducing-deep-research/) · [Gemini Deep Research](https://blog.google/products/gemini/google-gemini-deep-research/) · [NotebookLM](https://notebooklm.google/) · [Prism](https://openai.com/prism/) | Fast literature synthesis, source-grounded reading, and scientific writing assistance |
-| **Research systems** | [InnoClaw](https://github.com/SpectrAI-Initiative/InnoClaw) · [ResearchClaw](https://github.com/ymx10086/ResearchClaw) · [FARS](https://github.com/fars-analemma) · [AI Scientist](https://github.com/SakanaAI/AI-Scientist) · [Agent Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) · [EvoScientist](https://github.com/EvoScientist/EvoScientist) | End-to-end research assistance, automation, and experiment execution |
+| **Auto Research systems** | [The AI Scientist](https://github.com/SakanaAI/AI-Scientist) · [The AI Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) · [Agent Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) · [AI-Researcher](https://github.com/HKUDS/AI-Researcher) · [RD-Agent](https://github.com/microsoft/RD-Agent) · [Auto-Deep-Research](https://github.com/HKUDS/Auto-Deep-Research) · [EvoScientist](https://github.com/EvoScientist/EvoScientist) | The current system family for automating or orchestrating meaningful parts of the research loop |
+| **Scientist-aligned benchmarks** | [ScienceAgentBench](https://github.com/OSU-NLP-Group/ScienceAgentBench) · [FIRE-Bench](https://firebench.github.io/) · [ResearchClawBench](https://github.com/InternScience/ResearchClawBench) · [SGI-Bench](https://arxiv.org/abs/2512.16969) · [RE-Bench](https://github.com/METR/RE-Bench) | Keeps the field grounded in rediscovery, expert comparison, and research-workflow realism |
 | **AI scientist platforms** | [FutureHouse Platform](https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents?_bhlid=b2b50af9254da4cf97bbad70959795fa728b14f6) · [Robin](https://www.futurehouse.org/research-announcements/demonstrating-end-to-end-scientific-discovery-with-robin-a-multi-agent-system) · [Edison Scientific](https://edisonscientific.com/) · [Kosmos](https://edisonscientific.com/articles/announcing-kosmos) | Shows the field moving from paper demos to persistent web/API platforms and validated scientific workflows |
-| **Personal agent assistants** | [OpenClaw](https://github.com/openclaw/openclaw) · [Hermes Agent](https://github.com/NousResearch/Hermes-Agent) · [Goose](https://github.com/block/goose) · [Khoj](https://github.com/khoj-ai/khoj) · [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) | Shows the wider assistant layer surrounding research: messaging-native, dev-native, knowledge-native, and workspace-native agents |
-| **Agent-native software / harnesses** | [CLI-Anything](https://github.com/HKUDS/CLI-Anything) · [cc-connect](https://github.com/chenhg5/cc-connect) · [Official MCP Registry](https://modelcontextprotocol.io/registry/about) · [anthropics/skills](https://github.com/anthropics/skills) | Shows how software surfaces, registries, and skills are becoming agent-operable infrastructure |
+| **Research workspaces** | [InnoClaw](https://github.com/SpectrAI-Initiative/InnoClaw) · [ResearchClaw](https://github.com/ymx10086/ResearchClaw) · [FARS](https://github.com/fars-analemma) · [OpenClaw](https://github.com/openclaw/openclaw) | Workspaces and assistant shells that keep papers, files, notes, code, and local execution in one loop |
 | **Learning / self-evolving layer** | [Agent Lightning](https://github.com/microsoft/agent-lightning) · [Agent0](https://github.com/aiming-lab/Agent0) · [AgentEvolver](https://github.com/modelscope/AgentEvolver) · [EvoAgentX](https://github.com/EvoAgentX/EvoAgentX) · [Acontext](https://github.com/memodb-io/Acontext) | Turns agent training, self-generated data, evolving workflows, and persistent skill/context memory into a real stack layer |
+| **Agent-native software / harnesses** | [CLI-Anything](https://github.com/HKUDS/CLI-Anything) · [cc-connect](https://github.com/chenhg5/cc-connect) · [Official MCP Registry](https://modelcontextprotocol.io/registry/about) · [anthropics/skills](https://github.com/anthropics/skills) | Shows how software surfaces, registries, and skills are becoming agent-operable infrastructure |
 | **Claw ecosystem** | [OpenClaw](https://github.com/openclaw/openclaw) · [ClawHub](https://github.com/openclaw/clawhub) · [OpenClaw Plugin Bundles](https://docs.openclaw.ai/plugins/bundles) · [nix-openclaw](https://github.com/openclaw/nix-openclaw) · [InnoClaw](https://github.com/SpectrAI-Initiative/InnoClaw) · [ResearchClaw](https://github.com/ymx10086/ResearchClaw) · [ScienceClaw](https://github.com/beita6969/ScienceClaw) · [MetaClaw](https://github.com/aiming-lab/MetaClaw) · [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | Gateway, registry, compatibility, deployment, research workspaces, scientific specialization, online learning, and autonomous pipelines |
 | **Execution layer** | [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) · [Codex](https://github.com/openai/codex) · [Cursor Background Agents](https://docs.cursor.com/en/background-agent) · [GitHub Copilot Coding Agent](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent) | The coding and repo workflow layer that increasingly powers research execution |
+| **Personal agent assistants** | [Hermes Agent](https://github.com/NousResearch/Hermes-Agent) · [Goose](https://github.com/block/goose) · [Khoj](https://github.com/khoj-ai/khoj) · [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) | Shows the wider assistant layer surrounding research: messaging-native, dev-native, knowledge-native, and workspace-native agents |
 | **Companion apps / coding UX** | [Crush](https://github.com/charmbracelet/crush) · [Vibe Island](https://vibeisland.app/) · [xisland](https://xisland.app/) | Shows the monitoring, approval, and session-jump UX layer forming around long-running coding agents |
 | **Adjacent prompt-native tools** | [v0](https://v0.dev/docs) · [Lovable](https://docs.lovable.dev/) · [Replit Agent](https://docs.replit.com/replitai/agent) | Useful for prototyping, but not the core of Vibe Research |
 
@@ -242,22 +285,23 @@ More detailed map: [→ Tools & Platforms](./topics/tools.md)
 | Topic | Description | Link |
 |---|---|---|
 | 🚀 **Getting Started** | 5-min demo → 30-min agent deployment → full automation | [→ Getting Started](./topics/getting-started.md) |
+| 🔬 **Auto Research** | Map the AI Scientist stack across papers, systems, benchmarks, frameworks, and platform signals | [→ Auto Research](./topics/auto-research.md) |
 | 🧰 **Tools & Platforms** | Core research platforms plus assistant, connector, and software-surface layers | [→ Tools & Platforms](./topics/tools.md) |
 | 🦞 **Claw Park** | Ecosystem map for what each Claw project is building and where it fits | [→ Claw Park](./topics/claw-park.md) |
 | 💻 **Vibe Coding** | Terminal agents, coding agents, companion apps, and repo guardrails | [→ Vibe Coding](./topics/vibe-coding.md) |
 | 🎨 **Vibe Anything** | Adjacent prompt-native workflows for apps, design, writing, slides, and ops | [→ Vibe Anything](./topics/vibe-anything.md) |
 
-### Research Topics (35+ papers)
+### Research Topics (39+ papers)
 
 | Topic | Core Question | Papers | Link |
 |---|---|---|---|
-| 📄 **Surveys** | Landscape & evolution of the field | 5 | [→ Surveys](./topics/surveys.md) |
-| ⚙️ **Systems** | How to design end-to-end research systems | 6 | [→ Systems](./topics/systems.md) |
+| 📄 **Surveys** | Landscape, scientific-method framing, and evolution of the field | 6 | [→ Surveys](./topics/surveys.md) |
+| ⚙️ **Systems** | How to design end-to-end research systems | 7 | [→ Systems](./topics/systems.md) |
 | 💡 **Ideation** | Can LLMs generate novel ideas | 6 | [→ Ideation](./topics/ideation.md) |
 | 📚 **Synthesis** | How to synthesize literature at scale | 5 | [→ Synthesis](./topics/synthesis.md) |
 | 🧪 **Experiment** | How agents automate experiments | 4 | [→ Experiment](./topics/experiment.md) |
 | ✍️ **Writing & Review** | LLM-assisted writing & peer review | 4 | [→ Writing & Review](./topics/writing-review.md) |
-| 📊 **Benchmarks** | How to evaluate research agents | 5 | [→ Benchmarks](./topics/benchmarks.md) |
+| 📊 **Benchmarks** | How to evaluate research agents | 7 | [→ Benchmarks](./topics/benchmarks.md) |
 
 ---
 
@@ -267,7 +311,7 @@ More detailed map: [→ Tools & Platforms](./topics/tools.md)
   <tr>
     <td width="33%">
       <strong>Read The Field</strong><br><br>
-      <a href="./topics/surveys.md">Surveys</a> · <a href="./topics/systems.md">Systems</a> · <a href="./topics/benchmarks.md">Benchmarks</a>
+      <a href="./topics/auto-research.md">Auto Research</a> · <a href="./topics/surveys.md">Surveys</a> · <a href="./topics/systems.md">Systems</a> · <a href="./topics/benchmarks.md">Benchmarks</a>
     </td>
     <td width="33%">
       <strong>Build The Stack</strong><br><br>
@@ -290,7 +334,13 @@ More detailed map: [→ Tools & Platforms](./topics/tools.md)
 
 **Research Core**: [Semantic Scholar](https://www.semanticscholar.org/) · [Elicit](https://elicit.com/) · [Consensus](https://consensus.app/) · [Connected Papers](https://www.connectedpapers.com/)
 
-**AI Scientist Platforms**: [FutureHouse Platform](https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents?_bhlid=b2b50af9254da4cf97bbad70959795fa728b14f6) · [Robin](https://www.futurehouse.org/research-announcements/demonstrating-end-to-end-scientific-discovery-with-robin-a-multi-agent-system) · [Edison Scientific](https://edisonscientific.com/) · [Kosmos](https://edisonscientific.com/articles/announcing-kosmos)
+**Auto Research / AI Scientist**: [The AI Scientist](https://arxiv.org/abs/2408.06292) · [The AI Scientist-v2](https://arxiv.org/abs/2504.08066) · [Agent Laboratory](https://arxiv.org/abs/2501.04227) · [AI-Researcher](https://github.com/HKUDS/AI-Researcher) · [RD-Agent](https://github.com/microsoft/RD-Agent) · [Auto-Deep-Research](https://github.com/HKUDS/Auto-Deep-Research) · [EvoScientist](https://arxiv.org/abs/2603.08127)
+
+**Benchmarks & Evaluation**: [ScienceAgentBench](https://arxiv.org/abs/2410.05080) · [FIRE-Bench](https://arxiv.org/abs/2602.02905) · [ResearchClawBench](https://github.com/InternScience/ResearchClawBench) · [SGI-Bench](https://arxiv.org/abs/2512.16969) · [RE-Bench](https://arxiv.org/abs/2411.15671) · [MLE-bench](https://arxiv.org/abs/2410.07095)
+
+**Scientific-Method Framing**: [From Automation to Autonomy](https://arxiv.org/abs/2505.13259) · [LLM Agents as AI Scientists: A Survey](https://openreview.net/pdf?id=bfdUWy6rUA) · [A Survey of LLM-based Scientific Agents](https://arxiv.org/abs/2503.24047) · [Exploring the role of large language models in the scientific method](https://www.nature.com/articles/s44387-026-00087-1)
+
+**AI Scientist Platforms**: [FutureHouse Platform](https://www.futurehouse.org/research-announcements/launching-futurehouse-platform-ai-agents?_bhlid=b2b50af9254da4cf97bbad70959795fa728b14f6) · [Robin](https://www.futurehouse.org/research-announcements/demonstrating-end-to-end-scientific-discovery-with-robin-a-multi-agent-system) · [BixBench](https://www.futurehouse.org/research-announcements/bixbench) · [Edison Scientific](https://edisonscientific.com/) · [Kosmos](https://edisonscientific.com/articles/announcing-kosmos)
 
 **Personal Agent Assistants**: [OpenClaw](https://docs.openclaw.ai/) · [Hermes Agent](https://github.com/NousResearch/Hermes-Agent) · [Goose](https://github.com/block/goose) · [Khoj](https://github.com/khoj-ai/khoj) · [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm)
 
@@ -339,6 +389,7 @@ Submit resources via [Resource Suggestion](https://github.com/SpectrAI-Initiativ
 <details>
 <summary><b>Changelog</b></summary>
 
+- **2026-04-21**: Added a dedicated `Auto Research` core guide, reweighted the README back toward `Vibe Research`, refreshed `Systems / Surveys / Benchmarks / Tools`, and synced the landing page to the stronger auto-research framing
 - **2026-04-15**: Reframed the README as a research-first but broader agent-native map, adding personal assistants, CLI-Anything / harness layers, and companion coding apps while keeping `Vibe Research` as the center
 - **2026-W17**: Expanded Claw coverage from a short project list into a fuller family map, including ClawHub, Plugin Bundles, nix-openclaw, ResearchClaw Desktop App, and a clearer stack-layer taxonomy
 - **2026-W16**: Added a dedicated learning / RL / self-evolving layer to the guide, including Agent Lightning, Agent0, AgentEvolver, EvoAgentX, Acontext, and Awesome-Self-Evolving-Agents

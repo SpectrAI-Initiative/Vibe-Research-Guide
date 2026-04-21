@@ -9,7 +9,7 @@ const translations = {
       "If you are comparing Claw projects, go straight to Claw Park.",
       "If you care about execution, read Vibe Coding after the main research pages."
     ],
-    heroLabels: ["Getting Started", "Tools & Platforms", "Claw Park", "Vibe Coding"],
+    heroLabels: ["Getting Started", "Auto Research", "Tools & Platforms", "Claw Park"],
     toc: "Table of Contents",
     whatIs: "What is Vibe Research?",
     whatIsDesc: "Vibe Research studies how LLM-based agents can support or automate the research loop: literature review, idea generation, experiment execution, writing, and evaluation.",
@@ -95,6 +95,7 @@ const translations = {
     guideLink: "Link",
     guideTrackLabels: {
       gettingStarted: "Getting Started",
+      autoResearch: "Auto Research",
       tools: "Tools & Platforms",
       clawPark: "Claw Park",
       vibeCoding: "Vibe Coding",
@@ -124,7 +125,7 @@ const translations = {
     featured: "Featured Projects",
     readingModes: "Reading Modes",
     readingModeCards: {
-      field: ["Read The Field", "Surveys · Systems · Benchmarks"],
+      field: ["Read The Field", "Auto Research · Surveys · Systems · Benchmarks"],
       stack: ["Build The Stack", "Tools & Platforms · Claw Park · Vibe Coding"],
       beyond: ["Prototype Beyond Research", "Vibe Anything"]
     },
@@ -149,7 +150,7 @@ const translations = {
       "如果你在比较不同 Claw 项目，直接看 Claw Park。",
       "如果你关心执行层，读完科研主线后再看 Vibe Coding。"
     ],
-    heroLabels: ["入门", "工具与平台", "Claw Park", "Vibe Coding"],
+    heroLabels: ["入门", "Auto Research", "工具与平台", "Claw Park"],
     toc: "目录",
     whatIs: "什么是 Vibe Research？",
     whatIsDesc: "Vibe Research 研究 LLM Agent 如何支持或自动化科研闭环：文献综述、idea 生成、实验执行、论文写作与评测。",
@@ -235,6 +236,7 @@ const translations = {
     guideLink: "链接",
     guideTrackLabels: {
       gettingStarted: "入门",
+      autoResearch: "Auto Research",
       tools: "工具与平台",
       clawPark: "Claw Park",
       vibeCoding: "Vibe Coding",
@@ -264,7 +266,7 @@ const translations = {
     featured: "重点项目",
     readingModes: "阅读模式",
     readingModeCards: {
-      field: ["读懂这个领域", "Surveys · Systems · Benchmarks"],
+      field: ["读懂这个领域", "Auto Research · Surveys · Systems · Benchmarks"],
       stack: ["搭建执行栈", "Tools & Platforms · Claw Park · Vibe Coding"],
       beyond: ["做科研以外的原型", "Vibe Anything"]
     },
@@ -289,7 +291,7 @@ const translations = {
       "Claw 프로젝트를 비교하려면 바로 Claw Park로 가세요.",
       "실행 계층이 중요하다면 연구 메인 페이지 다음에 Vibe Coding을 읽으세요."
     ],
-    heroLabels: ["시작하기", "도구와 플랫폼", "Claw Park", "Vibe Coding"],
+    heroLabels: ["시작하기", "Auto Research", "도구와 플랫폼", "Claw Park"],
     toc: "목차",
     whatIs: "Vibe Research란?",
     whatIsDesc: "Vibe Research는 LLM 에이전트가 문헌 조사, 아이디어 생성, 실험 실행, 글쓰기, 평가 같은 연구 루프를 어떻게 지원하거나 자동화할 수 있는지 다룹니다.",
@@ -368,6 +370,7 @@ const translations = {
     guideLink: "링크",
     guideTrackLabels: {
       gettingStarted: "시작하기",
+      autoResearch: "Auto Research",
       tools: "도구와 플랫폼",
       clawPark: "Claw Park",
       vibeCoding: "Vibe Coding",
@@ -397,7 +400,7 @@ const translations = {
     featured: "주요 프로젝트",
     readingModes: "읽기 모드",
     readingModeCards: {
-      field: ["분야 읽기", "Surveys · Systems · Benchmarks"],
+      field: ["분야 읽기", "Auto Research · Surveys · Systems · Benchmarks"],
       stack: ["스택 구축", "Tools & Platforms · Claw Park · Vibe Coding"],
       beyond: ["연구 밖 프로토타입", "Vibe Anything"]
     },
@@ -422,7 +425,7 @@ const translations = {
       "Claw プロジェクトを比較したいなら、そのまま Claw Park へ進んでください。",
       "実行レイヤーに関心があるなら、研究本編の後に Vibe Coding を読んでください。"
     ],
-    heroLabels: ["はじめに", "ツールとプラットフォーム", "Claw Park", "Vibe Coding"],
+    heroLabels: ["はじめに", "Auto Research", "ツールとプラットフォーム", "Claw Park"],
     toc: "目次",
     whatIs: "Vibe Research とは？",
     whatIsDesc: "Vibe Research は、LLM ベースのエージェントが文献調査、アイデア生成、実験実行、執筆、評価といった研究ループをどのように支援・自動化できるかを扱います。",
@@ -501,6 +504,7 @@ const translations = {
     guideLink: "リンク",
     guideTrackLabels: {
       gettingStarted: "はじめに",
+      autoResearch: "Auto Research",
       tools: "ツールとプラットフォーム",
       clawPark: "Claw Park",
       vibeCoding: "Vibe Coding",
@@ -530,7 +534,7 @@ const translations = {
     featured: "注目プロジェクト",
     readingModes: "読み方のモード",
     readingModeCards: {
-      field: ["分野を読む", "Surveys · Systems · Benchmarks"],
+      field: ["分野を読む", "Auto Research · Surveys · Systems · Benchmarks"],
       stack: ["スタックを作る", "Tools & Platforms · Claw Park · Vibe Coding"],
       beyond: ["研究外を試作する", "Vibe Anything"]
     },
@@ -555,7 +559,7 @@ const translations = {
       "Wenn du Claw-Projekte vergleichen willst, gehe direkt zu Claw Park.",
       "Wenn dich die Ausführungsebene interessiert, lies nach den Forschungsseiten Vibe Coding."
     ],
-    heroLabels: ["Einstieg", "Tools & Plattformen", "Claw Park", "Vibe Coding"],
+    heroLabels: ["Einstieg", "Auto Research", "Tools & Plattformen", "Claw Park"],
     toc: "Inhaltsverzeichnis",
     whatIs: "Was ist Vibe Research?",
     whatIsDesc: "Vibe Research untersucht, wie LLM-basierte Agenten den Forschungszyklus unterstützen oder automatisieren können: Literaturrecherche, Ideenfindung, Experimentausführung, Schreiben und Bewertung.",
@@ -634,6 +638,7 @@ const translations = {
     guideLink: "Link",
     guideTrackLabels: {
       gettingStarted: "Einstieg",
+      autoResearch: "Auto Research",
       tools: "Tools & Plattformen",
       clawPark: "Claw Park",
       vibeCoding: "Vibe Coding",
@@ -663,7 +668,7 @@ const translations = {
     featured: "Hervorgehobene Projekte",
     readingModes: "Lesemodi",
     readingModeCards: {
-      field: ["Das Feld lesen", "Surveys · Systems · Benchmarks"],
+      field: ["Das Feld lesen", "Auto Research · Surveys · Systems · Benchmarks"],
       stack: ["Den Stack bauen", "Tools & Platforms · Claw Park · Vibe Coding"],
       beyond: ["Jenseits der Forschung prototypen", "Vibe Anything"]
     },
@@ -688,7 +693,7 @@ const translations = {
       "Si vous comparez des projets Claw, allez directement à Claw Park.",
       "Si l'execution layer vous intéresse, lisez Vibe Coding après les pages principales sur la recherche."
     ],
-    heroLabels: ["Démarrer", "Outils & plateformes", "Claw Park", "Vibe Coding"],
+    heroLabels: ["Démarrer", "Auto Research", "Outils & plateformes", "Claw Park"],
     toc: "Table des matières",
     whatIs: "Qu'est-ce que Vibe Research ?",
     whatIsDesc: "Vibe Research étudie la manière dont des agents fondés sur les LLM peuvent soutenir ou automatiser la boucle de recherche : revue de littérature, génération d'idées, exécution d'expériences, rédaction et évaluation.",
@@ -767,6 +772,7 @@ const translations = {
     guideLink: "Lien",
     guideTrackLabels: {
       gettingStarted: "Démarrer",
+      autoResearch: "Auto Research",
       tools: "Outils & plateformes",
       clawPark: "Claw Park",
       vibeCoding: "Vibe Coding",
@@ -796,7 +802,7 @@ const translations = {
     featured: "Projets mis en avant",
     readingModes: "Modes de lecture",
     readingModeCards: {
-      field: ["Lire le champ", "Surveys · Systems · Benchmarks"],
+      field: ["Lire le champ", "Auto Research · Surveys · Systems · Benchmarks"],
       stack: ["Construire le stack", "Tools & Platforms · Claw Park · Vibe Coding"],
       beyond: ["Prototyper au-delà de la recherche", "Vibe Anything"]
     },
@@ -821,7 +827,7 @@ const translations = {
       "Si estás comparando proyectos Claw, ve directamente a Claw Park.",
       "Si te importa la capa de ejecución, lee Vibe Coding después de las páginas principales de investigación."
     ],
-    heroLabels: ["Empezar", "Herramientas y plataformas", "Claw Park", "Vibe Coding"],
+    heroLabels: ["Empezar", "Auto Research", "Herramientas y plataformas", "Claw Park"],
     toc: "Tabla de contenidos",
     whatIs: "¿Qué es Vibe Research?",
     whatIsDesc: "Vibe Research estudia cómo los agentes basados en LLM pueden apoyar o automatizar el ciclo de investigación: revisión bibliográfica, generación de ideas, ejecución de experimentos, escritura y evaluación.",
@@ -900,6 +906,7 @@ const translations = {
     guideLink: "Enlace",
     guideTrackLabels: {
       gettingStarted: "Empezar",
+      autoResearch: "Auto Research",
       tools: "Herramientas y plataformas",
       clawPark: "Claw Park",
       vibeCoding: "Vibe Coding",
@@ -929,7 +936,7 @@ const translations = {
     featured: "Proyectos destacados",
     readingModes: "Modos de lectura",
     readingModeCards: {
-      field: ["Leer el campo", "Surveys · Systems · Benchmarks"],
+      field: ["Leer el campo", "Auto Research · Surveys · Systems · Benchmarks"],
       stack: ["Construir el stack", "Tools & Platforms · Claw Park · Vibe Coding"],
       beyond: ["Prototipar más allá de investigación", "Vibe Anything"]
     },
@@ -954,7 +961,7 @@ const translations = {
       "Se vuoi confrontare i progetti Claw, vai subito a Claw Park.",
       "Se ti interessa il livello di esecuzione, leggi Vibe Coding dopo le pagine principali sulla ricerca."
     ],
-    heroLabels: ["Inizia", "Strumenti e piattaforme", "Claw Park", "Vibe Coding"],
+    heroLabels: ["Inizia", "Auto Research", "Strumenti e piattaforme", "Claw Park"],
     toc: "Indice",
     whatIs: "Che cos'è Vibe Research?",
     whatIsDesc: "Vibe Research studia come gli agenti basati su LLM possano supportare o automatizzare il ciclo della ricerca: revisione della letteratura, generazione di idee, esecuzione di esperimenti, scrittura e valutazione.",
@@ -1033,6 +1040,7 @@ const translations = {
     guideLink: "Link",
     guideTrackLabels: {
       gettingStarted: "Inizia",
+      autoResearch: "Auto Research",
       tools: "Strumenti e piattaforme",
       clawPark: "Claw Park",
       vibeCoding: "Vibe Coding",
@@ -1062,7 +1070,7 @@ const translations = {
     featured: "Progetti in evidenza",
     readingModes: "Modalità di lettura",
     readingModeCards: {
-      field: ["Leggere il campo", "Surveys · Systems · Benchmarks"],
+      field: ["Leggere il campo", "Auto Research · Surveys · Systems · Benchmarks"],
       stack: ["Costruire lo stack", "Tools & Platforms · Claw Park · Vibe Coding"],
       beyond: ["Prototipare oltre la ricerca", "Vibe Anything"]
     },
@@ -1087,7 +1095,7 @@ const translations = {
       "Se quer comparar projetos Claw, vá direto para Claw Park.",
       "Se a camada de execução importa para você, leia Vibe Coding depois das páginas principais de pesquisa."
     ],
-    heroLabels: ["Começar", "Ferramentas e plataformas", "Claw Park", "Vibe Coding"],
+    heroLabels: ["Começar", "Auto Research", "Ferramentas e plataformas", "Claw Park"],
     toc: "Sumário",
     whatIs: "O que é Vibe Research?",
     whatIsDesc: "Vibe Research estuda como agentes baseados em LLM podem apoiar ou automatizar o ciclo de pesquisa: revisão de literatura, geração de ideias, execução de experimentos, escrita e avaliação.",
@@ -1166,6 +1174,7 @@ const translations = {
     guideLink: "Link",
     guideTrackLabels: {
       gettingStarted: "Começar",
+      autoResearch: "Auto Research",
       tools: "Ferramentas e plataformas",
       clawPark: "Claw Park",
       vibeCoding: "Vibe Coding",
@@ -1195,7 +1204,7 @@ const translations = {
     featured: "Projetos em destaque",
     readingModes: "Modos de leitura",
     readingModeCards: {
-      field: ["Ler o campo", "Surveys · Systems · Benchmarks"],
+      field: ["Ler o campo", "Auto Research · Surveys · Systems · Benchmarks"],
       stack: ["Construir a stack", "Tools & Platforms · Claw Park · Vibe Coding"],
       beyond: ["Prototipar além da pesquisa", "Vibe Anything"]
     },
@@ -1220,7 +1229,7 @@ const translations = {
       "إذا كنت تقارن بين مشاريع Claw فاذهب مباشرة إلى Claw Park.",
       "إذا كنت تهتم بطبقة التنفيذ فاقرأ Vibe Coding بعد صفحات البحث الأساسية."
     ],
-    heroLabels: ["ابدأ", "الأدوات والمنصات", "Claw Park", "Vibe Coding"],
+    heroLabels: ["ابدأ", "Auto Research", "الأدوات والمنصات", "Claw Park"],
     toc: "المحتويات",
     whatIs: "ما هو Vibe Research؟",
     whatIsDesc: "يدرس Vibe Research كيف يمكن للوكلاء القائمين على LLM دعم أو أتمتة حلقة البحث: مراجعة الأدبيات، توليد الأفكار، تنفيذ التجارب، الكتابة، والتقييم.",
@@ -1299,6 +1308,7 @@ const translations = {
     guideLink: "الرابط",
     guideTrackLabels: {
       gettingStarted: "ابدأ",
+      autoResearch: "Auto Research",
       tools: "الأدوات والمنصات",
       clawPark: "Claw Park",
       vibeCoding: "Vibe Coding",
@@ -1328,7 +1338,7 @@ const translations = {
     featured: "مشاريع مميزة",
     readingModes: "أنماط القراءة",
     readingModeCards: {
-      field: ["قراءة المجال", "Surveys · Systems · Benchmarks"],
+      field: ["قراءة المجال", "Auto Research · Surveys · Systems · Benchmarks"],
       stack: ["بناء الـ stack", "Tools & Platforms · Claw Park · Vibe Coding"],
       beyond: ["نمذجة خارج البحث", "Vibe Anything"]
     },
@@ -1353,7 +1363,7 @@ const translations = {
       "ถ้าต้องการเปรียบเทียบโปรเจกต์ Claw ให้ไปที่ Claw Park โดยตรง",
       "ถ้าคุณสนใจ execution layer ให้อ่าน Vibe Coding หลังจากหน้าหลักด้านงานวิจัย"
     ],
-    heroLabels: ["เริ่มต้น", "เครื่องมือและแพลตฟอร์ม", "Claw Park", "Vibe Coding"],
+    heroLabels: ["เริ่มต้น", "Auto Research", "เครื่องมือและแพลตฟอร์ม", "Claw Park"],
     toc: "สารบัญ",
     whatIs: "Vibe Research คืออะไร?",
     whatIsDesc: "Vibe Research ศึกษาว่าเอเจนต์ที่ขับเคลื่อนด้วย LLM สามารถช่วยหรือทำให้งานวิจัยเป็นอัตโนมัติได้อย่างไร ตั้งแต่การทบทวนวรรณกรรม การสร้างไอเดีย การรันการทดลอง การเขียน และการประเมินผล",
@@ -1432,6 +1442,7 @@ const translations = {
     guideLink: "ลิงก์",
     guideTrackLabels: {
       gettingStarted: "เริ่มต้น",
+      autoResearch: "Auto Research",
       tools: "เครื่องมือและแพลตฟอร์ม",
       clawPark: "Claw Park",
       vibeCoding: "Vibe Coding",
@@ -1461,7 +1472,7 @@ const translations = {
     featured: "โปรเจกต์เด่น",
     readingModes: "โหมดการอ่าน",
     readingModeCards: {
-      field: ["อ่านเพื่อเข้าใจทั้งสนาม", "Surveys · Systems · Benchmarks"],
+      field: ["อ่านเพื่อเข้าใจทั้งสนาม", "Auto Research · Surveys · Systems · Benchmarks"],
       stack: ["สร้าง stack", "Tools & Platforms · Claw Park · Vibe Coding"],
       beyond: ["ทำต้นแบบนอกงานวิจัย", "Vibe Anything"]
     },
@@ -1486,7 +1497,7 @@ const translations = {
       "Nếu bạn muốn so sánh các dự án Claw, hãy vào thẳng Claw Park.",
       "Nếu bạn quan tâm đến tầng thực thi, hãy đọc Vibe Coding sau các trang nghiên cứu chính."
     ],
-    heroLabels: ["Bắt đầu", "Công cụ và nền tảng", "Claw Park", "Vibe Coding"],
+    heroLabels: ["Bắt đầu", "Auto Research", "Công cụ và nền tảng", "Claw Park"],
     toc: "Mục lục",
     whatIs: "Vibe Research là gì?",
     whatIsDesc: "Vibe Research nghiên cứu cách các agent dựa trên LLM có thể hỗ trợ hoặc tự động hóa vòng lặp nghiên cứu: tổng quan tài liệu, tạo ý tưởng, chạy thí nghiệm, viết và đánh giá.",
@@ -1565,6 +1576,7 @@ const translations = {
     guideLink: "Liên kết",
     guideTrackLabels: {
       gettingStarted: "Bắt đầu",
+      autoResearch: "Auto Research",
       tools: "Công cụ và nền tảng",
       clawPark: "Claw Park",
       vibeCoding: "Vibe Coding",
@@ -1594,7 +1606,7 @@ const translations = {
     featured: "Dự án nổi bật",
     readingModes: "Chế độ đọc",
     readingModeCards: {
-      field: ["Đọc toàn cảnh lĩnh vực", "Surveys · Systems · Benchmarks"],
+      field: ["Đọc toàn cảnh lĩnh vực", "Auto Research · Surveys · Systems · Benchmarks"],
       stack: ["Xây stack", "Tools & Platforms · Claw Park · Vibe Coding"],
       beyond: ["Tạo mẫu ngoài nghiên cứu", "Vibe Anything"]
     },
@@ -1619,7 +1631,7 @@ const translations = {
       "Если вы сравниваете проекты Claw, сразу переходите в Claw Park.",
       "Если вас интересует исполнительный слой, читайте Vibe Coding после основных исследовательских страниц."
     ],
-    heroLabels: ["Старт", "Инструменты и платформы", "Claw Park", "Vibe Coding"],
+    heroLabels: ["Старт", "Auto Research", "Инструменты и платформы", "Claw Park"],
     toc: "Содержание",
     whatIs: "Что такое Vibe Research?",
     whatIsDesc: "Vibe Research изучает, как агенты на базе LLM могут поддерживать или автоматизировать исследовательский цикл: обзор литературы, генерацию идей, запуск экспериментов, письмо и оценку.",
@@ -1698,6 +1710,7 @@ const translations = {
     guideLink: "Ссылка",
     guideTrackLabels: {
       gettingStarted: "Старт",
+      autoResearch: "Auto Research",
       tools: "Инструменты и платформы",
       clawPark: "Claw Park",
       vibeCoding: "Vibe Coding",
@@ -1727,7 +1740,7 @@ const translations = {
     featured: "Ключевые проекты",
     readingModes: "Режимы чтения",
     readingModeCards: {
-      field: ["Изучить поле", "Surveys · Systems · Benchmarks"],
+      field: ["Изучить поле", "Auto Research · Surveys · Systems · Benchmarks"],
       stack: ["Собрать стек", "Tools & Platforms · Claw Park · Vibe Coding"],
       beyond: ["Прототипировать вне исследований", "Vibe Anything"]
     },
@@ -1746,13 +1759,14 @@ const translations = {
 
 const heroLinks = [
   "./topics/getting-started.md",
+  "./topics/auto-research.md",
   "./topics/tools.md",
-  "./topics/claw-park.md",
-  "./topics/vibe-coding.md"
+  "./topics/claw-park.md"
 ];
 
 const guideTracks = [
   { key: "gettingStarted", url: "./topics/getting-started.md" },
+  { key: "autoResearch", url: "./topics/auto-research.md" },
   { key: "tools", url: "./topics/tools.md" },
   { key: "clawPark", url: "./topics/claw-park.md" },
   { key: "vibeCoding", url: "./topics/vibe-coding.md" },
@@ -1776,14 +1790,14 @@ const learningRowsData = [
   { key: "map", examples: "Awesome-Self-Evolving-Agents" }
 ];
 const pathRowsData = [
-  { key: "newcomer", start: "./topics/getting-started.md", then: "./topics/tools.md" },
-  { key: "builder", start: "./topics/tools.md", then: "./topics/vibe-coding.md" },
-  { key: "researcher", start: "./topics/surveys.md", then: "./topics/benchmarks.md" },
-  { key: "creator", start: "./topics/vibe-anything.md", then: "./topics/vibe-coding.md" }
+  { key: "newcomer", start: "./topics/getting-started.md", then: "./topics/auto-research.md" },
+  { key: "builder", start: "./topics/auto-research.md", then: "./topics/tools.md" },
+  { key: "researcher", start: "./topics/surveys.md", then: "./topics/auto-research.md" },
+  { key: "creator", start: "./topics/tools.md", then: "./topics/vibe-anything.md" }
 ];
 const ecosystemRowsData = [
   { key: "copilots", examples: "Deep Research, NotebookLM, Prism" },
-  { key: "systems", examples: "InnoClaw, ResearchClaw, FARS, AI Scientist, Agent Laboratory, EvoScientist" },
+  { key: "systems", examples: "AI Scientist, AI Scientist-v2, Agent Laboratory, AI-Researcher, RD-Agent, Auto-Deep-Research, EvoScientist" },
   { key: "platforms", examples: "FutureHouse Platform, Robin, Edison Scientific, Kosmos" },
   { key: "learning", examples: "Agent Lightning, Agent0, AgentEvolver, EvoAgentX, Acontext" },
   { key: "claw", examples: "OpenClaw, ClawHub, Plugin Bundles, nix-openclaw, ResearchClaw, ScienceClaw, MetaClaw, AutoResearchClaw" },
@@ -1827,20 +1841,20 @@ const clawProjects = [
   { name: "awesome-openclaw-skills", layer: "registry", url: "https://github.com/sundial-org/awesome-openclaw-skills" }
 ];
 const featuredProjects = [
-  ["OpenClaw", "https://github.com/openclaw/openclaw"],
-  ["Hermes Agent", "https://github.com/NousResearch/Hermes-Agent"],
-  ["Goose", "https://github.com/block/goose"],
-  ["Khoj", "https://github.com/khoj-ai/khoj"],
-  ["AnythingLLM", "https://github.com/Mintplex-Labs/anything-llm"],
-  ["CLI-Anything", "https://github.com/HKUDS/CLI-Anything"],
-  ["Agent Lightning", "https://github.com/microsoft/agent-lightning"],
-  ["Vibe Island", "https://vibeisland.app/"]
+  ["The AI Scientist", "https://github.com/SakanaAI/AI-Scientist"],
+  ["The AI Scientist-v2", "https://github.com/SakanaAI/AI-Scientist-v2"],
+  ["Agent Laboratory", "https://github.com/SamuelSchmidgall/AgentLaboratory"],
+  ["AI-Researcher", "https://github.com/HKUDS/AI-Researcher"],
+  ["RD-Agent", "https://github.com/microsoft/RD-Agent"],
+  ["Auto-Deep-Research", "https://github.com/HKUDS/Auto-Deep-Research"],
+  ["EvoScientist", "https://github.com/EvoScientist/EvoScientist"],
+  ["OpenClaw", "https://github.com/openclaw/openclaw"]
 ];
 const readingModeKeys = ["field", "stack", "beyond"];
 const langButtons = ["en", "zh", "ko", "ja", "de", "fr", "es", "it", "pt", "ar", "th", "vi", "ru"];
 const landingUpdateText = {
-  en: "2026-04-15: expanded the guide from a research-only map into a research-first broader agent-native landscape, adding personal assistants, software / harness layers, and companion coding apps.",
-  zh: "2026-04-15：把这个指南从偏研究单线地图扩展成了 research-first 的更广义 agent-native 版图，新增了个人助手、software / harness 层，以及 companion coding apps。"
+  en: "2026-04-21: added a dedicated Auto Research guide, refreshed systems / surveys / benchmarks / tools, and moved the landing page back toward a stronger research-first map without dropping the broader agent-native ecosystem.",
+  zh: "2026-04-21：新增了独立的 Auto Research 总览页，刷新了 systems / surveys / benchmarks / tools，并把首页重新拉回更强的 research-first 结构，同时保留更广义的 agent-native 生态。"
 };
 
 function getTranslation(lang, key) {
